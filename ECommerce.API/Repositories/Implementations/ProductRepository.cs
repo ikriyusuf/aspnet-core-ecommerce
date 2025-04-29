@@ -19,5 +19,14 @@ namespace ECommerce.API.Repositories.Implementations
                     .Include(p => p.Seller)
                     .ThenInclude(s => s.SellerProfile);
         }
+
+        public Product? GetProductById(int productId, bool trackChanges)
+        {
+            return FindByCondition(p => p.Id.Equals(productId), trackChanges)
+                    .Include(p => p.Category)
+                    .Include(p => p.Seller)
+                    .ThenInclude(s => s.SellerProfile)
+                    .FirstOrDefault();
+        }
     }
 }

@@ -21,5 +21,14 @@ namespace ECommerce.API.Controllers
             var summaries = await _productService.GetProductSummariesAsync(false);
             return Ok(summaries);
         }
+
+        [HttpGet("{productId:int}", Name = "GetProductById")]
+        public IActionResult GetProductById(int productId)
+        {
+            var product = _productService.GetProductById(productId, false);
+            if (product == null)
+                return NotFound();
+            return Ok(product);
+        }
     }
 }

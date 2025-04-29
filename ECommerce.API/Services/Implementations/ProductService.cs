@@ -19,6 +19,14 @@ namespace ECommerce.API.Services.Implementations
             _mapper = mapper;
         }
 
+        public ProductDto GetProductById(int productId, bool trackChanges)
+        {
+            var product = _repositoryManager.Product.GetProductById(productId, trackChanges);
+
+            var productDto = _mapper.Map<ProductDto>(product);
+            return productDto;
+        }
+
         public async Task<IEnumerable<ProductSummaryDto>> GetProductSummariesAsync(bool trackChanges)
         {
             var products = await _repositoryManager.Product.GetAllProducts(trackChanges)

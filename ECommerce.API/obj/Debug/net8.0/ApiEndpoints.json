@@ -1,6 +1,23 @@
 [
   {
     "ContainingType": "ECommerce.API.Controllers.ProductController",
+    "Method": "GetProductById",
+    "RelativePath": "api/Product/{productId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "GetProductById"
+  },
+  {
+    "ContainingType": "ECommerce.API.Controllers.ProductController",
     "Method": "GetProductSummaries",
     "RelativePath": "api/Product/summaries",
     "HttpMethod": "GET",

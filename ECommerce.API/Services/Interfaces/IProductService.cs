@@ -6,5 +6,6 @@ namespace ECommerce.API.Services.Interfaces
     public interface IProductService
     {
         Task<IEnumerable<ProductSummaryDto>> GetProductSummariesAsync(bool trackChanges);
+        ProductDto GetProductById(int productId, bool trackChanges);
     }
 }

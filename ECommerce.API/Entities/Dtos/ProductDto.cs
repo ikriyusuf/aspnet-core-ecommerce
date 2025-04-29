@@ -7,11 +7,11 @@ namespace ECommerce.API.Entities.Dtos
     {
         public string Brand { get; set; } = null!;
         public string Model { get; set; } = null!;
-        public string Name { get; set; } = null!; // Brand + Model
+        public string Name { get; set; } = null!; 
         public string Description { get; set; } = null!;
         public decimal Price { get; set; }
         public double DiscountRate { get; set; }
-        public decimal DiscountedPrice { get; set; } // 🔥 DTO'da doğrudan hesaplı gönderiyoruz
+        public decimal DiscountedPrice { get; set; } 
         public int Stock { get; set; }
         public string? Color { get; set; }
         public string? Material { get; set; }
@@ -23,7 +23,6 @@ namespace ECommerce.API.Entities.Dtos
         public string CategoryName { get; set; } = null!;
         public string SellerShopName { get; set; } = null!;
         public bool IsActive { get; set; }
-        public DateTime CreatedAt { get; set; }
         // İstatistikler
         public int ViewsCount { get; set; }
         public int SoldCount { get; set; }

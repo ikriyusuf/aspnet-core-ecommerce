@@ -10,7 +10,11 @@ namespace ECommerce.API.Infrastructure.Mapper
         {
             CreateMap<Product, ProductSummaryDto>()
                 .ForMember(dest => dest.SellerShopName, opt => opt.MapFrom(src => src.Seller.SellerProfile.ShopName));
-            
+
+            CreateMap<Product, ProductDto>()
+                .ForMember(dest => dest.SellerShopName, opt => opt.MapFrom(src => src.Seller.SellerProfile.ShopName))
+                .ReverseMap();
+
         }
     }
 }
