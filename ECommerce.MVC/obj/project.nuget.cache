@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "yWoMq0DuW8w=",
+  "dgSpecHash": "B3ohMKGHUX0=",
   "success": true,
   "projectFilePath": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.MVC\\ECommerce.MVC.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\yusuf\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

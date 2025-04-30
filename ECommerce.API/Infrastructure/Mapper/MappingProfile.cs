@@ -8,8 +8,7 @@ namespace ECommerce.API.Infrastructure.Mapper
     {
         public MappingProfile()
         {
-            CreateMap<Product, ProductSummaryDto>()
-                .ForMember(dest => dest.SellerShopName, opt => opt.MapFrom(src => src.Seller.SellerProfile.ShopName));
+            CreateMap<Product, ProductSummaryDto>().ReverseMap();
 
             CreateMap<Product, ProductDto>()
                 .ForMember(dest => dest.SellerShopName, opt => opt.MapFrom(src => src.Seller.SellerProfile.ShopName))

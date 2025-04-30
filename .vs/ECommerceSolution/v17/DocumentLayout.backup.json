@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{367BA021-0B4A-43B0-ADB8-1A92B460B0E2}|ECommerce.API\\ECommerce.API.csproj|c:\\users\\yusuf\\source\\repos\\ecommercesolution\\ecommerce.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{367BA021-0B4A-43B0-ADB8-1A92B460B0E2}|ECommerce.API\\ECommerce.API.csproj|solutionrelative:ecommerce.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7D61EF6E-2A0B-4954-99DF-416FC0490120}|ECommerce.MVC\\ECommerce.MVC.csproj|c:\\users\\yusuf\\source\\repos\\ecommercesolution\\ecommerce.mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7D61EF6E-2A0B-4954-99DF-416FC0490120}|ECommerce.MVC\\ECommerce.MVC.csproj|solutionrelative:ecommerce.mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -55,14 +55,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.API\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "ECommerce.API\\Controllers\\ProductController.cs",
-              "ToolTip": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.API\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "ECommerce.API\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T12:47:07.893Z",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.MVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ECommerce.MVC\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.MVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ECommerce.MVC\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAiwDsAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-30T13:51:29.454Z",
               "EditorCaption": ""
             }
           ]

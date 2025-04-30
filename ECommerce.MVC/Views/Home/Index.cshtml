@@ -1,8 +1,38 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Anasayfa";
 }
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!-- Hero Banner -->
+<section class="hero-section py-5 text-white" style="background: url('/images/tech-hero.jpg') center/cover no-repeat;">
+    <div class="container text-center">
+        <h1 class="display-4 fw-bold">En Yeni Teknolojik Ürünler Burada</h1>
+        <p class="lead mb-4">Son model akıllı telefonlar, dizüstüler, aksesuarlar ve daha fazlası!</p>
+        <a href="/Product" class="btn btn-lg btn-primary">Teknoloji Mağazasını İncele</a>
+    </div>
+</section>
+
+<!-- Popüler Teknoloji Kategorileri -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="mb-4 text-center">Popüler Teknoloji Kategorileri</h2>
+        <div class="row g-4">
+            <div class="col-6 col-md-3 text-center">
+                <i class="fa-solid fa-laptop display-4 text-danger mb-2"></i>
+                <h5 class="text-dark">Dizüstü</h5>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+                <i class="fa-solid fa-mobile-screen-button display-4 text-danger mb-2"></i>
+                <h5 class="text-dark">Akıllı Telefon</h5>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+                <i class="fa-solid fa-headphones-simple display-4 text-danger mb-2"></i>
+                <h5 class="text-dark">Aksesuarlar</h5>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+                <i class="fa-solid fa-gamepad display-4 text-danger mb-2"></i>
+                <h5 class="text-dark">Oyun</h5>
+            </div>
+        </div>
+    </div>
+</section>

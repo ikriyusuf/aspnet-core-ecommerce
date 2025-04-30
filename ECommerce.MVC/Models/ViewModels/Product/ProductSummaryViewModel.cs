@@ -1,6 +1,6 @@
-﻿namespace ECommerce.API.Entities.Dtos
+﻿namespace ECommerce.MVC.Models.ViewModels.Product
 {
-    public class ProductSummaryDto
+    public class ProductSummaryViewModel
     {
         public int Id { get; set; }
         public string? Name { get; set; }
