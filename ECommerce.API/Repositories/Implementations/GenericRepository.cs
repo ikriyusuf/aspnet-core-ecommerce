@@ -8,9 +8,15 @@ namespace ECommerce.API.Repositories.Implementations
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
         protected readonly AppDbContext _context;
+
         public GenericRepository(AppDbContext context)
         {
             _context = context;
+        }
+
+        public async Task<int> CountAsync()
+        {
+            return await _context.Set<T>().CountAsync();
         }
 
         public void Create(T entity)
@@ -20,16 +26,16 @@ namespace ECommerce.API.Repositories.Implementations
 
         public IQueryable<T> FindAll(bool trackChanges)
         {
-            return !trackChanges
-                ? _context.Set<T>().AsNoTracking()
-                : _context.Set<T>();
+            return trackChanges
+                ? _context.Set<T>()
+                : _context.Set<T>().AsNoTracking();
         }
 
         public IQueryable<T> FindByCondition(Expression<Func<T, bool>> expression, bool trackChanges)
         {
-            return !trackChanges
-                ? _context.Set<T>().Where(expression).AsNoTracking()
-                : _context.Set<T>().Where(expression);
+            return trackChanges
+                ? _context.Set<T>().Where(expression)
+                : _context.Set<T>().Where(expression).AsNoTracking();
         }
 
         public void Remove(T entity)

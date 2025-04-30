@@ -1,4 +1,5 @@
-﻿using ECommerce.API.Entities.Model;
+﻿using ECommerce.API.Entities.Dtos;
+using ECommerce.API.Entities.Model;
 
 namespace ECommerce.API.Repositories.Interfaces
 {
@@ -6,5 +7,11 @@ namespace ECommerce.API.Repositories.Interfaces
     {
         IQueryable<Product> GetAllProducts(bool trackChanges);
         Product? GetProductById(int productId, bool trackChanges);
+        void CreateOneProduct(Product product);
+        void DeleteOneProduct(Product product);
+        void UpdateOneProduct(Product product);
+        Task<int> ProductCountAsync();
+        Task<ProductCountBySellerDto> GetProductCountBySellerIdAsync(int sellerId);
+        Task<List<Product>> GetSortedProductsAsync(string sortBy, bool trackChanges);
     }
 }

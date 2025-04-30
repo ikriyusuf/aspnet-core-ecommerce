@@ -4,10 +4,11 @@ namespace ECommerce.API.Repositories.Interfaces
 {
     public interface IGenericRepository<T> where T : class
     {
-        IQueryable<T> FindAll(bool trackChanges);
+        IQueryable<T> FindAll(bool trackChanges); // ← artık IQueryable
         IQueryable<T> FindByCondition(Expression<Func<T, bool>> expression, bool trackChanges);
         void Create(T entity);
-        void Remove(T entity);
         void Update(T entity);
+        void Remove(T entity);
+        Task<int> CountAsync();
     }
 }
