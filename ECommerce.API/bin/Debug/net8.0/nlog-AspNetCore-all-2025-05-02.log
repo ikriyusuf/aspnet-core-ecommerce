@@ -1,0 +1,535 @@
+2025-05-02 09:41:09.2780|0|DEBUG|ECommerce.API.Program|init main 
+2025-05-02 09:41:10.7594|12|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2025-05-02 09:41:10.8926|1|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2025-05-02 09:41:10.9158|0|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BlazorWasmHotReloadMiddleware|Middleware loaded 
+2025-05-02 09:41:10.9199|0|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserScriptMiddleware|Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16511 B). 
+2025-05-02 09:41:10.9199|0|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserScriptMiddleware|Middleware loaded. Script /_framework/blazor-hotreload.js (799 B). 
+2025-05-02 09:41:11.0984|0|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true 
+2025-05-02 09:41:11.2252|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7295 
+2025-05-02 09:41:11.2252|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5103 
+2025-05-02 09:41:11.2252|13|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly ECommerce.API 
+2025-05-02 09:41:11.2252|13|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery 
+2025-05-02 09:41:11.2252|13|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2025-05-02 09:41:11.2252|13|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2025-05-02 09:41:11.3256|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-05-02 09:41:11.3260|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-05-02 09:41:11.3260|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API 
+2025-05-02 09:41:11.3260|2|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2025-05-02 09:41:11.4546|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNC98H9U2Q4K" received FIN. 
+2025-05-02 09:41:11.4546|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNC98H9U2Q4J" received FIN. 
+2025-05-02 09:41:11.4546|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNC98H9U2Q4K" accepted. 
+2025-05-02 09:41:11.4546|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNC98H9U2Q4J" accepted. 
+2025-05-02 09:41:11.4546|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNC98H9U2Q4J" started. 
+2025-05-02 09:41:11.4546|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNC98H9U2Q4K" started. 
+2025-05-02 09:41:11.4923|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-05-02 09:41:11.4923|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-05-02 09:41:11.5506|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNC98H9U2Q4J" stopped. 
+2025-05-02 09:41:11.5506|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNC98H9U2Q4K" stopped. 
+2025-05-02 09:41:11.5506|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNC98H9U2Q4J" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-05-02 09:41:11.5506|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNC98H9U2Q4K" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-05-02 09:41:13.9460|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNC98H9U2Q4L" accepted. 
+2025-05-02 09:41:13.9508|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNC98H9U2Q4L" started. 
+2025-05-02 09:41:14.0900|3|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HNC98H9U2Q4L established using the following protocol: Tls13 
+2025-05-02 09:41:14.2483|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4L" sending SETTINGS frame for stream ID 0 with length 24 and flags NONE. 
+2025-05-02 09:41:14.2708|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4L" sending WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2025-05-02 09:41:14.2708|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4L" received SETTINGS frame for stream ID 0 with length 24 and flags NONE. 
+2025-05-02 09:41:14.2708|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4L" sending SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2025-05-02 09:41:14.2708|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4L" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2025-05-02 09:41:14.2708|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4L" received HEADERS frame for stream ID 1 with length 496 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2025-05-02 09:41:14.6729|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4L" received SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2025-05-02 09:41:15.0482|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - - - 
+2025-05-02 09:41:15.3011|0|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2025-05-02 09:41:15.3011|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2025-05-02 09:41:15.3384|1000|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html' 
+2025-05-02 09:41:15.3384|2|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2025-05-02 09:41:15.4539|1|DEBUG|Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware|Response markup is scheduled to include Browser Link script injection. 
+2025-05-02 09:41:15.4539|1|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection. 
+2025-05-02 09:41:15.4539|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4L" sending HEADERS frame for stream ID 1 with length 66 and flags END_HEADERS. 
+2025-05-02 09:41:15.4712|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4L" sending DATA frame for stream ID 1 with length 4096 and flags NONE. 
+2025-05-02 09:41:15.4712|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4L" sending DATA frame for stream ID 1 with length 925 and flags NONE. 
+2025-05-02 09:41:15.4712|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4L" sending DATA frame for stream ID 1 with length 81 and flags NONE. 
+2025-05-02 09:41:15.4712|2|DEBUG|Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware|Response markup was updated to include Browser Link script injection. 
+2025-05-02 09:41:15.4712|2|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection. 
+2025-05-02 09:41:15.4818|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4L" sending DATA frame for stream ID 1 with length 0 and flags END_STREAM. 
+2025-05-02 09:41:15.4818|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 - text/html;charset=utf-8 455.8392ms 
+2025-05-02 09:41:15.5115|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4L" received HEADERS frame for stream ID 3 with length 115 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2025-05-02 09:41:15.5115|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4L" received HEADERS frame for stream ID 5 with length 57 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2025-05-02 09:41:15.5115|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - - - 
+2025-05-02 09:41:15.5139|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - - - 
+2025-05-02 09:41:15.5139|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4L" sending HEADERS frame for stream ID 3 with length 60 and flags END_HEADERS. 
+2025-05-02 09:41:15.5139|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4L" sending DATA frame for stream ID 3 with length 16384 and flags NONE. 
+2025-05-02 09:41:15.5139|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4L" sending DATA frame for stream ID 3 with length 127 and flags NONE. 
+2025-05-02 09:41:15.5139|0|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserScriptMiddleware|Script injected: /_framework/aspnetcore-browser-refresh.js 
+2025-05-02 09:41:15.5139|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4L" sending DATA frame for stream ID 3 with length 0 and flags END_STREAM. 
+2025-05-02 09:41:15.5139|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript;+charset=utf-8 9.4766ms 
+2025-05-02 09:41:15.6127|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4L" sending HEADERS frame for stream ID 5 with length 119 and flags END_HEADERS. 
+2025-05-02 09:41:15.6127|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4L" sending DATA frame for stream ID 5 with length 9986 and flags NONE. 
+2025-05-02 09:41:15.6127|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4L" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2025-05-02 09:41:15.6127|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4L" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2025-05-02 09:41:15.6300|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4L" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2025-05-02 09:41:15.6300|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4L" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2025-05-02 09:41:15.6416|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4L" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2025-05-02 09:41:15.6416|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4L" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2025-05-02 09:41:15.6416|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4L" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2025-05-02 09:41:15.6416|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4L" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2025-05-02 09:41:15.6549|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4L" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2025-05-02 09:41:15.6549|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4L" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2025-05-02 09:41:15.6549|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4L" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2025-05-02 09:41:15.6549|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4L" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2025-05-02 09:41:15.6549|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4L" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2025-05-02 09:41:15.6708|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4L" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2025-05-02 09:41:15.6708|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4L" sending DATA frame for stream ID 5 with length 1806 and flags NONE. 
+2025-05-02 09:41:15.6708|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4L" sending DATA frame for stream ID 5 with length 0 and flags END_STREAM. 
+2025-05-02 09:41:15.6708|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 163.3064ms 
+2025-05-02 09:41:15.7619|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4L" received HEADERS frame for stream ID 7 with length 74 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2025-05-02 09:41:15.7619|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - - - 
+2025-05-02 09:41:15.7663|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2025-05-02 09:41:15.7663|1000|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json' 
+2025-05-02 09:41:15.7663|2|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2025-05-02 09:41:15.8267|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4L" sending HEADERS frame for stream ID 7 with length 35 and flags END_HEADERS. 
+2025-05-02 09:41:15.8267|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4L" sending DATA frame for stream ID 7 with length 7195 and flags NONE. 
+2025-05-02 09:41:15.8267|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4L" sending DATA frame for stream ID 7 with length 0 and flags END_STREAM. 
+2025-05-02 09:41:15.8267|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 75.6036ms 
+2025-05-02 09:41:18.4055|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNC98H9U2Q4L" received FIN. 
+2025-05-02 09:41:18.4055|62|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|The connection queue processing loop for 0HNC98H9U2Q4L completed. 
+2025-05-02 09:41:18.4055|48|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4L" is closed. The last processed stream ID was 7. 
+2025-05-02 09:41:18.4055|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNC98H9U2Q4L" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-05-02 09:41:18.4215|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNC98H9U2Q4L" stopped. 
+2025-05-02 09:41:35.3411|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNC98H9U2Q4M" accepted. 
+2025-05-02 09:41:35.3411|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNC98H9U2Q4M" started. 
+2025-05-02 09:41:35.3448|3|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HNC98H9U2Q4M established using the following protocol: Tls13 
+2025-05-02 09:41:35.3448|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4M" sending SETTINGS frame for stream ID 0 with length 24 and flags NONE. 
+2025-05-02 09:41:35.3448|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4M" sending WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2025-05-02 09:41:35.3448|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4M" received SETTINGS frame for stream ID 0 with length 24 and flags NONE. 
+2025-05-02 09:41:35.3448|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4M" sending SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2025-05-02 09:41:35.3448|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4M" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2025-05-02 09:41:35.3448|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4M" received HEADERS frame for stream ID 1 with length 423 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2025-05-02 09:41:35.3448|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4M" received SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2025-05-02 09:41:35.3448|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 DELETE https://localhost:7295/api/Product/10000 - - - 
+2025-05-02 09:41:35.3448|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2025-05-02 09:41:35.3448|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/Product/10000' 
+2025-05-02 09:41:35.3448|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'ECommerce.API.Controllers.ProductController.DeleteProductAsync (ECommerce.API)' with route pattern 'api/Product/{productId:int}' is valid for the request path '/api/Product/10000' 
+2025-05-02 09:41:35.3448|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'ECommerce.API.Controllers.ProductController.DeleteProductAsync (ECommerce.API)' 
+2025-05-02 09:41:35.3574|8|TRACE|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|The endpoint does not specify the IRequestSizeLimitMetadata. 
+2025-05-02 09:41:35.3574|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2025-05-02 09:41:35.3574|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'ECommerce.API.Controllers.ProductController.DeleteProductAsync (ECommerce.API)' 
+2025-05-02 09:41:35.3894|102|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "DeleteProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteProductAsync(Int32) on controller ECommerce.API.Controllers.ProductController (ECommerce.API). 
+2025-05-02 09:41:35.3894|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2025-05-02 09:41:35.3894|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2025-05-02 09:41:35.3894|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-05-02 09:41:35.3894|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2025-05-02 09:41:35.3894|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-05-02 09:41:35.3894|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller ECommerce.API.Controllers.ProductController (ECommerce.API) 
+2025-05-02 09:41:35.5726|10401|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework. 
+2025-05-02 09:41:35.6773|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller ECommerce.API.Controllers.ProductController (ECommerce.API) 
+2025-05-02 09:41:35.6899|22|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'productId' of type 'System.Int32' ... 
+2025-05-02 09:41:35.6899|44|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'productId' of type 'System.Int32' using the name 'productId' in request data ... 
+2025-05-02 09:41:35.6899|45|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'productId' of type 'System.Int32'. 
+2025-05-02 09:41:35.6899|23|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'productId' of type 'System.Int32'. 
+2025-05-02 09:41:35.6899|26|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'productId' of type 'System.Int32' ... 
+2025-05-02 09:41:35.6899|27|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'productId' of type 'System.Int32'. 
+2025-05-02 09:41:35.6899|52|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2025-05-02 09:41:35.6899|53|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2025-05-02 09:41:35.6899|52|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2025-05-02 09:41:35.6899|53|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2025-05-02 09:41:35.6899|101|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method ECommerce.API.Controllers.ProductController.DeleteProductAsync (ECommerce.API) - Validation state: Valid 
+2025-05-02 09:41:35.6899|102|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method ECommerce.API.Controllers.ProductController.DeleteProductAsync (ECommerce.API) with arguments (10000) 
+2025-05-02 09:41:36.2176|30000|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-05-02 09:41:36.2176|30000|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'AverageRating' on entity type 'SellerProfile'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-05-02 09:41:36.2893|10403|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 9.0.4 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.4' with options: EngineType=SqlServer  
+2025-05-02 09:41:36.3845|10111|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<Product>()
+    .Where(p => p.Id.Equals(__productId_0))
+    .AsNoTracking()
+    .Include(p => p.Category)
+    .Include(p => p.Seller)
+    .ThenInclude(s => s.SellerProfile)
+    .SingleOrDefault()' 
+2025-05-02 09:41:36.4465|10112|DEBUG|Microsoft.EntityFrameworkCore.Query|Including navigation: 'Product.Category'. 
+2025-05-02 09:41:36.4465|10112|DEBUG|Microsoft.EntityFrameworkCore.Query|Including navigation: 'Product.Seller'. 
+2025-05-02 09:41:36.4465|10112|DEBUG|Microsoft.EntityFrameworkCore.Query|Including navigation: 'User.SellerProfile'. 
+2025-05-02 09:41:36.7168|10107|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Product>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<Product>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Client Projections:
+                0 -> Dictionary<IProperty, int> { [Property: Product.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Product.Brand (string) Required, 1], [Property: Product.CategoryId (int) Required FK Index, 2], [Property: Product.Color (string), 3], [Property: Product.CreatedAt (DateTime) Required, 4], [Property: Product.Description (string) Required, 5], [Property: Product.Dimensions (string), 6], [Property: Product.DiscountRate (double) Required, 7], [Property: Product.ImageUrl (string), 8], [Property: Product.IsActive (bool) Required, 9], [Property: Product.Material (string), 10], [Property: Product.Model (string) Required, 11], [Property: Product.Price (decimal) Required, 12], [Property: Product.SellerId (int) Required FK Index, 13], [Property: Product.SoldCount (int) Required, 14], [Property: Product.Stock (_stock, int) Required, 15], [Property: Product.Tags (string), 16], [Property: Product.ViewsCount (int) Required, 17], [Property: Product.WarrantyPeriod (int?), 18], [Property: Product.Weight (double?), 19] }
+                1 -> Dictionary<IProperty, int> { [Property: Category.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 20], [Property: Category.Name (string) Required, 21] }
+                2 -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 22], [Property: User.Address (string), 23], [Property: User.CreatedAt (DateTime) Required, 24], [Property: User.Email (string) Required, 25], [Property: User.FirstName (string), 26], [Property: User.IsActive (bool) Required, 27], [Property: User.LastLoginAt (DateTime?), 28], [Property: User.LastName (string), 29], [Property: User.PasswordHash (string) Required, 30], [Property: User.PhoneNumber (string), 31], [Property: User.ProfileImageUrl (string), 32], [Property: User.Role (string) Required, 33], [Property: User.Username (string) Required, 34] }
+                3 -> Dictionary<IProperty, int> { [Property: SellerProfile.UserId (int) Required PK FK AfterSave:Throw, 35], [Property: SellerProfile.AverageRating (decimal) Required, 36], [Property: SellerProfile.IsActive (bool) Required, 37], [Property: SellerProfile.IsVerified (bool) Required, 38], [Property: SellerProfile.ShopAddress (string), 39], [Property: SellerProfile.ShopBannerUrl (string), 40], [Property: SellerProfile.ShopDescription (string), 41], [Property: SellerProfile.ShopEmail (string), 42], [Property: SellerProfile.ShopLogoUrl (string), 43], [Property: SellerProfile.ShopName (string) Required, 44], [Property: SellerProfile.ShopPhoneNumber (string), 45], [Property: SellerProfile.TotalReviews (int) Required, 46] }
+            SELECT TOP(2) p.Id, p.Brand, p.CategoryId, p.Color, p.CreatedAt, p.Description, p.Dimensions, p.DiscountRate, p.ImageUrl, p.IsActive, p.Material, p.Model, p.Price, p.SellerId, p.SoldCount, p.Stock, p.Tags, p.ViewsCount, p.WarrantyPeriod, p.Weight, c.Id, c.Name, u.Id, u.Address, u.CreatedAt, u.Email, u.FirstName, u.IsActive, u.LastLoginAt, u.LastName, u.PasswordHash, u.PhoneNumber, u.ProfileImageUrl, u.Role, u.Username, s.UserId, s.AverageRating, s.IsActive, s.IsVerified, s.ShopAddress, s.ShopBannerUrl, s.ShopDescription, s.ShopEmail, s.ShopLogoUrl, s.ShopName, s.ShopPhoneNumber, s.TotalReviews
+            FROM Products AS p
+            INNER JOIN Categories AS c ON p.CategoryId == c.Id
+            INNER JOIN Users AS u ON p.SellerId == u.Id
+            LEFT JOIN SellerProfiles AS s ON u.Id == s.UserId
+            WHERE p.Id == @__productId_0) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Client Projections:
+                0 -> Dictionary<IProperty, int> { [Property: Product.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Product.Brand (string) Required, 1], [Property: Product.CategoryId (int) Required FK Index, 2], [Property: Product.Color (string), 3], [Property: Product.CreatedAt (DateTime) Required, 4], [Property: Product.Description (string) Required, 5], [Property: Product.Dimensions (string), 6], [Property: Product.DiscountRate (double) Required, 7], [Property: Product.ImageUrl (string), 8], [Property: Product.IsActive (bool) Required, 9], [Property: Product.Material (string), 10], [Property: Product.Model (string) Required, 11], [Property: Product.Price (decimal) Required, 12], [Property: Product.SellerId (int) Required FK Index, 13], [Property: Product.SoldCount (int) Required, 14], [Property: Product.Stock (_stock, int) Required, 15], [Property: Product.Tags (string), 16], [Property: Product.ViewsCount (int) Required, 17], [Property: Product.WarrantyPeriod (int?), 18], [Property: Product.Weight (double?), 19] }
+                1 -> Dictionary<IProperty, int> { [Property: Category.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 20], [Property: Category.Name (string) Required, 21] }
+                2 -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 22], [Property: User.Address (string), 23], [Property: User.CreatedAt (DateTime) Required, 24], [Property: User.Email (string) Required, 25], [Property: User.FirstName (string), 26], [Property: User.IsActive (bool) Required, 27], [Property: User.LastLoginAt (DateTime?), 28], [Property: User.LastName (string), 29], [Property: User.PasswordHash (string) Required, 30], [Property: User.PhoneNumber (string), 31], [Property: User.ProfileImageUrl (string), 32], [Property: User.Role (string) Required, 33], [Property: User.Username (string) Required, 34] }
+                3 -> Dictionary<IProperty, int> { [Property: SellerProfile.UserId (int) Required PK FK AfterSave:Throw, 35], [Property: SellerProfile.AverageRating (decimal) Required, 36], [Property: SellerProfile.IsActive (bool) Required, 37], [Property: SellerProfile.IsVerified (bool) Required, 38], [Property: SellerProfile.ShopAddress (string), 39], [Property: SellerProfile.ShopBannerUrl (string), 40], [Property: SellerProfile.ShopDescription (string), 41], [Property: SellerProfile.ShopEmail (string), 42], [Property: SellerProfile.ShopLogoUrl (string), 43], [Property: SellerProfile.ShopName (string) Required, 44], [Property: SellerProfile.ShopPhoneNumber (string), 45], [Property: SellerProfile.TotalReviews (int) Required, 46] }
+            SELECT TOP(2) p.Id, p.Brand, p.CategoryId, p.Color, p.CreatedAt, p.Description, p.Dimensions, p.DiscountRate, p.ImageUrl, p.IsActive, p.Material, p.Model, p.Price, p.SellerId, p.SoldCount, p.Stock, p.Tags, p.ViewsCount, p.WarrantyPeriod, p.Weight, c.Id, c.Name, u.Id, u.Address, u.CreatedAt, u.Email, u.FirstName, u.IsActive, u.LastLoginAt, u.LastName, u.PasswordHash, u.PhoneNumber, u.ProfileImageUrl, u.Role, u.Username, s.UserId, s.AverageRating, s.IsActive, s.IsVerified, s.ShopAddress, s.ShopBannerUrl, s.ShopDescription, s.ShopEmail, s.ShopLogoUrl, s.ShopName, s.ShopPhoneNumber, s.TotalReviews
+            FROM Products AS p
+            INNER JOIN Categories AS c ON p.CategoryId == c.Id
+            INNER JOIN Users AS u ON p.SellerId == u.Id
+            LEFT JOIN SellerProfiles AS s ON u.Id == s.UserId
+            WHERE p.Id == @__productId_0, 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            Product entity;
+            Category entity;
+            User entity;
+            SellerProfile entity;
+            entity = 
+            {
+                MaterializationContext materializationContext1;
+                IEntityType entityType1;
+                Product instance1;
+                materializationContext1 = new MaterializationContext(
+                    [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                    queryContext.Context
+                );
+                instance1 = default(Product);
+                (object)dataReader.GetInt32(0) != null ? 
+                {
+                    ISnapshot shadowSnapshot1;
+                    shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                    entityType1 = [LIFTABLE Constant: EntityType: Product | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("ECommerce.API.Entities.Model.Product")];
+                    instance1 = switch (entityType1)
+                    {
+                        case [LIFTABLE Constant: EntityType: Product | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("ECommerce.API.Entities.Model.Product")]: 
+                            {
+                                return 
+                                {
+                                    Product instance;
+                                    instance = new Product();
+                                    instance.<Id>k__BackingField = dataReader.GetInt32(0);
+                                    instance.<Brand>k__BackingField = dataReader.GetString(1);
+                                    instance.<CategoryId>k__BackingField = dataReader.GetInt32(2);
+                                    instance.<Color>k__BackingField = dataReader.IsDBNull(3) ? default(string) : dataReader.GetString(3);
+                                    instance.<CreatedAt>k__BackingField = dataReader.GetDateTime(4);
+                                    instance.<Description>k__BackingField = dataReader.GetString(5);
+                                    instance.<Dimensions>k__BackingField = dataReader.IsDBNull(6) ? default(string) : dataReader.GetString(6);
+                                    instance.<DiscountRate>k__BackingField = dataReader.GetDouble(7);
+                                    instance.<ImageUrl>k__BackingField = dataReader.IsDBNull(8) ? default(string) : dataReader.GetString(8);
+                                    instance.<IsActive>k__BackingField = dataReader.GetBoolean(9);
+                                    instance.<Material>k__BackingField = dataReader.IsDBNull(10) ? default(string) : dataReader.GetString(10);
+                                    instance.<Model>k__BackingField = dataReader.GetString(11);
+                                    instance.<Price>k__BackingField = dataReader.GetDecimal(12);
+                                    instance.<SellerId>k__BackingField = dataReader.GetInt32(13);
+                                    instance.<SoldCount>k__BackingField = dataReader.GetInt32(14);
+                                    instance._stock = dataReader.GetInt32(15);
+                                    instance.<Tags>k__BackingField = dataReader.IsDBNull(16) ? default(string) : dataReader.GetString(16);
+                                    instance.<ViewsCount>k__BackingField = dataReader.GetInt32(17);
+                                    instance.<WarrantyPeriod>k__BackingField = dataReader.IsDBNull(18) ? default(int?) : (int?)dataReader.GetInt32(18);
+                                    instance.<Weight>k__BackingField = dataReader.IsDBNull(19) ? default(double?) : (double?)dataReader.GetDouble(19);
+                                    (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: NoTracking, 
+                                        structuralType: [LIFTABLE Constant: EntityType: Product | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("ECommerce.API.Entities.Model.Product")]) : default(void);
+                                    return instance;
+                                }}
+                        default: 
+                            default(Product)
+                    }
+                    ;
+                    return instance1;
+                } : 
+                {
+                    object[] keyValues1;
+                    keyValues1 = new object[]{ (object)dataReader.GetInt32(0) };
+                    return ShapedQueryCompilingExpressionVisitor.CreateNullKeyValueInNoTrackingQuery(
+                        entityType: [LIFTABLE Constant: EntityType: Product | Resolver: namelessParameter{3} => namelessParameter{3}.Dependencies.Model.FindEntityType("ECommerce.API.Entities.Model.Product")], 
+                        properties: [LIFTABLE Constant: List<RuntimeProperty> { Property: Product.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd } | Resolver: c => c.Dependencies.Model.FindEntityType("ECommerce.API.Entities.Model.Product").FindPrimaryKey().Properties], 
+                        keyValues: keyValues1);
+                };
+                return instance1;
+            };
+            entity = 
+            {
+                MaterializationContext materializationContext2;
+                IEntityType entityType2;
+                Category instance2;
+                materializationContext2 = new MaterializationContext(
+                    [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                    queryContext.Context
+                );
+                instance2 = default(Category);
+                (object)dataReader.GetInt32(20) != null ? 
+                {
+                    ISnapshot shadowSnapshot2;
+                    shadowSnapshot2 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                    entityType2 = [LIFTABLE Constant: EntityType: Category | Resolver: namelessParameter{4} => namelessParameter{4}.Dependencies.Model.FindEntityType("ECommerce.API.Entities.Model.Category")];
+                    instance2 = switch (entityType2)
+                    {
+                        case [LIFTABLE Constant: EntityType: Category | Resolver: namelessParameter{5} => namelessParameter{5}.Dependencies.Model.FindEntityType("ECommerce.API.Entities.Model.Category")]: 
+                            {
+                                return 
+                                {
+                                    Category instance;
+                                    instance = new Category();
+                                    instance.<Id>k__BackingField = dataReader.GetInt32(20);
+                                    instance.<Name>k__BackingField = dataReader.GetString(21);
+                                    (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                        context: materializationContext2.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: NoTracking, 
+                                        structuralType: [LIFTABLE Constant: EntityType: Category | Resolver: namelessParameter{6} => namelessParameter{6}.Dependencies.Model.FindEntityType("ECommerce.API.Entities.Model.Category")]) : default(void);
+                                    return instance;
+                                }}
+                        default: 
+                            default(Category)
+                    }
+                    ;
+                    return instance2;
+                } : 
+                {
+                    object[] keyValues2;
+                    keyValues2 = new object[]{ (object)dataReader.GetInt32(20) };
+                    return ShapedQueryCompilingExpressionVisitor.CreateNullKeyValueInNoTrackingQuery(
+                        entityType: [LIFTABLE Constant: EntityType: Category | Resolver: namelessParameter{7} => namelessParameter{7}.Dependencies.Model.FindEntityType("ECommerce.API.Entities.Model.Category")], 
+                        properties: [LIFTABLE Constant: List<RuntimeProperty> { Property: Category.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd } | Resolver: c => c.Dependencies.Model.FindEntityType("ECommerce.API.Entities.Model.Category").FindPrimaryKey().Properties], 
+                        keyValues: keyValues2);
+                };
+                return instance2;
+            };
+            entity = 
+            {
+                MaterializationContext materializationContext3;
+                IEntityType entityType3;
+                User instance3;
+                materializationContext3 = new MaterializationContext(
+                    [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                    queryContext.Context
+                );
+                instance3 = default(User);
+                (object)dataReader.GetInt32(22) != null ? 
+                {
+                    ISnapshot shadowSnapshot3;
+                    shadowSnapshot3 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                    entityType3 = [LIFTABLE Constant: EntityType: User | Resolver: namelessParameter{8} => namelessParameter{8}.Dependencies.Model.FindEntityType("ECommerce.API.Entities.Model.User")];
+                    instance3 = switch (entityType3)
+                    {
+                        case [LIFTABLE Constant: EntityType: User | Resolver: namelessParameter{9} => namelessParameter{9}.Dependencies.Model.FindEntityType("ECommerce.API.Entities.Model.User")]: 
+                            {
+                                return 
+                                {
+                                    User instance;
+                                    instance = new User();
+                                    instance.<Id>k__BackingField = dataReader.GetInt32(22);
+                                    instance.<Address>k__BackingField = dataReader.IsDBNull(23) ? default(string) : dataReader.GetString(23);
+                                    instance.<CreatedAt>k__BackingField = dataReader.GetDateTime(24);
+                                    instance.<Email>k__BackingField = dataReader.GetString(25);
+                                    instance.<FirstName>k__BackingField = dataReader.IsDBNull(26) ? default(string) : dataReader.GetString(26);
+                                    instance.<IsActive>k__BackingField = dataReader.GetBoolean(27);
+                                    instance.<LastLoginAt>k__BackingField = dataReader.IsDBNull(28) ? default(DateTime?) : (DateTime?)dataReader.GetDateTime(28);
+                                    instance.<LastName>k__BackingField = dataReader.IsDBNull(29) ? default(string) : dataReader.GetString(29);
+                                    instance.<PasswordHash>k__BackingField = dataReader.GetString(30);
+                                    instance.<PhoneNumber>k__BackingField = dataReader.IsDBNull(31) ? default(string) : dataReader.GetString(31);
+                                    instance.<ProfileImageUrl>k__BackingField = dataReader.IsDBNull(32) ? default(string) : dataReader.GetString(32);
+                                    instance.<Role>k__BackingField = dataReader.GetString(33);
+                                    instance.<Username>k__BackingField = dataReader.GetString(34);
+                                    (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                        context: materializationContext3.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: NoTracking, 
+                                        structuralType: [LIFTABLE Constant: EntityType: User | Resolver: namelessParameter{10} => namelessParameter{10}.Dependencies.Model.FindEntityType("ECommerce.API.Entities.Model.User")]) : default(void);
+                                    return instance;
+                                }}
+                        default: 
+                            default(User)
+                    }
+                    ;
+                    return instance3;
+                } : 
+                {
+                    object[] keyValues3;
+                    keyValues3 = new object[]{ (object)dataReader.GetInt32(22) };
+                    return ShapedQueryCompilingExpressionVisitor.CreateNullKeyValueInNoTrackingQuery(
+                        entityType: [LIFTABLE Constant: EntityType: User | Resolver: namelessParameter{11} => namelessParameter{11}.Dependencies.Model.FindEntityType("ECommerce.API.Entities.Model.User")], 
+                        properties: [LIFTABLE Constant: List<RuntimeProperty> { Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd } | Resolver: c => c.Dependencies.Model.FindEntityType("ECommerce.API.Entities.Model.User").FindPrimaryKey().Properties], 
+                        keyValues: keyValues3);
+                };
+                return instance3;
+            };
+            entity = 
+            {
+                MaterializationContext materializationContext4;
+                IEntityType entityType4;
+                SellerProfile instance4;
+                materializationContext4 = new MaterializationContext(
+                    [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                    queryContext.Context
+                );
+                instance4 = default(SellerProfile);
+                dataReader.IsDBNull(35) ? default(object) : (object)dataReader.GetInt32(35) != null ? 
+                {
+                    ISnapshot shadowSnapshot4;
+                    shadowSnapshot4 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                    entityType4 = [LIFTABLE Constant: EntityType: SellerProfile | Resolver: namelessParameter{12} => namelessParameter{12}.Dependencies.Model.FindEntityType("ECommerce.API.Entities.Model.SellerProfile")];
+                    instance4 = switch (entityType4)
+                    {
+                        case [LIFTABLE Constant: EntityType: SellerProfile | Resolver: namelessParameter{13} => namelessParameter{13}.Dependencies.Model.FindEntityType("ECommerce.API.Entities.Model.SellerProfile")]: 
+                            {
+                                return 
+                                {
+                                    SellerProfile instance;
+                                    instance = new SellerProfile();
+                                    instance.<UserId>k__BackingField = dataReader.IsDBNull(35) ? default(int) : dataReader.GetInt32(35);
+                                    instance.<AverageRating>k__BackingField = dataReader.IsDBNull(36) ? default(decimal) : dataReader.GetDecimal(36);
+                                    instance.<IsActive>k__BackingField = dataReader.IsDBNull(37) ? default(bool) : dataReader.GetBoolean(37);
+                                    instance.<IsVerified>k__BackingField = dataReader.IsDBNull(38) ? default(bool) : dataReader.GetBoolean(38);
+                                    instance.<ShopAddress>k__BackingField = dataReader.IsDBNull(39) ? default(string) : dataReader.GetString(39);
+                                    instance.<ShopBannerUrl>k__BackingField = dataReader.IsDBNull(40) ? default(string) : dataReader.GetString(40);
+                                    instance.<ShopDescription>k__BackingField = dataReader.IsDBNull(41) ? default(string) : dataReader.GetString(41);
+                                    instance.<ShopEmail>k__BackingField = dataReader.IsDBNull(42) ? default(string) : dataReader.GetString(42);
+                                    instance.<ShopLogoUrl>k__BackingField = dataReader.IsDBNull(43) ? default(string) : dataReader.GetString(43);
+                                    instance.<ShopName>k__BackingField = dataReader.IsDBNull(44) ? default(string) : dataReader.GetString(44);
+                                    instance.<ShopPhoneNumber>k__BackingField = dataReader.IsDBNull(45) ? default(string) : dataReader.GetString(45);
+                                    instance.<TotalReviews>k__BackingField = dataReader.IsDBNull(46) ? default(int) : dataReader.GetInt32(46);
+                                    (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                        context: materializationContext4.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: NoTracking, 
+                                        structuralType: [LIFTABLE Constant: EntityType: SellerProfile | Resolver: namelessParameter{14} => namelessParameter{14}.Dependencies.Model.FindEntityType("ECommerce.API.Entities.Model.SellerProfile")]) : default(void);
+                                    return instance;
+                                }}
+                        default: 
+                            default(SellerProfile)
+                    }
+                    ;
+                    return instance4;
+                } : default(void);
+                return instance4;
+            };
+            ShaperProcessingExpressionVisitor.IncludeReference<Product, Product, Category>(
+                queryContext: queryContext, 
+                entity: entity, 
+                relatedEntity: entity, 
+                navigation: [LIFTABLE Constant: Navigation: Product.Category (Category) ToPrincipal Category Inverse: Products | Resolver: namelessParameter{15} => namelessParameter{15}.Dependencies.Model.FindEntityType("ECommerce.API.Entities.Model.Product").FindNavigation("Category")], 
+                inverseNavigation: [LIFTABLE Constant: Navigation: Category.Products (ICollection<Product>) Collection ToDependent Product Inverse: Category | Resolver: namelessParameter{16} => namelessParameter{16}.Dependencies.Model.FindEntityType("ECommerce.API.Entities.Model.Category").FindNavigation("Products")], 
+                fixup: (namelessParameter{17}, namelessParameter{18}) => 
+                {
+                    namelessParameter{17}.<Category>k__BackingField = namelessParameter{18};
+                    return [LIFTABLE Constant: ClrICollectionAccessor<Category, ICollection<Product>, Product> | Resolver: namelessParameter{19} => namelessParameter{19}.Dependencies.Model.FindEntityType("ECommerce.API.Entities.Model.Category").FindNavigation("Products").GetCollectionAccessor()].Add(
+                        entity: namelessParameter{18}, 
+                        value: namelessParameter{17}, 
+                        forMaterialization: True);
+                }, 
+                trackingQuery: False);
+            ShaperProcessingExpressionVisitor.IncludeReference<User, User, SellerProfile>(
+                queryContext: queryContext, 
+                entity: entity, 
+                relatedEntity: entity, 
+                navigation: [LIFTABLE Constant: Navigation: User.SellerProfile (SellerProfile) ToDependent SellerProfile Inverse: User | Resolver: namelessParameter{20} => namelessParameter{20}.Dependencies.Model.FindEntityType("ECommerce.API.Entities.Model.User").FindNavigation("SellerProfile")], 
+                inverseNavigation: [LIFTABLE Constant: Navigation: SellerProfile.User (User) ToPrincipal User Inverse: SellerProfile | Resolver: namelessParameter{21} => namelessParameter{21}.Dependencies.Model.FindEntityType("ECommerce.API.Entities.Model.SellerProfile").FindNavigation("User")], 
+                fixup: (namelessParameter{22}, namelessParameter{23}) => 
+                {
+                    namelessParameter{22}.<SellerProfile>k__BackingField = namelessParameter{23};
+                    return namelessParameter{23}.<User>k__BackingField = namelessParameter{22};
+                }, 
+                trackingQuery: False);
+            ShaperProcessingExpressionVisitor.IncludeReference<Product, Product, User>(
+                queryContext: queryContext, 
+                entity: entity, 
+                relatedEntity: entity, 
+                navigation: [LIFTABLE Constant: Navigation: Product.Seller (User) ToPrincipal User Inverse: Products | Resolver: namelessParameter{24} => namelessParameter{24}.Dependencies.Model.FindEntityType("ECommerce.API.Entities.Model.Product").FindNavigation("Seller")], 
+                inverseNavigation: [LIFTABLE Constant: Navigation: User.Products (ICollection<Product>) Collection ToDependent Product Inverse: Seller | Resolver: namelessParameter{25} => namelessParameter{25}.Dependencies.Model.FindEntityType("ECommerce.API.Entities.Model.User").FindNavigation("Products")], 
+                fixup: (namelessParameter{26}, namelessParameter{27}) => 
+                {
+                    namelessParameter{26}.<Seller>k__BackingField = namelessParameter{27};
+                    return [LIFTABLE Constant: ClrICollectionAccessor<User, ICollection<Product>, Product> | Resolver: namelessParameter{28} => namelessParameter{28}.Dependencies.Model.FindEntityType("ECommerce.API.Entities.Model.User").FindNavigation("Products").GetCollectionAccessor()].Add(
+                        entity: namelessParameter{27}, 
+                        value: namelessParameter{26}, 
+                        forMaterialization: True);
+                }, 
+                trackingQuery: False);
+            return entity;
+        }, 
+        contextType: ECommerce.API.Data.AppDbContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)' 
+2025-05-02 09:41:36.7579|20005|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. 
+2025-05-02 09:41:36.7797|20006|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (22ms). 
+2025-05-02 09:41:36.7797|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ECommerceDb' on server 'YUSUF\SQLEXPRESS'. 
+2025-05-02 09:41:37.1365|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ECommerceDb' on server 'YUSUF\SQLEXPRESS'. 
+2025-05-02 09:41:37.1398|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2025-05-02 09:41:37.1398|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (3ms). 
+2025-05-02 09:41:37.1398|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (9ms). 
+2025-05-02 09:41:37.1551|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__productId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedAt], [p].[Description], [p].[Dimensions], [p].[DiscountRate], [p].[ImageUrl], [p].[IsActive], [p].[Material], [p].[Model], [p].[Price], [p].[SellerId], [p].[SoldCount], [p].[Stock], [p].[Tags], [p].[ViewsCount], [p].[WarrantyPeriod], [p].[Weight], [c].[Id], [c].[Name], [u].[Id], [u].[Address], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[ProfileImageUrl], [u].[Role], [u].[Username], [s].[UserId], [s].[AverageRating], [s].[IsActive], [s].[IsVerified], [s].[ShopAddress], [s].[ShopBannerUrl], [s].[ShopDescription], [s].[ShopEmail], [s].[ShopLogoUrl], [s].[ShopName], [s].[ShopPhoneNumber], [s].[TotalReviews]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [p].[SellerId] = [u].[Id]
+LEFT JOIN [SellerProfiles] AS [s] ON [u].[Id] = [s].[UserId]
+WHERE [p].[Id] = @__productId_0 
+2025-05-02 09:41:37.2200|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (66ms) [Parameters=[@__productId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedAt], [p].[Description], [p].[Dimensions], [p].[DiscountRate], [p].[ImageUrl], [p].[IsActive], [p].[Material], [p].[Model], [p].[Price], [p].[SellerId], [p].[SoldCount], [p].[Stock], [p].[Tags], [p].[ViewsCount], [p].[WarrantyPeriod], [p].[Weight], [c].[Id], [c].[Name], [u].[Id], [u].[Address], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[ProfileImageUrl], [u].[Role], [u].[Username], [s].[UserId], [s].[AverageRating], [s].[IsActive], [s].[IsVerified], [s].[ShopAddress], [s].[ShopBannerUrl], [s].[ShopDescription], [s].[ShopEmail], [s].[ShopLogoUrl], [s].[ShopName], [s].[ShopPhoneNumber], [s].[TotalReviews]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [p].[SellerId] = [u].[Id]
+LEFT JOIN [SellerProfiles] AS [s] ON [u].[Id] = [s].[UserId]
+WHERE [p].[Id] = @__productId_0 
+2025-05-02 09:41:37.2200|20301|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'ECommerceDb' on server 'YUSUF\SQLEXPRESS'. 
+2025-05-02 09:41:37.2362|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'ECommerceDb' on server 'YUSUF\SQLEXPRESS' is being disposed after spending 12ms reading results. 
+2025-05-02 09:41:37.2362|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ECommerceDb' on server 'YUSUF\SQLEXPRESS'. 
+2025-05-02 09:41:37.2362|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ECommerceDb' on server 'YUSUF\SQLEXPRESS' (3ms). 
+2025-05-02 09:41:37.2485|0|INFO|ECommerce.API.Services.Implementations.LoggerManager|Product with id 10000 not found. 
+2025-05-02 09:41:37.3204|52|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2025-05-02 09:41:37.3204|53|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2025-05-02 09:41:37.3204|52|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2025-05-02 09:41:37.3204|53|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2025-05-02 09:41:37.3266|105|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action ECommerce.API.Controllers.ProductController.DeleteProductAsync (ECommerce.API) in 1932.0329ms 
+2025-05-02 09:41:37.3266|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'ECommerce.API.Controllers.ProductController.DeleteProductAsync (ECommerce.API)' 
+2025-05-02 09:41:37.3266|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.Collections.Generic.KeyNotFoundException: Product with id 10000 not found.
+   at ECommerce.API.Services.Implementations.ProductService.DeleteProductAsync(Int32 productId, Boolean trackChanges) in C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\Services\Implementations\ProductService.cs:line 43
+   at ECommerce.API.Controllers.ProductController.DeleteProductAsync(Int32 productId) in C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\Controllers\ProductController.cs:line 70
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-05-02 09:41:37.3521|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4M" sending HEADERS frame for stream ID 1 with length 68 and flags END_HEADERS. 
+2025-05-02 09:41:37.3521|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4M" sending DATA frame for stream ID 1 with length 3269 and flags NONE. 
+2025-05-02 09:41:37.3521|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4M" sending DATA frame for stream ID 1 with length 0 and flags END_STREAM. 
+2025-05-02 09:41:37.3521|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'AppDbContext' disposed. 
+2025-05-02 09:41:37.3521|20007|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'ECommerceDb' on server 'YUSUF\SQLEXPRESS'. 
+2025-05-02 09:41:37.3573|20008|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database '' on server '' (0ms). 
+2025-05-02 09:41:37.3573|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 DELETE https://localhost:7295/api/Product/10000 - 500 - text/plain;+charset=utf-8 2011.2143ms 
+2025-05-02 09:41:40.2526|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNC98H9U2Q4M" received FIN. 
+2025-05-02 09:41:40.2526|48|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNC98H9U2Q4M" is closed. The last processed stream ID was 1. 
+2025-05-02 09:41:40.2526|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNC98H9U2Q4M" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-05-02 09:41:40.2526|62|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|The connection queue processing loop for 0HNC98H9U2Q4M completed. 
+2025-05-02 09:41:40.2526|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNC98H9U2Q4M" stopped. 

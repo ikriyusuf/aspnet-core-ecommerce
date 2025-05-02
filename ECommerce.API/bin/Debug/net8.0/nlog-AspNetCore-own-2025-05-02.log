@@ -1,0 +1,27 @@
+2025-05-02 09:41:09.2780|0|DEBUG|ECommerce.API.Program|init main |url: |action: 
+2025-05-02 09:41:11.2252|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7295 |url: |action: 
+2025-05-02 09:41:11.2252|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5103 |url: |action: 
+2025-05-02 09:41:11.3256|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2025-05-02 09:41:11.3260|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2025-05-02 09:41:11.3260|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API |url: |action: 
+2025-05-02 09:41:36.2176|30000|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. |url: https://localhost/api/Product/10000|action: DeleteProduct
+2025-05-02 09:41:36.2176|30000|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'AverageRating' on entity type 'SellerProfile'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. |url: https://localhost/api/Product/10000|action: DeleteProduct
+2025-05-02 09:41:37.2485|0|INFO|ECommerce.API.Services.Implementations.LoggerManager|Product with id 10000 not found. |url: https://localhost/api/Product/10000|action: DeleteProduct
+2025-05-02 09:41:37.3266|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.Collections.Generic.KeyNotFoundException: Product with id 10000 not found.
+   at ECommerce.API.Services.Implementations.ProductService.DeleteProductAsync(Int32 productId, Boolean trackChanges) in C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\Services\Implementations\ProductService.cs:line 43
+   at ECommerce.API.Controllers.ProductController.DeleteProductAsync(Int32 productId) in C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\Controllers\ProductController.cs:line 70
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)|url: https://localhost/api/Product/10000|action: DeleteProduct

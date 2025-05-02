@@ -5,8 +5,8 @@ namespace ECommerce.API.Repositories.Interfaces
 {
     public interface IProductRepository : IGenericRepository<Product>
     {
-        IQueryable<Product> GetAllProducts(bool trackChanges);
-        Product? GetProductById(int productId, bool trackChanges);
+        Task<IEnumerable<Product>> GetAllProductsAsync(bool trackChanges);
+        Task<Product> GetProductByIdAsync(int productId, bool trackChanges);
         void CreateOneProduct(Product product);
         void DeleteOneProduct(Product product);
         void UpdateOneProduct(Product product);

@@ -1,7 +1,9 @@
 ﻿using ECommerce.API.Entities.Dtos;
+using ECommerce.API.Services.Implementations;
 using ECommerce.API.Services.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace ECommerce.API.Controllers
 {
@@ -10,17 +12,19 @@ namespace ECommerce.API.Controllers
     public class ProductController : ControllerBase
     {
         private readonly IProductService _productService;
+        private readonly ILoggerService _logger;
 
-        public ProductController(IProductService productService)
+        public ProductController(IProductService productService,ILoggerService logger)
         {
             _productService = productService;
+            _logger = logger;
         }
 
         /// <summary>
         /// Tüm ürünlerin özet listesini getirir (vitrin görünümü için).
         /// </summary>
         [HttpGet("summary")]
-        public async Task<IActionResult> GetProductSummaries()
+        public async Task<IActionResult> GetProductSummariesAsync()
         {
             var summaries = await _productService.GetProductSummariesAsync(false);
             return Ok(summaries);
@@ -31,9 +35,9 @@ namespace ECommerce.API.Controllers
         /// </summary>
         /// <param name="productId">Ürün ID</param>
         [HttpGet("{productId:int}")]
-        public IActionResult GetProductById(int productId)
+        public async Task<IActionResult> GetProductByIdAsync(int productId)
         {
-            var product = _productService.GetProductById(productId, false);
+            var product = await _productService.GetProductByIdAsync(productId, false);
             if (product == null)
                 return NotFound(new { Message = "Ürün bulunamadı." });
             return Ok(product);
@@ -44,13 +48,16 @@ namespace ECommerce.API.Controllers
         /// </summary>
         /// <param name="createProductDto">Ürün bilgileri</param>
         [HttpPost]
-        public IActionResult CreateProduct([FromBody] CreateProductDto createProductDto)
+        public async Task<IActionResult> CreateProductAsync([FromBody] CreateProductDto createProductDto)
         {
             if (createProductDto == null)
                 return BadRequest(new { Message = "Product data is null." });
 
-            _productService.CreateProduct(createProductDto);
-            return Ok(new { Message = "Ürün başarıyla eklendi." });
+            if(!ModelState.IsValid)
+                return UnprocessableEntity(ModelState);
+
+            var product = await _productService.CreateProductAsync(createProductDto);
+            return StatusCode(201,product);
         }
 
         /// <summary>
@@ -58,21 +65,11 @@ namespace ECommerce.API.Controllers
         /// </summary>
         /// <param name="productId">Ürün ID</param>
         [HttpDelete("{productId:int}")]
-        public IActionResult DeleteProduct(int productId)
+        public async Task<IActionResult> DeleteProductAsync(int productId)
         {
-            try
-            {
-                _productService.DeleteProduct(productId);
-                return Ok(new { Message = "Ürün silindi." });
-            }
-            catch (KeyNotFoundException ex)
-            {
-                return NotFound(new { Message = ex.Message });
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, new { Message = "Bir hata oluştu.", Details = ex.Message });
-            }
+            await _productService.DeleteProductAsync(productId, false);
+            _logger.LogInformation("Here is info message from the controller.");
+            return NoContent();
         }
 
         /// <summary>
@@ -81,24 +78,16 @@ namespace ECommerce.API.Controllers
         /// <param name="id">Ürün ID</param>
         /// <param name="updateProductDto">Güncellenmiş veriler</param>
         [HttpPut("{id:int}")]
-        public IActionResult UpdateProduct(int id, [FromBody] UpdateProductDto updateProductDto)
+        public async Task<IActionResult> UpdateProductAsync(int id, [FromBody] UpdateProductDto updateProductDto)
         {
             if (updateProductDto == null)
                 return BadRequest(new { Message = "Güncelleme verisi boş olamaz." });
 
-            try
-            {
-                _productService.UpdateProduct(id, updateProductDto);
-                return Ok(new { Message = $"Product with id {id} updated successfully." });
-            }
-            catch (KeyNotFoundException ex)
-            {
-                return NotFound(new { Message = ex.Message });
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, new { Message = "Bir hata oluştu.", Details = ex.Message });
-            }
+            if(!ModelState.IsValid)
+                return UnprocessableEntity(ModelState);
+
+            await _productService.UpdateProductAsync(id, updateProductDto, false);
+            return NoContent();
         }
 
         /// <summary>

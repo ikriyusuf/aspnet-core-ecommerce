@@ -16,6 +16,11 @@ namespace ECommerce.API.Infrastructure.Extension
         {
             services.AddScoped<IProductService, ProductService>();
         }
+
+        public static void ConfigureLoggerService(this IServiceCollection services)
+        {
+            services.AddSingleton<ILoggerService, LoggerManager>();
+        }
     }
 }
 

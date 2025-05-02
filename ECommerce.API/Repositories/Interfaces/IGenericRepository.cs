@@ -9,6 +9,6 @@ namespace ECommerce.API.Repositories.Interfaces
         void Create(T entity);
         void Update(T entity);
         void Remove(T entity);
-        Task<int> CountAsync();
+        int Count();
     }
 }

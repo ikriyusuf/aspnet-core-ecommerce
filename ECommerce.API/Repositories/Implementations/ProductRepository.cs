@@ -17,17 +17,18 @@ namespace ECommerce.API.Repositories.Implementations
 
         public void DeleteOneProduct(Product product) => Remove(product);
 
-        public IQueryable<Product> GetAllProducts(bool trackChanges) =>
-            FindAll(trackChanges)
+        public async Task<IEnumerable<Product>> GetAllProductsAsync(bool trackChanges) =>
+            await FindAll(trackChanges)
                 .Include(p => p.Category)
                 .Include(p => p.Seller)
-            .ThenInclude(s => s.SellerProfile);
+                    .ThenInclude(s => s.SellerProfile)
+                .ToListAsync();
 
-        public Product? GetProductById(int productId, bool trackChanges) =>
-            FindByCondition(p => p.Id.Equals(productId), trackChanges)
+        public async Task<Product> GetProductByIdAsync(int productId, bool trackChanges) =>
+            await FindByCondition(p => p.Id.Equals(productId), trackChanges)
             .Include(p => p.Category)
             .Include(p => p.Seller)
-            .ThenInclude(s => s.SellerProfile).FirstOrDefault();
+            .ThenInclude(s => s.SellerProfile).SingleOrDefaultAsync();
 
         public async Task<ProductCountBySellerDto> GetProductCountBySellerIdAsync(int sellerId)
         {
@@ -59,7 +60,7 @@ namespace ECommerce.API.Repositories.Implementations
                 : query.OrderBy(p => p.Price)).ToListAsync();
         }
 
-        public Task<int> ProductCountAsync() => CountAsync();
+        public async Task<int> ProductCountAsync() => Count();
 
         public void UpdateOneProduct(Product product) => Update(product);
     }

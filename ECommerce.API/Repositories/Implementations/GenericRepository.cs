@@ -14,9 +14,9 @@ namespace ECommerce.API.Repositories.Implementations
             _context = context;
         }
 
-        public async Task<int> CountAsync()
+        public int Count()
         {
-            return await _context.Set<T>().CountAsync();
+            return _context.Set<T>().Count();
         }
 
         public void Create(T entity)

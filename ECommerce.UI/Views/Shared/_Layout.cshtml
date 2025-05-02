@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ECommerce.UI</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ECommerce.MVC.styles.css" asp-append-version="true" />
+    <style>
+        .navbar .search-form {
+            flex: 1 1 40%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .navbar .nav-icons {
+            flex: 0 0 auto;
+        }
+
+            .navbar .nav-icons a {
+                color: #333;
+                margin-left: 1rem;
+                font-size: 1rem;
+                display: flex;
+                align-items: center;
+            }
+
+                .navbar .nav-icons a i {
+                    margin-right: 0.5rem;
+                    font-size: 1.2rem;
+                }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom mb-3">
+            <div class="container-fluid d-flex align-items-center">
+
+                <!-- Sol: Marka -->
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    BozokBazaar
+                </a>
+
+                <!-- Orta: Arama Çubuğu -->
+                <form class="d-flex search-form" asp-controller="Product" asp-action="Index" method="get">
+                    <input class="form-control"
+                           type="search"
+                           name="searchTerm"
+                           placeholder="Ürün ara..."
+                           aria-label="Ara" />
+                </form>
+
+                <div class="nav-icons d-flex align-items-center">
+                    <a class="text-decoration-none d-flex align-items-center" asp-controller="Account" asp-action="Login" title="Giriş Yap">
+                        <i class="fa-solid fa-user me-1"></i> Giriş Yap
+                    </a>
+                    <a class="text-decoration-none d-flex align-items-center" asp-controller="Favorites" asp-action="Index" title="Favoriler">
+                        <i class="fa-regular fa-heart me-1"></i> Favorilerim
+                    </a>
+                    <a class="text-decoration-none d-flex align-items-center" asp-controller="Cart" asp-action="Index" title="Sepetim">
+                        <i class="fa-solid fa-shopping-cart me-1"></i> Sepetim
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted py-3">
+        <div class="container text-center">
+            <span>&copy; 2025 BozokBazaar</span>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

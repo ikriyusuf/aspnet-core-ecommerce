@@ -12,36 +12,43 @@ namespace ECommerce.API.Services.Implementations
     {
         private readonly IRepositoryManager _repositoryManager;
         private readonly IMapper _mapper;
+        private readonly ILoggerService _logger;
 
-        public ProductService(IRepositoryManager repositoryManager, IMapper mapper)
+        public ProductService(IRepositoryManager repositoryManager, IMapper mapper, ILoggerService logger)
         {
             _repositoryManager = repositoryManager;
             _mapper = mapper;
+            _logger = logger;
         }
 
-        public void CreateProduct(CreateProductDto createProductDto)
+        public async Task<ProductDto> CreateProductAsync(CreateProductDto createProductDto)
         {
-            Product product = _mapper.Map<Product>(createProductDto);
+            var entity  = _mapper.Map<Product>(createProductDto);
 
-            _repositoryManager.Product.CreateOneProduct(product);
+            _repositoryManager.Product.CreateOneProduct(entity);
 
-            _repositoryManager.Save();
+            await _repositoryManager.SaveAsync();
+
+            return _mapper.Map<ProductDto>(entity);
         }
 
-        public void DeleteProduct(int productId)
+        public async Task DeleteProductAsync(int productId, bool trackChanges)
         {
-            var product = _repositoryManager.Product.GetProductById(productId, false);
+            var product = await _repositoryManager.Product.GetProductByIdAsync(productId, trackChanges);
 
-            if (product == null)
-                throw new KeyNotFoundException($"Product with id {productId} not found.");
-
+            if (product is null)
+            {
+                string message = $"Product with id {productId} not found.";
+                _logger.LogInformation(message);
+                throw new KeyNotFoundException(message);
+            }
             _repositoryManager.Product.DeleteOneProduct(product);
-            _repositoryManager.Save();
+            await _repositoryManager.SaveAsync();
         }
 
-        public ProductDto? GetProductById(int productId, bool trackChanges)
+        public async Task<ProductDto> GetProductByIdAsync(int productId, bool trackChanges)
         {
-            var product = _repositoryManager.Product.GetProductById(productId, trackChanges);
+            var product = await _repositoryManager.Product.GetProductByIdAsync(productId, trackChanges);
 
             return _mapper.Map<ProductDto>(product);
         }
@@ -53,9 +60,8 @@ namespace ECommerce.API.Services.Implementations
 
         public async Task<IEnumerable<ProductSummaryDto>> GetProductSummariesAsync(bool trackChanges)
         {
-            var products = await _repositoryManager.Product.GetAllProducts(trackChanges)
-                .ToListAsync();
-
+            var products = await _repositoryManager.Product.GetAllProductsAsync(trackChanges);
+                
             var productSummaryDtos = _mapper.Map<IEnumerable<ProductSummaryDto>>(products);
 
             return productSummaryDtos;
@@ -81,16 +87,16 @@ namespace ECommerce.API.Services.Implementations
             return await _repositoryManager.Product.ProductCountAsync();
         }
 
-        public void UpdateProduct(int productId, UpdateProductDto updateProductDto)
+        public async Task UpdateProductAsync(int productId, UpdateProductDto updateProductDto, bool trackChanges)
         {
-            var product = _repositoryManager.Product.GetProductById(productId, true);
+            var product = await _repositoryManager.Product.GetProductByIdAsync(productId, trackChanges);
 
-            if (product == null)
+            if (product is null)
                 throw new KeyNotFoundException($"Product with id {productId} not found.");
 
             _mapper.Map(updateProductDto, product); // Burada direkt mevcut product'a yazıyoruz
             _repositoryManager.Product.UpdateOneProduct(product);
-            _repositoryManager.Save();
+            await _repositoryManager.SaveAsync();
         }
     }
 }
