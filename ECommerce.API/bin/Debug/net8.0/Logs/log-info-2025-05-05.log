@@ -1,0 +1,181 @@
+2025-05-05 10:57:10.5836|Info|Now listening on: https://localhost:7295
+2025-05-05 10:57:10.5891|Info|Now listening on: http://localhost:5103
+2025-05-05 10:57:10.7401|Info|Application started. Press Ctrl+C to shut down.
+2025-05-05 10:57:10.7401|Info|Hosting environment: Development
+2025-05-05 10:57:10.7401|Info|Content root path: C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API
+2025-05-05 10:57:12.8859|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - - -
+2025-05-05 10:57:13.7555|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 - text/html;charset=utf-8 898.9055ms
+2025-05-05 10:57:13.7874|Info|Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - - -
+2025-05-05 10:57:13.7874|Info|Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - - -
+2025-05-05 10:57:13.7874|Info|Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript;+charset=utf-8 8.4301ms
+2025-05-05 10:57:13.8490|Info|Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 59.2823ms
+2025-05-05 10:57:13.9324|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - - -
+2025-05-05 10:57:13.9943|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 61.3134ms
+2025-05-05 10:57:21.9980|Info|Request starting HTTP/2 GET https://localhost:7295/api/Product/85 - - -
+2025-05-05 10:57:22.0090|Info|Executing endpoint 'ECommerce.API.Controllers.ProductController.GetProductByIdAsync (ECommerce.API)'
+2025-05-05 10:57:22.0409|Info|Route matched with {action = "GetProductById", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductByIdAsync(Int32) on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-05-05 10:57:22.2253|Info|Executing action method ECommerce.API.Controllers.ProductController.GetProductByIdAsync (ECommerce.API) - Validation state: Valid
+2025-05-05 10:57:23.5004|Info|Executed DbCommand (61ms) [Parameters=[@__productId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedAt], [p].[Description], [p].[Dimensions], [p].[DiscountRate], [p].[ImageUrl], [p].[IsActive], [p].[Material], [p].[Model], [p].[Price], [p].[ProductCode], [p].[SellerId], [p].[SoldCount], [p].[Stock], [p].[Tags], [p].[ViewsCount], [p].[WarrantyPeriod], [p].[Weight], [c].[Id], [c].[BaseCode], [c].[Name], [c].[Prefix], [u].[Id], [u].[Address], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[ProfileImageUrl], [u].[Role], [u].[Username], [s].[UserId], [s].[AverageRating], [s].[IsActive], [s].[IsVerified], [s].[ShopAddress], [s].[ShopBannerUrl], [s].[ShopDescription], [s].[ShopEmail], [s].[ShopLogoUrl], [s].[ShopName], [s].[ShopPhoneNumber], [s].[TotalReviews]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [p].[SellerId] = [u].[Id]
+LEFT JOIN [SellerProfiles] AS [s] ON [u].[Id] = [s].[UserId]
+WHERE [p].[Id] = @__productId_0
+2025-05-05 10:57:23.5718|Info|Executed action ECommerce.API.Controllers.ProductController.GetProductByIdAsync (ECommerce.API) in 1531.324ms
+2025-05-05 10:57:23.5718|Info|Executed endpoint 'ECommerce.API.Controllers.ProductController.GetProductByIdAsync (ECommerce.API)'
+2025-05-05 10:57:23.5900|Info|Request finished HTTP/2 GET https://localhost:7295/api/Product/85 - 404 - application/json 1597.5106ms
+2025-05-05 11:08:10.3500|Info|Now listening on: https://localhost:7295
+2025-05-05 11:08:10.3500|Info|Now listening on: http://localhost:5103
+2025-05-05 11:08:10.5488|Info|Application started. Press Ctrl+C to shut down.
+2025-05-05 11:08:10.5488|Info|Hosting environment: Development
+2025-05-05 11:08:10.5488|Info|Content root path: C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API
+2025-05-05 11:08:12.9881|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - - -
+2025-05-05 11:08:13.2870|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 - text/html;charset=utf-8 320.7691ms
+2025-05-05 11:08:16.8736|Info|Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - - -
+2025-05-05 11:08:16.8736|Info|Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - - -
+2025-05-05 11:08:16.8984|Info|Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript;+charset=utf-8 26.9604ms
+2025-05-05 11:08:16.9295|Info|Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 61.0561ms
+2025-05-05 11:08:16.9716|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - - -
+2025-05-05 11:08:16.9979|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 32.7790ms
+2025-05-05 11:08:27.4161|Info|Request starting HTTP/2 GET https://localhost:7295/api/Product/499 - - -
+2025-05-05 11:08:27.4305|Info|Executing endpoint 'ECommerce.API.Controllers.ProductController.GetProductByIdAsync (ECommerce.API)'
+2025-05-05 11:08:27.4665|Info|Route matched with {action = "GetProductById", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductByIdAsync(Int32) on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-05-05 11:08:27.6810|Info|Executing action method ECommerce.API.Controllers.ProductController.GetProductByIdAsync (ECommerce.API) - Validation state: Valid
+2025-05-05 11:08:28.9140|Info|Executed DbCommand (67ms) [Parameters=[@__productId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedAt], [p].[Description], [p].[Dimensions], [p].[DiscountRate], [p].[ImageUrl], [p].[IsActive], [p].[Material], [p].[Model], [p].[Price], [p].[ProductCode], [p].[SellerId], [p].[SoldCount], [p].[Stock], [p].[Tags], [p].[ViewsCount], [p].[WarrantyPeriod], [p].[Weight], [c].[Id], [c].[BaseCode], [c].[Name], [c].[Prefix], [u].[Id], [u].[Address], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[ProfileImageUrl], [u].[Role], [u].[Username], [s].[UserId], [s].[AverageRating], [s].[IsActive], [s].[IsVerified], [s].[ShopAddress], [s].[ShopBannerUrl], [s].[ShopDescription], [s].[ShopEmail], [s].[ShopLogoUrl], [s].[ShopName], [s].[ShopPhoneNumber], [s].[TotalReviews]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [p].[SellerId] = [u].[Id]
+LEFT JOIN [SellerProfiles] AS [s] ON [u].[Id] = [s].[UserId]
+WHERE [p].[Id] = @__productId_0
+2025-05-05 11:08:28.9961|Info|Executed action ECommerce.API.Controllers.ProductController.GetProductByIdAsync (ECommerce.API) in 1529.7184ms
+2025-05-05 11:08:28.9961|Info|Executed endpoint 'ECommerce.API.Controllers.ProductController.GetProductByIdAsync (ECommerce.API)'
+2025-05-05 11:08:29.0265|Info|Request finished HTTP/2 GET https://localhost:7295/api/Product/499 - 404 - application/json 1613.5451ms
+2025-05-05 11:08:44.4456|Info|Request starting HTTP/2 DELETE https://localhost:7295/api/Product/800 - - -
+2025-05-05 11:08:44.4456|Info|Executing endpoint 'ECommerce.API.Controllers.ProductController.DeleteProductAsync (ECommerce.API)'
+2025-05-05 11:08:44.4456|Info|Route matched with {action = "DeleteProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteProductAsync(Int32) on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-05-05 11:08:44.4456|Info|Executing action method ECommerce.API.Controllers.ProductController.DeleteProductAsync (ECommerce.API) - Validation state: Valid
+2025-05-05 11:08:44.4953|Info|Executed DbCommand (5ms) [Parameters=[@__productId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedAt], [p].[Description], [p].[Dimensions], [p].[DiscountRate], [p].[ImageUrl], [p].[IsActive], [p].[Material], [p].[Model], [p].[Price], [p].[ProductCode], [p].[SellerId], [p].[SoldCount], [p].[Stock], [p].[Tags], [p].[ViewsCount], [p].[WarrantyPeriod], [p].[Weight], [c].[Id], [c].[BaseCode], [c].[Name], [c].[Prefix], [u].[Id], [u].[Address], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[ProfileImageUrl], [u].[Role], [u].[Username], [s].[UserId], [s].[AverageRating], [s].[IsActive], [s].[IsVerified], [s].[ShopAddress], [s].[ShopBannerUrl], [s].[ShopDescription], [s].[ShopEmail], [s].[ShopLogoUrl], [s].[ShopName], [s].[ShopPhoneNumber], [s].[TotalReviews]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [p].[SellerId] = [u].[Id]
+LEFT JOIN [SellerProfiles] AS [s] ON [u].[Id] = [s].[UserId]
+WHERE [p].[Id] = @__productId_0
+2025-05-05 11:08:44.5473|Info|Executed action ECommerce.API.Controllers.ProductController.DeleteProductAsync (ECommerce.API) in 94.8732ms
+2025-05-05 11:08:44.5473|Info|Executed endpoint 'ECommerce.API.Controllers.ProductController.DeleteProductAsync (ECommerce.API)'
+2025-05-05 11:08:44.5473|Info|Request finished HTTP/2 DELETE https://localhost:7295/api/Product/800 - 404 - application/json 104.7990ms
+2025-05-05 11:09:03.6806|Info|Request starting HTTP/2 GET https://localhost:7295/api/Product/seller/89 - - -
+2025-05-05 11:09:03.6806|Info|Executing endpoint 'ECommerce.API.Controllers.ProductController.GetProductsBySellerId (ECommerce.API)'
+2025-05-05 11:09:03.6806|Info|Route matched with {action = "GetProductsBySellerId", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductsBySellerId(Int32) on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-05-05 11:09:03.6806|Info|Executing action method ECommerce.API.Controllers.ProductController.GetProductsBySellerId (ECommerce.API) - Validation state: Valid
+2025-05-05 11:09:03.7597|Info|Executed DbCommand (7ms) [Parameters=[@__sellerId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) COUNT(*) AS [Total], COUNT(CASE
+    WHEN [p0].[IsActive] = CAST(1 AS bit) THEN 1
+END) AS [Active]
+FROM (
+    SELECT [p].[IsActive], 1 AS [Key]
+    FROM [Products] AS [p]
+    WHERE [p].[SellerId] = @__sellerId_0
+) AS [p0]
+GROUP BY [p0].[Key]
+2025-05-05 11:09:03.7597|Info|Executed action method ECommerce.API.Controllers.ProductController.GetProductsBySellerId (ECommerce.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 74.5626ms.
+2025-05-05 11:09:03.7746|Info|Executing OkObjectResult, writing value of type 'ECommerce.API.Entities.Dtos.ProductCountBySellerDto'.
+2025-05-05 11:09:03.7746|Info|Executed action ECommerce.API.Controllers.ProductController.GetProductsBySellerId (ECommerce.API) in 97.2031ms
+2025-05-05 11:09:03.7746|Info|Executed endpoint 'ECommerce.API.Controllers.ProductController.GetProductsBySellerId (ECommerce.API)'
+2025-05-05 11:09:03.7746|Info|Request finished HTTP/2 GET https://localhost:7295/api/Product/seller/89 - 200 - application/json;+charset=utf-8 104.6305ms
+2025-05-05 11:16:21.2468|Info|Now listening on: https://localhost:7295
+2025-05-05 11:16:21.2619|Info|Now listening on: http://localhost:5103
+2025-05-05 11:16:21.3754|Info|Application started. Press Ctrl+C to shut down.
+2025-05-05 11:16:21.3754|Info|Hosting environment: Development
+2025-05-05 11:16:21.3754|Info|Content root path: C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API
+2025-05-05 11:16:22.5280|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - - -
+2025-05-05 11:16:22.8355|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 - text/html;charset=utf-8 324.4512ms
+2025-05-05 11:16:22.9160|Info|Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - - -
+2025-05-05 11:16:22.9275|Info|Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript;+charset=utf-8 10.4594ms
+2025-05-05 11:16:23.0191|Info|Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - - -
+2025-05-05 11:16:23.1152|Info|Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 99.4173ms
+2025-05-05 11:16:23.1927|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - - -
+2025-05-05 11:16:23.2546|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 63.1224ms
+2025-05-05 11:16:33.1170|Info|Request starting HTTP/2 GET https://localhost:7295/api/Product/seller/800 - - -
+2025-05-05 11:16:33.1170|Info|Executing endpoint 'ECommerce.API.Controllers.ProductController.GetProductsBySellerId (ECommerce.API)'
+2025-05-05 11:16:33.1537|Info|Route matched with {action = "GetProductsBySellerId", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductsBySellerId(Int32) on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-05-05 11:16:33.3502|Info|Executing action method ECommerce.API.Controllers.ProductController.GetProductsBySellerId (ECommerce.API) - Validation state: Valid
+2025-05-05 11:16:34.5513|Info|Executed DbCommand (58ms) [Parameters=[@__sellerId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) COUNT(*) AS [Total], COUNT(CASE
+    WHEN [p0].[IsActive] = CAST(1 AS bit) THEN 1
+END) AS [Active]
+FROM (
+    SELECT [p].[IsActive], 1 AS [Key]
+    FROM [Products] AS [p]
+    WHERE [p].[SellerId] = @__sellerId_0
+) AS [p0]
+GROUP BY [p0].[Key]
+2025-05-05 11:16:34.6384|Info|Executed action ECommerce.API.Controllers.ProductController.GetProductsBySellerId (ECommerce.API) in 1484.881ms
+2025-05-05 11:16:34.6384|Info|Executed endpoint 'ECommerce.API.Controllers.ProductController.GetProductsBySellerId (ECommerce.API)'
+2025-05-05 11:16:34.6667|Info|Request finished HTTP/2 GET https://localhost:7295/api/Product/seller/800 - 404 - application/json 1551.1793ms
+2025-05-05 11:20:40.3985|Info|Now listening on: https://localhost:7295
+2025-05-05 11:20:40.3985|Info|Now listening on: http://localhost:5103
+2025-05-05 11:20:40.4825|Info|Application started. Press Ctrl+C to shut down.
+2025-05-05 11:20:40.4825|Info|Hosting environment: Development
+2025-05-05 11:20:40.4825|Info|Content root path: C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API
+2025-05-05 11:20:42.3800|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - - -
+2025-05-05 11:20:42.8207|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 - text/html;charset=utf-8 460.5494ms
+2025-05-05 11:20:42.8567|Info|Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - - -
+2025-05-05 11:20:42.8567|Info|Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - - -
+2025-05-05 11:20:42.9096|Info|Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript;+charset=utf-8 48.3940ms
+2025-05-05 11:20:43.0152|Info|Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 161.5200ms
+2025-05-05 11:20:43.0959|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - - -
+2025-05-05 11:20:43.1351|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 45.3729ms
+2025-05-05 11:20:47.6471|Info|Request starting HTTP/2 GET https://localhost:7295/api/Product/seller/2 - - -
+2025-05-05 11:20:47.6471|Info|Executing endpoint 'ECommerce.API.Controllers.ProductController.GetProductsBySellerId (ECommerce.API)'
+2025-05-05 11:20:47.6830|Info|Route matched with {action = "GetProductsBySellerId", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductsBySellerId(Int32) on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-05-05 11:20:47.8852|Info|Executing action method ECommerce.API.Controllers.ProductController.GetProductsBySellerId (ECommerce.API) - Validation state: Valid
+2025-05-05 11:20:49.1993|Info|Executed DbCommand (57ms) [Parameters=[@__sellerId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) COUNT(*) AS [Total], COUNT(CASE
+    WHEN [p0].[IsActive] = CAST(1 AS bit) THEN 1
+END) AS [Active]
+FROM (
+    SELECT [p].[IsActive], 1 AS [Key]
+    FROM [Products] AS [p]
+    WHERE [p].[SellerId] = @__sellerId_0
+) AS [p0]
+GROUP BY [p0].[Key]
+2025-05-05 11:20:49.2289|Info|Executed action method ECommerce.API.Controllers.ProductController.GetProductsBySellerId (ECommerce.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1335.6437ms.
+2025-05-05 11:20:49.2411|Info|Executing OkObjectResult, writing value of type 'ECommerce.API.Entities.Dtos.ProductCountBySellerDto'.
+2025-05-05 11:20:49.2411|Info|Executed action ECommerce.API.Controllers.ProductController.GetProductsBySellerId (ECommerce.API) in 1563.4725ms
+2025-05-05 11:20:49.2411|Info|Executed endpoint 'ECommerce.API.Controllers.ProductController.GetProductsBySellerId (ECommerce.API)'
+2025-05-05 11:20:49.2560|Info|Request finished HTTP/2 GET https://localhost:7295/api/Product/seller/2 - 200 - application/json;+charset=utf-8 1608.2525ms
+2025-05-05 11:22:43.9367|Info|Now listening on: https://localhost:7295
+2025-05-05 11:22:43.9367|Info|Now listening on: http://localhost:5103
+2025-05-05 11:22:44.0410|Info|Application started. Press Ctrl+C to shut down.
+2025-05-05 11:22:44.0410|Info|Hosting environment: Development
+2025-05-05 11:22:44.0410|Info|Content root path: C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API
+2025-05-05 11:22:46.1604|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - - -
+2025-05-05 11:22:46.3979|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 - text/html;charset=utf-8 253.4663ms
+2025-05-05 11:22:46.4458|Info|Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - - -
+2025-05-05 11:22:46.4458|Info|Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript;+charset=utf-8 7.7902ms
+2025-05-05 11:22:46.5160|Info|Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - - -
+2025-05-05 11:22:46.5832|Info|Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 70.4389ms
+2025-05-05 11:22:46.6577|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - - -
+2025-05-05 11:22:46.6999|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 41.6374ms
+2025-05-05 11:23:07.9498|Info|Request starting HTTP/2 GET https://localhost:7295/api/Product/seller/3 - - -
+2025-05-05 11:23:07.9597|Info|Executing endpoint 'ECommerce.API.Controllers.ProductController.GetProductsBySellerId (ECommerce.API)'
+2025-05-05 11:23:07.9869|Info|Route matched with {action = "GetProductsBySellerId", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductsBySellerId(Int32) on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-05-05 11:23:08.1781|Info|Executing action method ECommerce.API.Controllers.ProductController.GetProductsBySellerId (ECommerce.API) - Validation state: Valid
+2025-05-05 11:23:09.2642|Info|Executed DbCommand (54ms) [Parameters=[@__sellerId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) COUNT(*) AS [Total], COUNT(CASE
+    WHEN [p0].[IsActive] = CAST(1 AS bit) THEN 1
+END) AS [Active]
+FROM (
+    SELECT [p].[IsActive], 1 AS [Key]
+    FROM [Products] AS [p]
+    WHERE [p].[SellerId] = @__sellerId_0
+) AS [p0]
+GROUP BY [p0].[Key]
+2025-05-05 11:23:09.2893|Info|Executed action method ECommerce.API.Controllers.ProductController.GetProductsBySellerId (ECommerce.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1104.6544ms.
+2025-05-05 11:23:09.2893|Info|Executing OkObjectResult, writing value of type 'ECommerce.API.Entities.Dtos.ProductCountBySellerDto'.
+2025-05-05 11:23:09.3061|Info|Executed action ECommerce.API.Controllers.ProductController.GetProductsBySellerId (ECommerce.API) in 1318.4154ms
+2025-05-05 11:23:09.3061|Info|Executed endpoint 'ECommerce.API.Controllers.ProductController.GetProductsBySellerId (ECommerce.API)'
+2025-05-05 11:23:09.3061|Info|Request finished HTTP/2 GET https://localhost:7295/api/Product/seller/3 - 200 - application/json;+charset=utf-8 1361.9073ms

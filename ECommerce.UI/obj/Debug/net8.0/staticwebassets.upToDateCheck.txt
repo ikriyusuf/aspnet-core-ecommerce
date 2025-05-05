@@ -1,5 +1,16 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\images\product\appleairpods2.png
+wwwroot\images\product\asusrog.png
+wwwroot\images\product\huaweimatepad11.png
+wwwroot\images\product\iphone.png
+wwwroot\images\product\microsoftxbox.png
+wwwroot\images\product\monster.png
+wwwroot\images\product\msigf63.png
+wwwroot\images\product\nvdiageforcertx4070.png
+wwwroot\images\product\samsunggalaxywatch6.png
+wwwroot\images\product\samsungs23.png
+wwwroot\images\product\sonyplaystation.png
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

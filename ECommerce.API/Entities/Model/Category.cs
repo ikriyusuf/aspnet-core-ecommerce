@@ -7,6 +7,8 @@ namespace ECommerce.API.Entities.Model
         [Key]
         public int Id { get; set; }
         public string Name { get; set; } = null!;
+        public string Prefix { get; set; } = null!;
+        public string BaseCode { get; set; } = null!;
         public ICollection<Product> Products { get; set; } = new List<Product>();
     }
 }

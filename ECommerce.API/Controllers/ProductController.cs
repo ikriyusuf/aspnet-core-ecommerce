@@ -1,4 +1,5 @@
 ﻿using ECommerce.API.Entities.Dtos;
+using ECommerce.API.Entities.Exceptions;
 using ECommerce.API.Services.Implementations;
 using ECommerce.API.Services.Interfaces;
 using Microsoft.AspNetCore.Http;
@@ -11,12 +12,12 @@ namespace ECommerce.API.Controllers
     [Route("api/[controller]")]
     public class ProductController : ControllerBase
     {
-        private readonly IProductService _productService;
+        private readonly IServiceManager _serviceManager;
         private readonly ILoggerService _logger;
 
-        public ProductController(IProductService productService,ILoggerService logger)
+        public ProductController(IServiceManager serviceManager, ILoggerService logger)
         {
-            _productService = productService;
+            _serviceManager = serviceManager;
             _logger = logger;
         }
 
@@ -26,7 +27,7 @@ namespace ECommerce.API.Controllers
         [HttpGet("summary")]
         public async Task<IActionResult> GetProductSummariesAsync()
         {
-            var summaries = await _productService.GetProductSummariesAsync(false);
+            var summaries = await _serviceManager.ProductService.GetProductSummariesAsync(false);
             return Ok(summaries);
         }
 
@@ -37,9 +38,7 @@ namespace ECommerce.API.Controllers
         [HttpGet("{productId:int}")]
         public async Task<IActionResult> GetProductByIdAsync(int productId)
         {
-            var product = await _productService.GetProductByIdAsync(productId, false);
-            if (product == null)
-                return NotFound(new { Message = "Ürün bulunamadı." });
+            var product = await _serviceManager.ProductService.GetProductByIdAsync(productId, false);
             return Ok(product);
         }
 
@@ -51,12 +50,12 @@ namespace ECommerce.API.Controllers
         public async Task<IActionResult> CreateProductAsync([FromBody] CreateProductDto createProductDto)
         {
             if (createProductDto == null)
-                return BadRequest(new { Message = "Product data is null." });
+                return BadRequest();
 
             if(!ModelState.IsValid)
                 return UnprocessableEntity(ModelState);
 
-            var product = await _productService.CreateProductAsync(createProductDto);
+            var product = await _serviceManager.ProductService.CreateProductAsync(createProductDto);
             return StatusCode(201,product);
         }
 
@@ -67,8 +66,8 @@ namespace ECommerce.API.Controllers
         [HttpDelete("{productId:int}")]
         public async Task<IActionResult> DeleteProductAsync(int productId)
         {
-            await _productService.DeleteProductAsync(productId, false);
-            _logger.LogInformation("Here is info message from the controller.");
+            await _serviceManager.ProductService.DeleteProductAsync(productId, false);
+            _logger.LogError("Here is info message from the controller.");
             return NoContent();
         }
 
@@ -86,7 +85,7 @@ namespace ECommerce.API.Controllers
             if(!ModelState.IsValid)
                 return UnprocessableEntity(ModelState);
 
-            await _productService.UpdateProductAsync(id, updateProductDto, false);
+            await _serviceManager.ProductService.UpdateProductAsync(id, updateProductDto, false);
             return NoContent();
         }
 
@@ -96,7 +95,7 @@ namespace ECommerce.API.Controllers
         [HttpGet("count")]
         public async Task<IActionResult> ProductCount()
         {
-            var count = await _productService.ProductCountAsync();
+            var count = await _serviceManager.ProductService.ProductCountAsync();
             return Ok(count);
         }
 
@@ -107,7 +106,7 @@ namespace ECommerce.API.Controllers
         [HttpGet("seller/{sellerId:int}")]
         public async Task<IActionResult> GetProductsBySellerId(int sellerId)
         {
-            var products = await _productService.GetProductCountBySellerIdAsync(sellerId);
+            var products = await _serviceManager.ProductService.GetProductCountBySellerIdAsync(sellerId);
             return Ok(products);
         }
 
@@ -118,7 +117,7 @@ namespace ECommerce.API.Controllers
         [HttpGet("sorted")]
         public async Task<IActionResult> GetSortedProductsAsync([FromQuery] string sortBy)
         {
-            var products = await _productService.GetSortedProductsAsync(sortBy, false);
+            var products = await _serviceManager.ProductService.GetSortedProductsAsync(sortBy, false);
             return Ok(products);
         }
     }

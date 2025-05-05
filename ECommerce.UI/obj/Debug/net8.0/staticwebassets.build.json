@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GFBwcDNT6oQydB5dEr8R7G50ngtD/QRH1YdRB1L1scE=",
+  "Hash": "0Y/TNeeizMXrhr2YWCIknJm5kpX9H5DcFo0OqwWWSII=",
   "Source": "ECommerce.UI",
   "BasePath": "_content/ECommerce.UI",
   "Mode": "Default",
@@ -99,6 +99,237 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\appleairpods2.png",
+      "SourceId": "ECommerce.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\",
+      "BasePath": "_content/ECommerce.UI",
+      "RelativePath": "images/product/appleairpods2#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "s1shrbpm0i",
+      "Integrity": "QL+f7DRtnZo0Ife1yeEuh5bMU+LcdCfX2dgcqqGyjhM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\product\\appleairpods2.png"
+    },
+    {
+      "Identity": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\asusrog.png",
+      "SourceId": "ECommerce.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\",
+      "BasePath": "_content/ECommerce.UI",
+      "RelativePath": "images/product/asusrog#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5tup0ta248",
+      "Integrity": "ORxOEzDVE14x+NFldoN96dBjqjbQxaEVtNCMmyGCe/I=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\product\\asusrog.png"
+    },
+    {
+      "Identity": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\huaweimatepad11.png",
+      "SourceId": "ECommerce.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\",
+      "BasePath": "_content/ECommerce.UI",
+      "RelativePath": "images/product/huaweimatepad11#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bahb1c16dd",
+      "Integrity": "vfI4LI8yFgDhNkmjsP8A72ox1LxFANn4MCawzVjYE3I=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\product\\huaweimatepad11.png"
+    },
+    {
+      "Identity": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\iphone.png",
+      "SourceId": "ECommerce.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\",
+      "BasePath": "_content/ECommerce.UI",
+      "RelativePath": "images/product/iphone#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jtrhpxwtqk",
+      "Integrity": "6TuqTSiInTLm9UNWY/SCayKygnPtKM6171LJ86Iwe38=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\product\\iphone.png"
+    },
+    {
+      "Identity": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\microsoftxbox.png",
+      "SourceId": "ECommerce.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\",
+      "BasePath": "_content/ECommerce.UI",
+      "RelativePath": "images/product/microsoftxbox#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "nwb95jfu2v",
+      "Integrity": "eZpz1pucet7G1ZmNgYFxnXIjYQGlmbcudR56LdFkhX8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\product\\microsoftxbox.png"
+    },
+    {
+      "Identity": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\monster.png",
+      "SourceId": "ECommerce.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\",
+      "BasePath": "_content/ECommerce.UI",
+      "RelativePath": "images/product/monster#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "looc5fnfol",
+      "Integrity": "9fikmLT/jHM07/C8DgBNcMJMcdf/ssC9Fg/6U35bO8I=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\product\\monster.png"
+    },
+    {
+      "Identity": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\msigf63.png",
+      "SourceId": "ECommerce.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\",
+      "BasePath": "_content/ECommerce.UI",
+      "RelativePath": "images/product/msigf63#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3i7cae2ql1",
+      "Integrity": "BW0oXeK4x3i3RogGCKCOmHcN8sgDuwo09CE86gosDm8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\product\\msigf63.png"
+    },
+    {
+      "Identity": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\nvdiageforcertx4070.png",
+      "SourceId": "ECommerce.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\",
+      "BasePath": "_content/ECommerce.UI",
+      "RelativePath": "images/product/nvdiageforcertx4070#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6ya3pu7bck",
+      "Integrity": "Lns0zqVcULooUTZXB/Vn6oFJVJXlwpJnMMdjYNpZlM8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\product\\nvdiageforcertx4070.png"
+    },
+    {
+      "Identity": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\samsunggalaxywatch6.png",
+      "SourceId": "ECommerce.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\",
+      "BasePath": "_content/ECommerce.UI",
+      "RelativePath": "images/product/samsunggalaxywatch6#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "nq3kljbwhw",
+      "Integrity": "EZ8ex9Ml6YTES1M7f/UzD8ngy0V/EHoIhaLwZgkNfgc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\product\\samsunggalaxywatch6.png"
+    },
+    {
+      "Identity": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\samsungs23.png",
+      "SourceId": "ECommerce.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\",
+      "BasePath": "_content/ECommerce.UI",
+      "RelativePath": "images/product/samsungs23#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pjnop5eyf2",
+      "Integrity": "NdolQpCJjOpJDd0prunJR8R8CKolNJw8j+leK42qC7k=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\product\\samsungs23.png"
+    },
+    {
+      "Identity": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\sonyplaystation.png",
+      "SourceId": "ECommerce.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\",
+      "BasePath": "_content/ECommerce.UI",
+      "RelativePath": "images/product/sonyplaystation#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "g6w2nivxqx",
+      "Integrity": "aD7GLUXiWcU3UjXZ/xohFk9nQpF4zy7envW0DrpRY4M=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\product\\sonyplaystation.png"
     },
     {
       "Identity": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\js\\site.js",
@@ -1645,6 +1876,908 @@
         {
           "Name": "integrity",
           "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "images/product/appleairpods2.png",
+      "AssetFile": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\appleairpods2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "59493"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QL+f7DRtnZo0Ife1yeEuh5bMU+LcdCfX2dgcqqGyjhM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 11:37:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QL+f7DRtnZo0Ife1yeEuh5bMU+LcdCfX2dgcqqGyjhM="
+        }
+      ]
+    },
+    {
+      "Route": "images/product/appleairpods2.s1shrbpm0i.png",
+      "AssetFile": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\appleairpods2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "59493"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QL+f7DRtnZo0Ife1yeEuh5bMU+LcdCfX2dgcqqGyjhM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 11:37:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s1shrbpm0i"
+        },
+        {
+          "Name": "label",
+          "Value": "images/product/appleairpods2.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QL+f7DRtnZo0Ife1yeEuh5bMU+LcdCfX2dgcqqGyjhM="
+        }
+      ]
+    },
+    {
+      "Route": "images/product/asusrog.5tup0ta248.png",
+      "AssetFile": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\asusrog.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "91229"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ORxOEzDVE14x+NFldoN96dBjqjbQxaEVtNCMmyGCe/I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 11:32:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5tup0ta248"
+        },
+        {
+          "Name": "label",
+          "Value": "images/product/asusrog.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ORxOEzDVE14x+NFldoN96dBjqjbQxaEVtNCMmyGCe/I="
+        }
+      ]
+    },
+    {
+      "Route": "images/product/asusrog.png",
+      "AssetFile": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\asusrog.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "91229"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ORxOEzDVE14x+NFldoN96dBjqjbQxaEVtNCMmyGCe/I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 11:32:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ORxOEzDVE14x+NFldoN96dBjqjbQxaEVtNCMmyGCe/I="
+        }
+      ]
+    },
+    {
+      "Route": "images/product/huaweimatepad11.bahb1c16dd.png",
+      "AssetFile": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\huaweimatepad11.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "150499"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vfI4LI8yFgDhNkmjsP8A72ox1LxFANn4MCawzVjYE3I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 11:41:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bahb1c16dd"
+        },
+        {
+          "Name": "label",
+          "Value": "images/product/huaweimatepad11.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vfI4LI8yFgDhNkmjsP8A72ox1LxFANn4MCawzVjYE3I="
+        }
+      ]
+    },
+    {
+      "Route": "images/product/huaweimatepad11.png",
+      "AssetFile": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\huaweimatepad11.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "150499"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vfI4LI8yFgDhNkmjsP8A72ox1LxFANn4MCawzVjYE3I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 11:41:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vfI4LI8yFgDhNkmjsP8A72ox1LxFANn4MCawzVjYE3I="
+        }
+      ]
+    },
+    {
+      "Route": "images/product/iphone.jtrhpxwtqk.png",
+      "AssetFile": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\iphone.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "364519"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6TuqTSiInTLm9UNWY/SCayKygnPtKM6171LJ86Iwe38=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 11:18:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jtrhpxwtqk"
+        },
+        {
+          "Name": "label",
+          "Value": "images/product/iphone.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6TuqTSiInTLm9UNWY/SCayKygnPtKM6171LJ86Iwe38="
+        }
+      ]
+    },
+    {
+      "Route": "images/product/iphone.png",
+      "AssetFile": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\iphone.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "364519"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6TuqTSiInTLm9UNWY/SCayKygnPtKM6171LJ86Iwe38=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 11:18:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6TuqTSiInTLm9UNWY/SCayKygnPtKM6171LJ86Iwe38="
+        }
+      ]
+    },
+    {
+      "Route": "images/product/microsoftxbox.nwb95jfu2v.png",
+      "AssetFile": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\microsoftxbox.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51286"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eZpz1pucet7G1ZmNgYFxnXIjYQGlmbcudR56LdFkhX8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 11:37:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nwb95jfu2v"
+        },
+        {
+          "Name": "label",
+          "Value": "images/product/microsoftxbox.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-eZpz1pucet7G1ZmNgYFxnXIjYQGlmbcudR56LdFkhX8="
+        }
+      ]
+    },
+    {
+      "Route": "images/product/microsoftxbox.png",
+      "AssetFile": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\microsoftxbox.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51286"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eZpz1pucet7G1ZmNgYFxnXIjYQGlmbcudR56LdFkhX8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 11:37:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-eZpz1pucet7G1ZmNgYFxnXIjYQGlmbcudR56LdFkhX8="
+        }
+      ]
+    },
+    {
+      "Route": "images/product/monster.looc5fnfol.png",
+      "AssetFile": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\monster.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "980810"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9fikmLT/jHM07/C8DgBNcMJMcdf/ssC9Fg/6U35bO8I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 11:08:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "looc5fnfol"
+        },
+        {
+          "Name": "label",
+          "Value": "images/product/monster.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9fikmLT/jHM07/C8DgBNcMJMcdf/ssC9Fg/6U35bO8I="
+        }
+      ]
+    },
+    {
+      "Route": "images/product/monster.png",
+      "AssetFile": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\monster.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "980810"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9fikmLT/jHM07/C8DgBNcMJMcdf/ssC9Fg/6U35bO8I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 11:08:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9fikmLT/jHM07/C8DgBNcMJMcdf/ssC9Fg/6U35bO8I="
+        }
+      ]
+    },
+    {
+      "Route": "images/product/msigf63.3i7cae2ql1.png",
+      "AssetFile": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\msigf63.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1370160"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BW0oXeK4x3i3RogGCKCOmHcN8sgDuwo09CE86gosDm8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 11:35:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3i7cae2ql1"
+        },
+        {
+          "Name": "label",
+          "Value": "images/product/msigf63.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BW0oXeK4x3i3RogGCKCOmHcN8sgDuwo09CE86gosDm8="
+        }
+      ]
+    },
+    {
+      "Route": "images/product/msigf63.png",
+      "AssetFile": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\msigf63.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1370160"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BW0oXeK4x3i3RogGCKCOmHcN8sgDuwo09CE86gosDm8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 11:35:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BW0oXeK4x3i3RogGCKCOmHcN8sgDuwo09CE86gosDm8="
+        }
+      ]
+    },
+    {
+      "Route": "images/product/nvdiageforcertx4070.6ya3pu7bck.png",
+      "AssetFile": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\nvdiageforcertx4070.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "264696"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Lns0zqVcULooUTZXB/Vn6oFJVJXlwpJnMMdjYNpZlM8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 11:41:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6ya3pu7bck"
+        },
+        {
+          "Name": "label",
+          "Value": "images/product/nvdiageforcertx4070.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Lns0zqVcULooUTZXB/Vn6oFJVJXlwpJnMMdjYNpZlM8="
+        }
+      ]
+    },
+    {
+      "Route": "images/product/nvdiageforcertx4070.png",
+      "AssetFile": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\nvdiageforcertx4070.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "264696"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Lns0zqVcULooUTZXB/Vn6oFJVJXlwpJnMMdjYNpZlM8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 11:41:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Lns0zqVcULooUTZXB/Vn6oFJVJXlwpJnMMdjYNpZlM8="
+        }
+      ]
+    },
+    {
+      "Route": "images/product/samsunggalaxywatch6.nq3kljbwhw.png",
+      "AssetFile": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\samsunggalaxywatch6.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "195033"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EZ8ex9Ml6YTES1M7f/UzD8ngy0V/EHoIhaLwZgkNfgc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 11:41:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nq3kljbwhw"
+        },
+        {
+          "Name": "label",
+          "Value": "images/product/samsunggalaxywatch6.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EZ8ex9Ml6YTES1M7f/UzD8ngy0V/EHoIhaLwZgkNfgc="
+        }
+      ]
+    },
+    {
+      "Route": "images/product/samsunggalaxywatch6.png",
+      "AssetFile": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\samsunggalaxywatch6.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "195033"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EZ8ex9Ml6YTES1M7f/UzD8ngy0V/EHoIhaLwZgkNfgc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 11:41:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EZ8ex9Ml6YTES1M7f/UzD8ngy0V/EHoIhaLwZgkNfgc="
+        }
+      ]
+    },
+    {
+      "Route": "images/product/samsungs23.pjnop5eyf2.png",
+      "AssetFile": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\samsungs23.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56216"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NdolQpCJjOpJDd0prunJR8R8CKolNJw8j+leK42qC7k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 11:20:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pjnop5eyf2"
+        },
+        {
+          "Name": "label",
+          "Value": "images/product/samsungs23.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NdolQpCJjOpJDd0prunJR8R8CKolNJw8j+leK42qC7k="
+        }
+      ]
+    },
+    {
+      "Route": "images/product/samsungs23.png",
+      "AssetFile": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\samsungs23.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56216"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NdolQpCJjOpJDd0prunJR8R8CKolNJw8j+leK42qC7k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 11:20:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NdolQpCJjOpJDd0prunJR8R8CKolNJw8j+leK42qC7k="
+        }
+      ]
+    },
+    {
+      "Route": "images/product/sonyplaystation.g6w2nivxqx.png",
+      "AssetFile": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\sonyplaystation.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "84731"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aD7GLUXiWcU3UjXZ/xohFk9nQpF4zy7envW0DrpRY4M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 11:36:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "g6w2nivxqx"
+        },
+        {
+          "Name": "label",
+          "Value": "images/product/sonyplaystation.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aD7GLUXiWcU3UjXZ/xohFk9nQpF4zy7envW0DrpRY4M="
+        }
+      ]
+    },
+    {
+      "Route": "images/product/sonyplaystation.png",
+      "AssetFile": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\sonyplaystation.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "84731"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aD7GLUXiWcU3UjXZ/xohFk9nQpF4zy7envW0DrpRY4M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 11:36:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aD7GLUXiWcU3UjXZ/xohFk9nQpF4zy7envW0DrpRY4M="
         }
       ]
     },

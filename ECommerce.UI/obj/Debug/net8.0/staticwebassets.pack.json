@@ -13,6 +13,50 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\appleairpods2.png",
+      "PackagePath": "staticwebassets\\images\\product\\appleairpods2.png"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\asusrog.png",
+      "PackagePath": "staticwebassets\\images\\product\\asusrog.png"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\huaweimatepad11.png",
+      "PackagePath": "staticwebassets\\images\\product\\huaweimatepad11.png"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\iphone.png",
+      "PackagePath": "staticwebassets\\images\\product\\iphone.png"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\microsoftxbox.png",
+      "PackagePath": "staticwebassets\\images\\product\\microsoftxbox.png"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\monster.png",
+      "PackagePath": "staticwebassets\\images\\product\\monster.png"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\msigf63.png",
+      "PackagePath": "staticwebassets\\images\\product\\msigf63.png"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\nvdiageforcertx4070.png",
+      "PackagePath": "staticwebassets\\images\\product\\nvdiageforcertx4070.png"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\samsunggalaxywatch6.png",
+      "PackagePath": "staticwebassets\\images\\product\\samsunggalaxywatch6.png"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\samsungs23.png",
+      "PackagePath": "staticwebassets\\images\\product\\samsungs23.png"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\sonyplaystation.png",
+      "PackagePath": "staticwebassets\\images\\product\\sonyplaystation.png"
+    },
+    {
       "Id": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

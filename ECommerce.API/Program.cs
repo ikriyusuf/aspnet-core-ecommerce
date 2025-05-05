@@ -1,5 +1,6 @@
 using ECommerce.API.Data;
 using ECommerce.API.Infrastructure.Extension;
+using ECommerce.API.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using NLog;
@@ -32,12 +33,19 @@ try
 
     var app = builder.Build();
 
+    var loggerr = app.Services.GetRequiredService<ILoggerService>();
+    app.ConfigureExceptionHandler(loggerr);
+
     if (app.Environment.IsDevelopment())
     {
         app.UseSwagger();
         app.UseSwaggerUI();
     }
 
+    if (app.Environment.IsProduction())
+    {
+        app.UseHsts();
+    }
     app.UseHttpsRedirection();
 
     app.UseAuthorization();

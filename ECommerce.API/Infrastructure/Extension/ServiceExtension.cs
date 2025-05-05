@@ -11,10 +11,12 @@ namespace ECommerce.API.Infrastructure.Extension
         {
             services.AddScoped<IRepositoryManager, RepositoryManager>();
             services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
         }
         public static void ConfigureServiceRegistration(this IServiceCollection services)
         {
             services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<IServiceManager, ServiceManager>();
         }
 
         public static void ConfigureLoggerService(this IServiceCollection services)

@@ -6,6 +6,7 @@ namespace ECommerce.API.Entities.Model
     {
         [Key]
         public int Id { get; set; }
+        public string? ProductCode { get; set; }
 
         [Required]
         public string? Brand { get; set; }

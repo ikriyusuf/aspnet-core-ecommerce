@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using ECommerce.API.Entities.Dtos;
+using ECommerce.API.Entities.Exceptions;
 using ECommerce.API.Entities.Model;
 using ECommerce.API.Repositories.Interfaces;
 using ECommerce.API.Services.Interfaces;
@@ -23,10 +24,16 @@ namespace ECommerce.API.Services.Implementations
 
         public async Task<ProductDto> CreateProductAsync(CreateProductDto createProductDto)
         {
-            var entity  = _mapper.Map<Product>(createProductDto);
+            var entity = _mapper.Map<Product>(createProductDto);
+
+            var category = await _repositoryManager.Category.GetCategoryByIdAsync(entity.CategoryId, false);
+            if (category is null)
+                throw new Exception("Kategori bulunamadı.");
+
+
+            entity.ProductCode = GenerateProductCode(category);
 
             _repositoryManager.Product.CreateOneProduct(entity);
-
             await _repositoryManager.SaveAsync();
 
             return _mapper.Map<ProductDto>(entity);
@@ -37,11 +44,8 @@ namespace ECommerce.API.Services.Implementations
             var product = await _repositoryManager.Product.GetProductByIdAsync(productId, trackChanges);
 
             if (product is null)
-            {
-                string message = $"Product with id {productId} not found.";
-                _logger.LogInformation(message);
-                throw new KeyNotFoundException(message);
-            }
+                throw new ProductNotFoundException(productId);
+
             _repositoryManager.Product.DeleteOneProduct(product);
             await _repositoryManager.SaveAsync();
         }
@@ -49,13 +53,27 @@ namespace ECommerce.API.Services.Implementations
         public async Task<ProductDto> GetProductByIdAsync(int productId, bool trackChanges)
         {
             var product = await _repositoryManager.Product.GetProductByIdAsync(productId, trackChanges);
+            if (product is null)
+                throw new ProductNotFoundException(productId);
 
             return _mapper.Map<ProductDto>(product);
         }
 
         public async Task<ProductCountBySellerDto> GetProductCountBySellerIdAsync(int sellerId)
         {
-            return await _repositoryManager.Product.GetProductCountBySellerIdAsync(sellerId);
+            // Burada seller da kontrol edilmeli
+
+            // Buradaki hata zaten olan kullanıcının ID'si ile ürün sayısını alması
+            // 2. Ürün sayımı al
+            var countDto = await _repositoryManager.Product.GetProductCountBySellerIdAsync(sellerId);
+
+            // 3. Loglama (hiç ürün yoksa bilgi amaçlı)
+            if (countDto.TotalProductCount == 0)
+            {
+                _logger.LogInformation($"Satıcı (ID: {sellerId}) henüz hiç ürün eklememiş.");
+            }
+
+            return countDto;
         }
 
         public async Task<IEnumerable<ProductSummaryDto>> GetProductSummariesAsync(bool trackChanges)
@@ -92,11 +110,32 @@ namespace ECommerce.API.Services.Implementations
             var product = await _repositoryManager.Product.GetProductByIdAsync(productId, trackChanges);
 
             if (product is null)
-                throw new KeyNotFoundException($"Product with id {productId} not found.");
+                throw new ProductNotFoundException(productId);
 
             _mapper.Map(updateProductDto, product); // Burada direkt mevcut product'a yazıyoruz
             _repositoryManager.Product.UpdateOneProduct(product);
             await _repositoryManager.SaveAsync();
+        }
+
+        private string GenerateProductCode(Category category)
+        {
+            if (category == null || string.IsNullOrEmpty(category.BaseCode) || string.IsNullOrEmpty(category.Prefix))
+            {
+                var message = "Category is null or invalid.";
+                _logger.LogWarning(message);
+                throw new ArgumentException(message);
+            }
+
+            var random = new Random();
+
+            // 3 haneli sayı
+            string randomDigits = random.Next(100, 999).ToString();
+
+            // Tek karakterlik sembol
+            char[] symbols = { '#', '$', '%', '@', '*', '!', '?' };
+            char symbol = symbols[random.Next(symbols.Length)];
+
+            return $"{category.Prefix}{category.BaseCode}{randomDigits}{symbol}";
         }
     }
 }
