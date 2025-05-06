@@ -76,6 +76,15 @@ namespace ECommerce.API.Services.Implementations
             return countDto;
         }
 
+        public async Task<ProductSummaryDto> GetProductsByIdSummariesAsync(int productId, bool trackChanges)
+        {
+            var product = await _repositoryManager.Product.GetProductByIdAsync(productId, trackChanges);
+            if (product is null)
+                throw new ProductNotFoundException(productId);
+
+            return _mapper.Map<ProductSummaryDto>(product);
+        }
+
         public async Task<IEnumerable<ProductSummaryDto>> GetProductSummariesAsync(bool trackChanges)
         {
             var products = await _repositoryManager.Product.GetAllProductsAsync(trackChanges);

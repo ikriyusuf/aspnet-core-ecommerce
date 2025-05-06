@@ -1,27 +1,12 @@
 ﻿@model List<CategoryViewModel>
 
 <div class="my-4">
-    <ul class="list-group">
-        <!-- “Tümü” seçeneği -->
-        <li class="list-group-item @(string.IsNullOrEmpty(ViewContext.HttpContext.Request.Query["categoryId"]) ? "active" : "")">
-            <a asp-controller="Products"
-               asp-action="Index"
-               class="d-block text-decoration-none text-dark">
-                Tümü
-            </a>
-        </li>
-
-        @foreach (var category in Model)
-        {
-            var isActive = ViewContext.HttpContext.Request.Query["categoryId"] == category.Id.ToString();
-            <li class="list-group-item @(isActive ? "active" : "")">
-                <a asp-controller="Products"
-                   asp-action="Index"
-                   asp-route-categoryId="@category.Id"
-                   class="d-block text-decoration-none text-dark">
-                    @category.Name
-                </a>
-            </li>
-        }
-    </ul>
+	<ul class="list-group">
+		@foreach (var category in Model)
+		{
+			<li class="list-group-item">
+				@category.Name
+			</li>
+		}
+	</ul>
 </div>

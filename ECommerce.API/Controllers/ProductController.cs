@@ -52,11 +52,11 @@ namespace ECommerce.API.Controllers
             if (createProductDto == null)
                 return BadRequest();
 
-            if(!ModelState.IsValid)
+            if (!ModelState.IsValid)
                 return UnprocessableEntity(ModelState);
 
             var product = await _serviceManager.ProductService.CreateProductAsync(createProductDto);
-            return StatusCode(201,product);
+            return StatusCode(201, product);
         }
 
         /// <summary>
@@ -81,7 +81,7 @@ namespace ECommerce.API.Controllers
             if (updateProductDto == null)
                 return BadRequest(new { Message = "Güncelleme verisi boş olamaz." });
 
-            if(!ModelState.IsValid)
+            if (!ModelState.IsValid)
                 return UnprocessableEntity(ModelState);
 
             await _serviceManager.ProductService.UpdateProductAsync(id, updateProductDto, false);
@@ -117,6 +117,13 @@ namespace ECommerce.API.Controllers
         public async Task<IActionResult> GetSortedProductsAsync([FromQuery] string sortBy)
         {
             var products = await _serviceManager.ProductService.GetSortedProductsAsync(sortBy, false);
+            return Ok(products);
+        }
+
+        [HttpGet("forPage")]
+        public async Task<IActionResult> GetProductsByIdSummariesAsync([FromQuery] int productId)
+        {
+            var products = await _serviceManager.ProductService.GetProductsByIdSummariesAsync(productId, false);
             return Ok(products);
         }
     }

@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{79FBF0EC-E95E-474E-8126-C0B93241DFD3}|ECommerce.UI\\ECommerce.UI.csproj|c:\\users\\yusuf\\source\\repos\\ecommercesolution\\ecommerce.ui\\views\\shared\\components\\categoriesmenu\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{79FBF0EC-E95E-474E-8126-C0B93241DFD3}|ECommerce.UI\\ECommerce.UI.csproj|solutionrelative:ecommerce.ui\\views\\shared\\components\\categoriesmenu\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{79FBF0EC-E95E-474E-8126-C0B93241DFD3}|ECommerce.UI\\ECommerce.UI.csproj|c:\\users\\yusuf\\source\\repos\\ecommercesolution\\ecommerce.ui\\pages\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{79FBF0EC-E95E-474E-8126-C0B93241DFD3}|ECommerce.UI\\ECommerce.UI.csproj|solutionrelative:ecommerce.ui\\pages\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79FBF0EC-E95E-474E-8126-C0B93241DFD3}|ECommerce.UI\\ECommerce.UI.csproj|c:\\users\\yusuf\\source\\repos\\ecommercesolution\\ecommerce.ui\\models\\cartmodels\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79FBF0EC-E95E-474E-8126-C0B93241DFD3}|ECommerce.UI\\ECommerce.UI.csproj|solutionrelative:ecommerce.ui\\models\\cartmodels\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79FBF0EC-E95E-474E-8126-C0B93241DFD3}|ECommerce.UI\\ECommerce.UI.csproj|c:\\users\\yusuf\\source\\repos\\ecommercesolution\\ecommerce.ui\\pages\\cart.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79FBF0EC-E95E-474E-8126-C0B93241DFD3}|ECommerce.UI\\ECommerce.UI.csproj|solutionrelative:ecommerce.ui\\pages\\cart.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79FBF0EC-E95E-474E-8126-C0B93241DFD3}|ECommerce.UI\\ECommerce.UI.csproj|c:\\users\\yusuf\\source\\repos\\ecommercesolution\\ecommerce.ui\\views\\product\\_productcard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{79FBF0EC-E95E-474E-8126-C0B93241DFD3}|ECommerce.UI\\ECommerce.UI.csproj|solutionrelative:ecommerce.ui\\views\\product\\_productcard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,15 +66,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Default.cshtml",
-              "DocumentMoniker": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\Views\\Shared\\Components\\CategoriesMenu\\Default.cshtml",
-              "RelativeDocumentMoniker": "ECommerce.UI\\Views\\Shared\\Components\\CategoriesMenu\\Default.cshtml",
-              "ToolTip": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\Views\\Shared\\Components\\CategoriesMenu\\Default.cshtml",
-              "RelativeToolTip": "ECommerce.UI\\Views\\Shared\\Components\\CategoriesMenu\\Default.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA2AAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\Models\\CartModels\\Cart.cs",
+              "RelativeDocumentMoniker": "ECommerce.UI\\Models\\CartModels\\Cart.cs",
+              "ToolTip": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\Models\\CartModels\\Cart.cs",
+              "RelativeToolTip": "ECommerce.UI\\Models\\CartModels\\Cart.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAA4wBsAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T13:27:24.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Cart.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\Pages\\Cart.cshtml.cs",
+              "RelativeDocumentMoniker": "ECommerce.UI\\Pages\\Cart.cshtml.cs",
+              "ToolTip": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\Pages\\Cart.cshtml.cs",
+              "RelativeToolTip": "ECommerce.UI\\Pages\\Cart.cshtml.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAuwDEAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T13:42:19.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_ProductCard.cshtml",
+              "DocumentMoniker": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\Views\\Product\\_ProductCard.cshtml",
+              "RelativeDocumentMoniker": "ECommerce.UI\\Views\\Product\\_ProductCard.cshtml",
+              "ToolTip": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\Views\\Product\\_ProductCard.cshtml",
+              "RelativeToolTip": "ECommerce.UI\\Views\\Product\\_ProductCard.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAIwFQAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-06T06:53:52.166Z",
+              "WhenOpened": "2025-05-06T13:25:57.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Cart.cshtml",
+              "DocumentMoniker": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\Pages\\Cart.cshtml",
+              "RelativeDocumentMoniker": "ECommerce.UI\\Pages\\Cart.cshtml",
+              "ToolTip": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\Pages\\Cart.cshtml",
+              "RelativeToolTip": "ECommerce.UI\\Pages\\Cart.cshtml",
+              "ViewState": "AgIAAK4AAAAAAAAAAAAkwLYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-06T13:18:55.798Z",
               "EditorCaption": ""
             }
           ]

@@ -6,7 +6,7 @@
     <div class="card h-100 product-card shadow-sm border-0 rounded-3 overflow-hidden">
         <div class="position-relative">
             <img src="@Model.ImageUrl" class="card-img-top product-image" alt="@Model.Name" />
-            <button class="btn position-absolute top-0 end-0 m-2 bg-white rounded-circle p-2 shadow-sm favorite-btn"
+            <button type="button" class="btn position-absolute top-0 end-0 m-2 bg-white rounded-circle p-2 shadow-sm favorite-btn"
                     data-product-id="@Model.Id">
                 <i class="fas fa-star"></i>
             </button>
@@ -41,65 +41,74 @@
                             </p>
                         }
                     </div>
-                    <button class="btn btn-success rounded-pill px-3 add-to-cart-btn">
-                        <i class="fas fa-shopping-cart me-1"></i> Sepete Ekle
-                    </button>
+                    <form asp-page="/Cart" method="post">
+                        <input type="hidden" name="id" value="@Model.Id" />
+                        <button type="submit" class="btn btn-outline-dark w-100">
+                            <i class="fas fa-shopping-cart me-1"></i> Sepete Ekle
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
 <style>
-    .favorite-btn.active i {
-        color: #ffc107 !important;
+    .product-image {
+        height: 200px;
+        object-fit: cover;
     }
 
-    .add-to-cart-btn {
-        background-color: #28a745;
-        border-color: #28a745;
+    .favorite-btn {
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s;
     }
 
-        .add-to-cart-btn:hover {
-            background-color: #218838;
-            border-color: #1e7e34;
+        .favorite-btn i {
+            color: #6c757d;
+            transition: color 0.2s;
+        }
+
+        .favorite-btn.active i {
+            color: #ffc107 !important;
+        }
+
+    .btn-outline-dark {
+        transition: all 0.3s;
+    }
+
+        .btn-outline-dark:hover {
+            background-color: #343a40;
+            color: white;
         }
 </style>
-
 <script>
     // Favori butonları için tıklama olayı
     document.querySelectorAll('.favorite-btn').forEach(btn => {
-        btn.addEventListener('click', function() {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
             const productId = this.getAttribute('data-product-id');
             this.classList.toggle('active');
 
             // Burada AJAX çağrısı yaparak favori durumunu sunucuya kaydedebilirsiniz
             // Örnek:
-            // fetch(`/Favorites/ToggleFavorite?productId=${productId}`)
-            //     .then(response => response.json())
-            //     .then(data => {
-            //         if(data.success) {
-            //             this.classList.toggle('active', data.isFavorite);
-            //         }
-            //     });
-        });
-    });
-
-    // Sepete ekle butonları için tıklama olayı
-    document.querySelectorAll('.add-to-cart-btn').forEach(btn => {
-        btn.addEventListener('click', function() {
-            const productCard = this.closest('.product-card');
-            const productId = productCard.querySelector('.favorite-btn').getAttribute('data-product-id');
-
-            // Burada AJAX çağrısı yaparak sepete ekleme işlemi yapabilirsiniz
-            // Örnek:
-            // fetch(`/Cart/AddToCart?productId=${productId}`)
-            //     .then(response => response.json())
-            //     .then(data => {
-            //         if(data.success) {
-            //             alert('Ürün sepete eklendi');
-            //         }
-            //     });
+            // fetch(`/api/Favorites/ToggleFavorite`, {
+            //     method: 'POST',
+            //     headers: {
+            //         'Content-Type': 'application/json'
+            //     },
+            //     body: JSON.stringify({ productId: productId })
+            // })
+            // .then(response => response.json())
+            // .then(data => {
+            //     if(data.success) {
+            //         this.classList.toggle('active', data.isFavorite);
+            //     }
+            // })
+            // .catch(error => console.error('Favori işlemi hatası:', error));
         });
     });
 </script>

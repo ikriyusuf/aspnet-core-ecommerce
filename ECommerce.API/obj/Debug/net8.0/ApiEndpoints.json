@@ -90,6 +90,22 @@
   },
   {
     "ContainingType": "ECommerce.API.Controllers.ProductController",
+    "Method": "GetProductsByIdSummariesAsync",
+    "RelativePath": "api/Product/forPage",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ECommerce.API.Controllers.ProductController",
     "Method": "GetProductsBySellerId",
     "RelativePath": "api/Product/seller/{sellerId}",
     "HttpMethod": "GET",
