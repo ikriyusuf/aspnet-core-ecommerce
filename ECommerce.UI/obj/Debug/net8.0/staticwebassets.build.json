@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0Y/TNeeizMXrhr2YWCIknJm5kpX9H5DcFo0OqwWWSII=",
+  "Hash": "0OaEt0LPdoTixX/SBqbDoNYm5qbZzkdD9ZscDMWxbv0=",
   "Source": "ECommerce.UI",
   "BasePath": "_content/ECommerce.UI",
   "Mode": "Default",
@@ -330,6 +330,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\product\\sonyplaystation.png"
+    },
+    {
+      "Identity": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\xiaomi_redmi_buds_5.png",
+      "SourceId": "ECommerce.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\",
+      "BasePath": "_content/ECommerce.UI",
+      "RelativePath": "images/product/xiaomi_redmi_buds_5#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uj50excazt",
+      "Integrity": "Gk4Ay7nlXn4iIW7AbgeyIhlih7kz+2BmaNTnyAvMp4Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\product\\xiaomi_redmi_buds_5.png"
+    },
+    {
+      "Identity": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\xiaomi_redmi_note_13_pro.png",
+      "SourceId": "ECommerce.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\",
+      "BasePath": "_content/ECommerce.UI",
+      "RelativePath": "images/product/xiaomi_redmi_note_13_pro#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "89ro2lxr2b",
+      "Integrity": "/CVUV02YvKk2EE54H3GkjQ9vDPPChexkYKib1UOfrGg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\product\\xiaomi_redmi_note_13_pro.png"
     },
     {
       "Identity": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\js\\site.js",
@@ -2778,6 +2820,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-aD7GLUXiWcU3UjXZ/xohFk9nQpF4zy7envW0DrpRY4M="
+        }
+      ]
+    },
+    {
+      "Route": "images/product/xiaomi_redmi_buds_5.png",
+      "AssetFile": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\xiaomi_redmi_buds_5.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "288929"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Gk4Ay7nlXn4iIW7AbgeyIhlih7kz+2BmaNTnyAvMp4Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 05 May 2025 13:20:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Gk4Ay7nlXn4iIW7AbgeyIhlih7kz+2BmaNTnyAvMp4Q="
+        }
+      ]
+    },
+    {
+      "Route": "images/product/xiaomi_redmi_buds_5.uj50excazt.png",
+      "AssetFile": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\xiaomi_redmi_buds_5.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "288929"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Gk4Ay7nlXn4iIW7AbgeyIhlih7kz+2BmaNTnyAvMp4Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 05 May 2025 13:20:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uj50excazt"
+        },
+        {
+          "Name": "label",
+          "Value": "images/product/xiaomi_redmi_buds_5.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Gk4Ay7nlXn4iIW7AbgeyIhlih7kz+2BmaNTnyAvMp4Q="
+        }
+      ]
+    },
+    {
+      "Route": "images/product/xiaomi_redmi_note_13_pro.89ro2lxr2b.png",
+      "AssetFile": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\xiaomi_redmi_note_13_pro.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "108865"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/CVUV02YvKk2EE54H3GkjQ9vDPPChexkYKib1UOfrGg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 05 May 2025 13:18:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "89ro2lxr2b"
+        },
+        {
+          "Name": "label",
+          "Value": "images/product/xiaomi_redmi_note_13_pro.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/CVUV02YvKk2EE54H3GkjQ9vDPPChexkYKib1UOfrGg="
+        }
+      ]
+    },
+    {
+      "Route": "images/product/xiaomi_redmi_note_13_pro.png",
+      "AssetFile": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\xiaomi_redmi_note_13_pro.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "108865"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/CVUV02YvKk2EE54H3GkjQ9vDPPChexkYKib1UOfrGg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 05 May 2025 13:18:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/CVUV02YvKk2EE54H3GkjQ9vDPPChexkYKib1UOfrGg="
         }
       ]
     },

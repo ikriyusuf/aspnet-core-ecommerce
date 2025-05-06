@@ -179,3 +179,881 @@ GROUP BY [p0].[Key]
 2025-05-05 11:23:09.3061|Info|Executed action ECommerce.API.Controllers.ProductController.GetProductsBySellerId (ECommerce.API) in 1318.4154ms
 2025-05-05 11:23:09.3061|Info|Executed endpoint 'ECommerce.API.Controllers.ProductController.GetProductsBySellerId (ECommerce.API)'
 2025-05-05 11:23:09.3061|Info|Request finished HTTP/2 GET https://localhost:7295/api/Product/seller/3 - 200 - application/json;+charset=utf-8 1361.9073ms
+2025-05-05 16:05:00.8316|Info|Now listening on: https://localhost:7295
+2025-05-05 16:05:00.8350|Info|Now listening on: http://localhost:5103
+2025-05-05 16:05:00.9365|Info|Application started. Press Ctrl+C to shut down.
+2025-05-05 16:05:00.9365|Info|Hosting environment: Development
+2025-05-05 16:05:00.9365|Info|Content root path: C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API
+2025-05-05 16:05:04.8992|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - - -
+2025-05-05 16:05:05.5526|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 - text/html;charset=utf-8 679.6254ms
+2025-05-05 16:05:05.5526|Info|Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - - -
+2025-05-05 16:05:05.5526|Info|Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - - -
+2025-05-05 16:05:05.5719|Info|Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript;+charset=utf-8 15.1867ms
+2025-05-05 16:05:05.9604|Info|Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 401.8734ms
+2025-05-05 16:05:06.0267|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - - -
+2025-05-05 16:05:06.0874|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 63.8891ms
+2025-05-05 16:05:07.5098|Info|Request starting HTTP/1.1 GET https://localhost:7295/api/Product/summary - - -
+2025-05-05 16:05:07.5220|Info|Executing endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 16:05:07.5580|Info|Route matched with {action = "GetProductSummaries", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductSummariesAsync() on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-05-05 16:05:07.9945|Info|Executing action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) - Validation state: Valid
+2025-05-05 16:05:10.3939|Info|Executed DbCommand (115ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedAt], [p].[Description], [p].[Dimensions], [p].[DiscountRate], [p].[ImageUrl], [p].[IsActive], [p].[Material], [p].[Model], [p].[Price], [p].[ProductCode], [p].[SellerId], [p].[SoldCount], [p].[Stock], [p].[Tags], [p].[ViewsCount], [p].[WarrantyPeriod], [p].[Weight], [c].[Id], [c].[BaseCode], [c].[Name], [c].[Prefix], [u].[Id], [u].[Address], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[ProfileImageUrl], [u].[Role], [u].[Username], [s].[UserId], [s].[AverageRating], [s].[IsActive], [s].[IsVerified], [s].[ShopAddress], [s].[ShopBannerUrl], [s].[ShopDescription], [s].[ShopEmail], [s].[ShopLogoUrl], [s].[ShopName], [s].[ShopPhoneNumber], [s].[TotalReviews]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [p].[SellerId] = [u].[Id]
+LEFT JOIN [SellerProfiles] AS [s] ON [u].[Id] = [s].[UserId]
+2025-05-05 16:05:10.4787|Info|Executed action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2478.6134ms.
+2025-05-05 16:05:10.4787|Info|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.API.Entities.Dtos.ProductSummaryDto, ECommerce.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-05 16:05:10.5248|Info|Executed action ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) in 2960.4709ms
+2025-05-05 16:05:10.5248|Info|Executed endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 16:05:10.5248|Info|Request finished HTTP/1.1 GET https://localhost:7295/api/Product/summary - 200 - application/json;+charset=utf-8 3024.5750ms
+2025-05-05 16:05:25.9437|Info|Now listening on: https://localhost:7295
+2025-05-05 16:05:25.9614|Info|Now listening on: http://localhost:5103
+2025-05-05 16:05:26.1060|Info|Application started. Press Ctrl+C to shut down.
+2025-05-05 16:05:26.1060|Info|Hosting environment: Development
+2025-05-05 16:05:26.1060|Info|Content root path: C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API
+2025-05-05 16:05:27.4123|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - - -
+2025-05-05 16:05:27.6324|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 - text/html;charset=utf-8 236.5514ms
+2025-05-05 16:05:27.7286|Info|Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - - -
+2025-05-05 16:05:27.7286|Info|Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript;+charset=utf-8 8.0245ms
+2025-05-05 16:05:27.8810|Info|Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - - -
+2025-05-05 16:05:27.9747|Info|Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 102.5768ms
+2025-05-05 16:05:28.0710|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - - -
+2025-05-05 16:05:28.1629|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 84.1538ms
+2025-05-05 16:05:32.3394|Info|Request starting HTTP/2 GET https://localhost:7295/api/Product/summary - - -
+2025-05-05 16:05:32.3649|Info|Executing endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 16:05:32.3917|Info|Route matched with {action = "GetProductSummaries", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductSummariesAsync() on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-05-05 16:05:32.6655|Info|Executing action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) - Validation state: Valid
+2025-05-05 16:05:34.2459|Info|Executed DbCommand (55ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedAt], [p].[Description], [p].[Dimensions], [p].[DiscountRate], [p].[ImageUrl], [p].[IsActive], [p].[Material], [p].[Model], [p].[Price], [p].[ProductCode], [p].[SellerId], [p].[SoldCount], [p].[Stock], [p].[Tags], [p].[ViewsCount], [p].[WarrantyPeriod], [p].[Weight], [c].[Id], [c].[BaseCode], [c].[Name], [c].[Prefix], [u].[Id], [u].[Address], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[ProfileImageUrl], [u].[Role], [u].[Username], [s].[UserId], [s].[AverageRating], [s].[IsActive], [s].[IsVerified], [s].[ShopAddress], [s].[ShopBannerUrl], [s].[ShopDescription], [s].[ShopEmail], [s].[ShopLogoUrl], [s].[ShopName], [s].[ShopPhoneNumber], [s].[TotalReviews]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [p].[SellerId] = [u].[Id]
+LEFT JOIN [SellerProfiles] AS [s] ON [u].[Id] = [s].[UserId]
+2025-05-05 16:05:34.3069|Info|Executed action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1637.0961ms.
+2025-05-05 16:05:34.3069|Info|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.API.Entities.Dtos.ProductSummaryDto, ECommerce.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-05 16:05:34.3288|Info|Executed action ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) in 1936.1932ms
+2025-05-05 16:05:34.3288|Info|Executed endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 16:05:34.3350|Info|Request finished HTTP/2 GET https://localhost:7295/api/Product/summary - 200 - application/json;+charset=utf-8 1995.0094ms
+2025-05-05 16:11:27.9641|Info|Now listening on: https://localhost:7295
+2025-05-05 16:11:27.9641|Info|Now listening on: http://localhost:5103
+2025-05-05 16:11:28.1353|Info|Application started. Press Ctrl+C to shut down.
+2025-05-05 16:11:28.1353|Info|Hosting environment: Development
+2025-05-05 16:11:28.1353|Info|Content root path: C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API
+2025-05-05 16:11:29.9280|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - - -
+2025-05-05 16:11:30.2095|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 - text/html;charset=utf-8 303.2217ms
+2025-05-05 16:11:30.2888|Info|Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - - -
+2025-05-05 16:11:30.3032|Info|Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript;+charset=utf-8 14.8037ms
+2025-05-05 16:11:30.4126|Info|Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - - -
+2025-05-05 16:11:30.4899|Info|Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 86.9641ms
+2025-05-05 16:11:30.6765|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - - -
+2025-05-05 16:11:30.8040|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 162.9746ms
+2025-05-05 16:11:56.8249|Info|Request starting HTTP/1.1 GET https://localhost:7295/api/Product/summary - - -
+2025-05-05 16:11:56.8519|Info|Executing endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 16:11:56.8903|Info|Route matched with {action = "GetProductSummaries", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductSummariesAsync() on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-05-05 16:11:57.2125|Info|Executing action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) - Validation state: Valid
+2025-05-05 16:11:58.7814|Info|Executed DbCommand (52ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedAt], [p].[Description], [p].[Dimensions], [p].[DiscountRate], [p].[ImageUrl], [p].[IsActive], [p].[Material], [p].[Model], [p].[Price], [p].[ProductCode], [p].[SellerId], [p].[SoldCount], [p].[Stock], [p].[Tags], [p].[ViewsCount], [p].[WarrantyPeriod], [p].[Weight], [c].[Id], [c].[BaseCode], [c].[Name], [c].[Prefix], [u].[Id], [u].[Address], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[ProfileImageUrl], [u].[Role], [u].[Username], [s].[UserId], [s].[AverageRating], [s].[IsActive], [s].[IsVerified], [s].[ShopAddress], [s].[ShopBannerUrl], [s].[ShopDescription], [s].[ShopEmail], [s].[ShopLogoUrl], [s].[ShopName], [s].[ShopPhoneNumber], [s].[TotalReviews]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [p].[SellerId] = [u].[Id]
+LEFT JOIN [SellerProfiles] AS [s] ON [u].[Id] = [s].[UserId]
+2025-05-05 16:11:58.8330|Info|Executed action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1616.8833ms.
+2025-05-05 16:11:58.8336|Info|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.API.Entities.Dtos.ProductSummaryDto, ECommerce.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-05 16:11:58.8671|Info|Executed action ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) in 1969.1379ms
+2025-05-05 16:11:58.8671|Info|Executed endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 16:11:58.8671|Info|Request finished HTTP/1.1 GET https://localhost:7295/api/Product/summary - 200 - application/json;+charset=utf-8 2044.5532ms
+2025-05-05 16:13:39.6480|Info|Now listening on: https://localhost:7295
+2025-05-05 16:13:39.6480|Info|Now listening on: http://localhost:5103
+2025-05-05 16:13:39.8058|Info|Application started. Press Ctrl+C to shut down.
+2025-05-05 16:13:39.8058|Info|Hosting environment: Development
+2025-05-05 16:13:39.8058|Info|Content root path: C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API
+2025-05-05 16:13:41.4658|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - - -
+2025-05-05 16:13:41.7256|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 - text/html;charset=utf-8 278.1357ms
+2025-05-05 16:13:41.7954|Info|Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - - -
+2025-05-05 16:13:41.8027|Info|Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript;+charset=utf-8 10.4500ms
+2025-05-05 16:13:42.1493|Info|Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - - -
+2025-05-05 16:13:42.2411|Info|Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 99.2882ms
+2025-05-05 16:13:42.3941|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - - -
+2025-05-05 16:13:42.4629|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 69.0315ms
+2025-05-05 16:13:44.3239|Info|Request starting HTTP/1.1 GET https://localhost:7295/api/Product/summary - - -
+2025-05-05 16:13:44.3343|Info|Executing endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 16:13:44.3638|Info|Route matched with {action = "GetProductSummaries", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductSummariesAsync() on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-05-05 16:13:44.5728|Info|Executing action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) - Validation state: Valid
+2025-05-05 16:13:45.9755|Info|Executed DbCommand (53ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedAt], [p].[Description], [p].[Dimensions], [p].[DiscountRate], [p].[ImageUrl], [p].[IsActive], [p].[Material], [p].[Model], [p].[Price], [p].[ProductCode], [p].[SellerId], [p].[SoldCount], [p].[Stock], [p].[Tags], [p].[ViewsCount], [p].[WarrantyPeriod], [p].[Weight], [c].[Id], [c].[BaseCode], [c].[Name], [c].[Prefix], [u].[Id], [u].[Address], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[ProfileImageUrl], [u].[Role], [u].[Username], [s].[UserId], [s].[AverageRating], [s].[IsActive], [s].[IsVerified], [s].[ShopAddress], [s].[ShopBannerUrl], [s].[ShopDescription], [s].[ShopEmail], [s].[ShopLogoUrl], [s].[ShopName], [s].[ShopPhoneNumber], [s].[TotalReviews]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [p].[SellerId] = [u].[Id]
+LEFT JOIN [SellerProfiles] AS [s] ON [u].[Id] = [s].[UserId]
+2025-05-05 16:13:46.0277|Info|Executed action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1450.4661ms.
+2025-05-05 16:13:46.0277|Info|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.API.Entities.Dtos.ProductSummaryDto, ECommerce.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-05 16:13:46.0594|Info|Executed action ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) in 1690.3021ms
+2025-05-05 16:13:46.0594|Info|Executed endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 16:13:46.0594|Info|Request finished HTTP/1.1 GET https://localhost:7295/api/Product/summary - 200 - application/json;+charset=utf-8 1743.6233ms
+2025-05-05 16:26:41.5107|Info|Now listening on: https://localhost:7295
+2025-05-05 16:26:41.5107|Info|Now listening on: http://localhost:5103
+2025-05-05 16:26:41.6057|Info|Application started. Press Ctrl+C to shut down.
+2025-05-05 16:26:41.6057|Info|Hosting environment: Development
+2025-05-05 16:26:41.6057|Info|Content root path: C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API
+2025-05-05 16:26:44.9500|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - - -
+2025-05-05 16:26:45.4283|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 - text/html;charset=utf-8 511.3038ms
+2025-05-05 16:26:45.4695|Info|Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - - -
+2025-05-05 16:26:45.4695|Info|Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - - -
+2025-05-05 16:26:45.5020|Info|Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript;+charset=utf-8 30.8786ms
+2025-05-05 16:26:45.8034|Info|Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 334.3269ms
+2025-05-05 16:26:45.8816|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - - -
+2025-05-05 16:26:45.9415|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 59.2193ms
+2025-05-05 16:26:48.3033|Info|Request starting HTTP/1.1 GET https://localhost:7295/api/Product/summary - - -
+2025-05-05 16:26:48.3340|Info|Executing endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 16:26:48.3757|Info|Route matched with {action = "GetProductSummaries", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductSummariesAsync() on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-05-05 16:26:48.8660|Info|Executing action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) - Validation state: Valid
+2025-05-05 16:26:50.6731|Info|Executed DbCommand (65ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedAt], [p].[Description], [p].[Dimensions], [p].[DiscountRate], [p].[ImageUrl], [p].[IsActive], [p].[Material], [p].[Model], [p].[Price], [p].[ProductCode], [p].[SellerId], [p].[SoldCount], [p].[Stock], [p].[Tags], [p].[ViewsCount], [p].[WarrantyPeriod], [p].[Weight], [c].[Id], [c].[BaseCode], [c].[Name], [c].[Prefix], [u].[Id], [u].[Address], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[ProfileImageUrl], [u].[Role], [u].[Username], [s].[UserId], [s].[AverageRating], [s].[IsActive], [s].[IsVerified], [s].[ShopAddress], [s].[ShopBannerUrl], [s].[ShopDescription], [s].[ShopEmail], [s].[ShopLogoUrl], [s].[ShopName], [s].[ShopPhoneNumber], [s].[TotalReviews]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [p].[SellerId] = [u].[Id]
+LEFT JOIN [SellerProfiles] AS [s] ON [u].[Id] = [s].[UserId]
+2025-05-05 16:26:50.7645|Info|Executed action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1876.5539ms.
+2025-05-05 16:26:50.7717|Info|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.API.Entities.Dtos.ProductSummaryDto, ECommerce.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-05 16:26:50.8082|Info|Executed action ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) in 2430.8163ms
+2025-05-05 16:26:50.8082|Info|Executed endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 16:26:50.8183|Info|Request finished HTTP/1.1 GET https://localhost:7295/api/Product/summary - 200 - application/json;+charset=utf-8 2505.7358ms
+2025-05-05 16:32:29.9075|Info|Now listening on: https://localhost:7295
+2025-05-05 16:32:29.9075|Info|Now listening on: http://localhost:5103
+2025-05-05 16:32:30.0441|Info|Application started. Press Ctrl+C to shut down.
+2025-05-05 16:32:30.0441|Info|Hosting environment: Development
+2025-05-05 16:32:30.0441|Info|Content root path: C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API
+2025-05-05 16:32:32.1538|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - - -
+2025-05-05 16:32:32.4051|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 - text/html;charset=utf-8 265.5975ms
+2025-05-05 16:32:32.4460|Info|Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - - -
+2025-05-05 16:32:32.4460|Info|Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript;+charset=utf-8 7.9732ms
+2025-05-05 16:32:33.2628|Info|Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - - -
+2025-05-05 16:32:33.3338|Info|Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 77.7428ms
+2025-05-05 16:32:33.4218|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - - -
+2025-05-05 16:32:33.5171|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 93.9704ms
+2025-05-05 16:32:50.0103|Info|Request starting HTTP/1.1 GET https://localhost:7295/api/Product/summary - - -
+2025-05-05 16:32:50.0103|Info|Executing endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 16:32:50.0380|Info|Route matched with {action = "GetProductSummaries", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductSummariesAsync() on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-05-05 16:32:50.1988|Info|Executing action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) - Validation state: Valid
+2025-05-05 16:32:51.1813|Info|Executed DbCommand (44ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedAt], [p].[Description], [p].[Dimensions], [p].[DiscountRate], [p].[ImageUrl], [p].[IsActive], [p].[Material], [p].[Model], [p].[Price], [p].[ProductCode], [p].[SellerId], [p].[SoldCount], [p].[Stock], [p].[Tags], [p].[ViewsCount], [p].[WarrantyPeriod], [p].[Weight], [c].[Id], [c].[BaseCode], [c].[Name], [c].[Prefix], [u].[Id], [u].[Address], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[ProfileImageUrl], [u].[Role], [u].[Username], [s].[UserId], [s].[AverageRating], [s].[IsActive], [s].[IsVerified], [s].[ShopAddress], [s].[ShopBannerUrl], [s].[ShopDescription], [s].[ShopEmail], [s].[ShopLogoUrl], [s].[ShopName], [s].[ShopPhoneNumber], [s].[TotalReviews]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [p].[SellerId] = [u].[Id]
+LEFT JOIN [SellerProfiles] AS [s] ON [u].[Id] = [s].[UserId]
+2025-05-05 16:32:51.2271|Info|Executed action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1020.3961ms.
+2025-05-05 16:32:51.2271|Info|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.API.Entities.Dtos.ProductSummaryDto, ECommerce.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-05 16:32:51.2526|Info|Executed action ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) in 1210.6382ms
+2025-05-05 16:32:51.2526|Info|Executed endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 16:32:51.2575|Info|Request finished HTTP/1.1 GET https://localhost:7295/api/Product/summary - 200 - application/json;+charset=utf-8 1249.1887ms
+2025-05-05 16:34:21.7853|Info|Now listening on: https://localhost:7295
+2025-05-05 16:34:21.7879|Info|Now listening on: http://localhost:5103
+2025-05-05 16:34:21.8708|Info|Application started. Press Ctrl+C to shut down.
+2025-05-05 16:34:21.8708|Info|Hosting environment: Development
+2025-05-05 16:34:21.8708|Info|Content root path: C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API
+2025-05-05 16:34:23.1809|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - - -
+2025-05-05 16:34:23.3843|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 - text/html;charset=utf-8 225.0257ms
+2025-05-05 16:34:23.4376|Info|Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - - -
+2025-05-05 16:34:23.4432|Info|Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript;+charset=utf-8 6.8933ms
+2025-05-05 16:34:24.0212|Info|Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - - -
+2025-05-05 16:34:24.0844|Info|Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 73.9546ms
+2025-05-05 16:34:24.5162|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - - -
+2025-05-05 16:34:24.6131|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 96.9593ms
+2025-05-05 16:34:26.0579|Info|Request starting HTTP/1.1 GET https://localhost:7295/api/Product/summary - - -
+2025-05-05 16:34:26.0747|Info|Executing endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 16:34:26.1037|Info|Route matched with {action = "GetProductSummaries", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductSummariesAsync() on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-05-05 16:34:26.3324|Info|Executing action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) - Validation state: Valid
+2025-05-05 16:34:27.4666|Info|Executed DbCommand (89ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedAt], [p].[Description], [p].[Dimensions], [p].[DiscountRate], [p].[ImageUrl], [p].[IsActive], [p].[Material], [p].[Model], [p].[Price], [p].[ProductCode], [p].[SellerId], [p].[SoldCount], [p].[Stock], [p].[Tags], [p].[ViewsCount], [p].[WarrantyPeriod], [p].[Weight], [c].[Id], [c].[BaseCode], [c].[Name], [c].[Prefix], [u].[Id], [u].[Address], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[ProfileImageUrl], [u].[Role], [u].[Username], [s].[UserId], [s].[AverageRating], [s].[IsActive], [s].[IsVerified], [s].[ShopAddress], [s].[ShopBannerUrl], [s].[ShopDescription], [s].[ShopEmail], [s].[ShopLogoUrl], [s].[ShopName], [s].[ShopPhoneNumber], [s].[TotalReviews]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [p].[SellerId] = [u].[Id]
+LEFT JOIN [SellerProfiles] AS [s] ON [u].[Id] = [s].[UserId]
+2025-05-05 16:34:27.5699|Info|Executed action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1231.6716ms.
+2025-05-05 16:34:27.5699|Info|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.API.Entities.Dtos.ProductSummaryDto, ECommerce.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-05 16:34:27.6060|Info|Executed action ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) in 1501.6539ms
+2025-05-05 16:34:27.6060|Info|Executed endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 16:34:27.6060|Info|Request finished HTTP/1.1 GET https://localhost:7295/api/Product/summary - 200 - application/json;+charset=utf-8 1556.5226ms
+2025-05-05 19:26:51.4429|Info|Now listening on: https://localhost:7295
+2025-05-05 19:26:51.4507|Info|Now listening on: http://localhost:5103
+2025-05-05 19:26:51.6529|Info|Application started. Press Ctrl+C to shut down.
+2025-05-05 19:26:51.6529|Info|Hosting environment: Development
+2025-05-05 19:26:51.6529|Info|Content root path: C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API
+2025-05-05 19:26:55.0975|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - - -
+2025-05-05 19:26:55.4921|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 - text/html;charset=utf-8 407.7664ms
+2025-05-05 19:26:55.8225|Info|Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - - -
+2025-05-05 19:26:55.8225|Info|Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - - -
+2025-05-05 19:26:55.8421|Info|Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript;+charset=utf-8 24.3501ms
+2025-05-05 19:26:56.2093|Info|Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 389.4204ms
+2025-05-05 19:26:56.3381|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - - -
+2025-05-05 19:26:56.3995|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 60.1906ms
+2025-05-05 19:27:54.3595|Info|Now listening on: https://localhost:7295
+2025-05-05 19:27:54.3595|Info|Now listening on: http://localhost:5103
+2025-05-05 19:27:54.4573|Info|Application started. Press Ctrl+C to shut down.
+2025-05-05 19:27:54.4573|Info|Hosting environment: Development
+2025-05-05 19:27:54.4573|Info|Content root path: C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API
+2025-05-05 19:27:55.6546|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - - -
+2025-05-05 19:27:55.8808|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 - text/html;charset=utf-8 237.5363ms
+2025-05-05 19:27:55.9084|Info|Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - - -
+2025-05-05 19:27:55.9202|Info|Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript;+charset=utf-8 15.1101ms
+2025-05-05 19:27:56.1052|Info|Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - - -
+2025-05-05 19:27:56.1950|Info|Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 94.7987ms
+2025-05-05 19:27:56.2903|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - - -
+2025-05-05 19:27:56.3568|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 66.7352ms
+2025-05-05 19:28:46.5171|Info|Now listening on: https://localhost:7295
+2025-05-05 19:28:46.5216|Info|Now listening on: http://localhost:5103
+2025-05-05 19:28:46.7396|Info|Application started. Press Ctrl+C to shut down.
+2025-05-05 19:28:46.7399|Info|Hosting environment: Development
+2025-05-05 19:28:46.7399|Info|Content root path: C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API
+2025-05-05 19:28:48.2304|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - - -
+2025-05-05 19:28:48.5268|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 - text/html;charset=utf-8 321.3917ms
+2025-05-05 19:28:48.5514|Info|Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - - -
+2025-05-05 19:28:48.5570|Info|Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript;+charset=utf-8 7.5819ms
+2025-05-05 19:28:48.9951|Info|Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - - -
+2025-05-05 19:28:49.1468|Info|Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 155.1645ms
+2025-05-05 19:28:49.2420|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - - -
+2025-05-05 19:28:49.3103|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 65.2698ms
+2025-05-05 19:30:04.6229|Info|Now listening on: https://localhost:7295
+2025-05-05 19:30:04.6229|Info|Now listening on: http://localhost:5103
+2025-05-05 19:30:04.7813|Info|Application started. Press Ctrl+C to shut down.
+2025-05-05 19:30:04.7813|Info|Hosting environment: Development
+2025-05-05 19:30:04.7813|Info|Content root path: C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API
+2025-05-05 19:30:05.9267|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - - -
+2025-05-05 19:30:06.1477|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 - text/html;charset=utf-8 227.2281ms
+2025-05-05 19:30:06.1662|Info|Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - - -
+2025-05-05 19:30:06.1662|Info|Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript;+charset=utf-8 7.0353ms
+2025-05-05 19:30:06.4986|Info|Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - - -
+2025-05-05 19:30:06.6390|Info|Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 142.2646ms
+2025-05-05 19:30:06.7198|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - - -
+2025-05-05 19:30:06.7902|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 69.9563ms
+2025-05-05 19:30:25.1548|Info|Now listening on: https://localhost:7295
+2025-05-05 19:30:25.1548|Info|Now listening on: http://localhost:5103
+2025-05-05 19:30:25.3122|Info|Application started. Press Ctrl+C to shut down.
+2025-05-05 19:30:25.3122|Info|Hosting environment: Development
+2025-05-05 19:30:25.3122|Info|Content root path: C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API
+2025-05-05 19:30:27.0414|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - - -
+2025-05-05 19:30:27.2709|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 - text/html;charset=utf-8 248.6805ms
+2025-05-05 19:30:27.3440|Info|Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - - -
+2025-05-05 19:30:27.3506|Info|Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript;+charset=utf-8 8.4578ms
+2025-05-05 19:30:27.7245|Info|Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - - -
+2025-05-05 19:30:27.9176|Info|Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 200.5095ms
+2025-05-05 19:30:28.0231|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - - -
+2025-05-05 19:30:28.1656|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 140.2682ms
+2025-05-05 20:01:03.9147|Info|Now listening on: https://localhost:7295
+2025-05-05 20:01:03.9292|Info|Now listening on: http://localhost:5103
+2025-05-05 20:01:04.0616|Info|Application started. Press Ctrl+C to shut down.
+2025-05-05 20:01:04.0616|Info|Hosting environment: Development
+2025-05-05 20:01:04.0616|Info|Content root path: C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API
+2025-05-05 20:01:05.4163|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - - -
+2025-05-05 20:01:05.7122|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 - text/html;charset=utf-8 313.3615ms
+2025-05-05 20:01:05.8990|Info|Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - - -
+2025-05-05 20:01:05.8990|Info|Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - - -
+2025-05-05 20:01:05.9140|Info|Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript;+charset=utf-8 18.6324ms
+2025-05-05 20:01:06.0221|Info|Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 130.7363ms
+2025-05-05 20:01:06.0971|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - - -
+2025-05-05 20:01:06.1536|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 55.8269ms
+2025-05-05 20:01:12.0102|Info|Request starting HTTP/2 GET https://localhost:7295/api/Category/categories - - -
+2025-05-05 20:01:12.0236|Info|Executing endpoint 'ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API)'
+2025-05-05 20:01:12.0497|Info|Route matched with {action = "GetCategories", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoriesAsync() on controller ECommerce.API.Controllers.CategoryController (ECommerce.API).
+2025-05-05 20:01:12.3710|Info|Executing action method ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API) - Validation state: Valid
+2025-05-05 20:01:13.8467|Info|Executed DbCommand (80ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[BaseCode], [c].[Name], [c].[Prefix]
+FROM [Categories] AS [c]
+2025-05-05 20:01:13.9103|Info|Executed action method ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1534.4814ms.
+2025-05-05 20:01:13.9122|Info|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.API.Entities.Dtos.Category.CategoryDto, ECommerce.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-05 20:01:13.9292|Info|Executed action ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API) in 1874.4164ms
+2025-05-05 20:01:13.9292|Info|Executed endpoint 'ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API)'
+2025-05-05 20:01:13.9292|Info|Request finished HTTP/2 GET https://localhost:7295/api/Category/categories - 200 - application/json;+charset=utf-8 1922.7146ms
+2025-05-05 20:03:36.0475|Info|Now listening on: https://localhost:7295
+2025-05-05 20:03:36.0475|Info|Now listening on: http://localhost:5103
+2025-05-05 20:03:36.1522|Info|Application started. Press Ctrl+C to shut down.
+2025-05-05 20:03:36.1773|Info|Hosting environment: Development
+2025-05-05 20:03:36.1773|Info|Content root path: C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API
+2025-05-05 20:03:37.6939|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - - -
+2025-05-05 20:03:37.9463|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 - text/html;charset=utf-8 263.8333ms
+2025-05-05 20:03:38.0017|Info|Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - - -
+2025-05-05 20:03:38.0077|Info|Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript;+charset=utf-8 7.2916ms
+2025-05-05 20:03:38.3664|Info|Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - - -
+2025-05-05 20:03:38.4437|Info|Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 87.7786ms
+2025-05-05 20:03:38.5331|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - - -
+2025-05-05 20:03:38.5889|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 52.7664ms
+2025-05-05 20:03:43.8526|Info|Request starting HTTP/2 GET https://localhost:7295/api/Category/categories - - -
+2025-05-05 20:03:43.8655|Info|Executing endpoint 'ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API)'
+2025-05-05 20:03:43.8913|Info|Route matched with {action = "GetCategories", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoriesAsync() on controller ECommerce.API.Controllers.CategoryController (ECommerce.API).
+2025-05-05 20:03:44.1195|Info|Executing action method ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API) - Validation state: Valid
+2025-05-05 20:03:45.3756|Info|Executed DbCommand (47ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[BaseCode], [c].[Name], [c].[Prefix]
+FROM [Categories] AS [c]
+2025-05-05 20:03:45.4305|Info|Executed action method ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1305.0426ms.
+2025-05-05 20:03:45.4305|Info|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.API.Entities.Dtos.Category.CategoryDto, ECommerce.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-05 20:03:45.4479|Info|Executed action ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API) in 1556.0928ms
+2025-05-05 20:03:45.4479|Info|Executed endpoint 'ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API)'
+2025-05-05 20:03:45.4630|Info|Request finished HTTP/2 GET https://localhost:7295/api/Category/categories - 200 - application/json;+charset=utf-8 1610.0028ms
+2025-05-05 20:09:39.5618|Info|Now listening on: https://localhost:7295
+2025-05-05 20:09:39.5618|Info|Now listening on: http://localhost:5103
+2025-05-05 20:09:39.6747|Info|Application started. Press Ctrl+C to shut down.
+2025-05-05 20:09:39.6747|Info|Hosting environment: Development
+2025-05-05 20:09:39.6747|Info|Content root path: C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API
+2025-05-05 20:09:41.5916|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - - -
+2025-05-05 20:09:41.8242|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 - text/html;charset=utf-8 250.0883ms
+2025-05-05 20:09:41.8603|Info|Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - - -
+2025-05-05 20:09:41.8673|Info|Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript;+charset=utf-8 7.9463ms
+2025-05-05 20:09:42.2798|Info|Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - - -
+2025-05-05 20:09:42.3511|Info|Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 81.0466ms
+2025-05-05 20:09:42.4399|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - - -
+2025-05-05 20:09:42.5013|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 60.7339ms
+2025-05-05 20:10:14.0247|Info|Now listening on: https://localhost:7295
+2025-05-05 20:10:14.0247|Info|Now listening on: http://localhost:5103
+2025-05-05 20:10:14.1243|Info|Application started. Press Ctrl+C to shut down.
+2025-05-05 20:10:14.1243|Info|Hosting environment: Development
+2025-05-05 20:10:14.1243|Info|Content root path: C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API
+2025-05-05 20:10:15.3053|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - - -
+2025-05-05 20:10:15.5373|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 - text/html;charset=utf-8 250.2136ms
+2025-05-05 20:10:16.0806|Info|Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - - -
+2025-05-05 20:10:16.0834|Info|Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - - -
+2025-05-05 20:10:16.0834|Info|Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript;+charset=utf-8 9.2680ms
+2025-05-05 20:10:16.1459|Info|Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 69.6345ms
+2025-05-05 20:10:16.2120|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - - -
+2025-05-05 20:10:16.2600|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 47.6009ms
+2025-05-05 20:13:14.2869|Info|Now listening on: https://localhost:7295
+2025-05-05 20:13:14.2869|Info|Now listening on: http://localhost:5103
+2025-05-05 20:13:14.4011|Info|Application started. Press Ctrl+C to shut down.
+2025-05-05 20:13:14.4011|Info|Hosting environment: Development
+2025-05-05 20:13:14.4011|Info|Content root path: C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API
+2025-05-05 20:13:15.7962|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - - -
+2025-05-05 20:13:16.0274|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 - text/html;charset=utf-8 249.2975ms
+2025-05-05 20:13:17.6467|Info|Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - - -
+2025-05-05 20:13:17.6467|Info|Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - - -
+2025-05-05 20:13:17.6467|Info|Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript;+charset=utf-8 11.3500ms
+2025-05-05 20:13:17.7246|Info|Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 76.2022ms
+2025-05-05 20:13:17.8239|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - - -
+2025-05-05 20:13:17.8845|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 59.7160ms
+2025-05-05 20:14:09.1714|Info|Now listening on: https://localhost:7295
+2025-05-05 20:14:09.1714|Info|Now listening on: http://localhost:5103
+2025-05-05 20:14:09.2620|Info|Application started. Press Ctrl+C to shut down.
+2025-05-05 20:14:09.2620|Info|Hosting environment: Development
+2025-05-05 20:14:09.2620|Info|Content root path: C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API
+2025-05-05 20:14:10.7947|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - - -
+2025-05-05 20:14:11.0416|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 - text/html;charset=utf-8 264.8468ms
+2025-05-05 20:14:11.0587|Info|Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - - -
+2025-05-05 20:14:11.0587|Info|Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript;+charset=utf-8 8.2302ms
+2025-05-05 20:14:11.5088|Info|Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - - -
+2025-05-05 20:14:11.5681|Info|Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 70.1665ms
+2025-05-05 20:14:11.6509|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - - -
+2025-05-05 20:14:11.6994|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 47.1714ms
+2025-05-05 20:14:15.4769|Info|Request starting HTTP/1.1 GET https://localhost:7295/api/Product/summary - - -
+2025-05-05 20:14:15.4926|Info|Executing endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 20:14:15.5185|Info|Route matched with {action = "GetProductSummaries", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductSummariesAsync() on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-05-05 20:14:15.7602|Info|Executing action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) - Validation state: Valid
+2025-05-05 20:14:16.9496|Info|Executed DbCommand (72ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedAt], [p].[Description], [p].[Dimensions], [p].[DiscountRate], [p].[ImageUrl], [p].[IsActive], [p].[Material], [p].[Model], [p].[Price], [p].[ProductCode], [p].[SellerId], [p].[SoldCount], [p].[Stock], [p].[Tags], [p].[ViewsCount], [p].[WarrantyPeriod], [p].[Weight], [c].[Id], [c].[BaseCode], [c].[Name], [c].[Prefix], [u].[Id], [u].[Address], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[ProfileImageUrl], [u].[Role], [u].[Username], [s].[UserId], [s].[AverageRating], [s].[IsActive], [s].[IsVerified], [s].[ShopAddress], [s].[ShopBannerUrl], [s].[ShopDescription], [s].[ShopEmail], [s].[ShopLogoUrl], [s].[ShopName], [s].[ShopPhoneNumber], [s].[TotalReviews]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [p].[SellerId] = [u].[Id]
+LEFT JOIN [SellerProfiles] AS [s] ON [u].[Id] = [s].[UserId]
+2025-05-05 20:14:16.9742|Info|Executed action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1223.0548ms.
+2025-05-05 20:14:16.9963|Info|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.API.Entities.Dtos.ProductSummaryDto, ECommerce.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-05 20:14:17.0179|Info|Executed action ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) in 1498.6813ms
+2025-05-05 20:14:17.0179|Info|Executed endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 20:14:17.0224|Info|Request finished HTTP/1.1 GET https://localhost:7295/api/Product/summary - 200 - application/json;+charset=utf-8 1544.1064ms
+2025-05-05 20:14:30.8261|Info|Now listening on: https://localhost:7295
+2025-05-05 20:14:30.8261|Info|Now listening on: http://localhost:5103
+2025-05-05 20:14:30.9758|Info|Application started. Press Ctrl+C to shut down.
+2025-05-05 20:14:30.9758|Info|Hosting environment: Development
+2025-05-05 20:14:30.9758|Info|Content root path: C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API
+2025-05-05 20:14:32.7216|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - - -
+2025-05-05 20:14:32.9807|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 - text/html;charset=utf-8 275.7459ms
+2025-05-05 20:14:33.0328|Info|Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - - -
+2025-05-05 20:14:33.0401|Info|Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript;+charset=utf-8 21.9151ms
+2025-05-05 20:14:33.3645|Info|Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - - -
+2025-05-05 20:14:33.4905|Info|Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 127.5806ms
+2025-05-05 20:14:33.5664|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - - -
+2025-05-05 20:14:33.6293|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 62.4010ms
+2025-05-05 20:14:35.2560|Info|Request starting HTTP/1.1 GET https://localhost:7295/api/Product/summary - - -
+2025-05-05 20:14:35.2725|Info|Executing endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 20:14:35.3077|Info|Route matched with {action = "GetProductSummaries", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductSummariesAsync() on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-05-05 20:14:35.5215|Info|Executing action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) - Validation state: Valid
+2025-05-05 20:14:36.8364|Info|Executed DbCommand (93ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedAt], [p].[Description], [p].[Dimensions], [p].[DiscountRate], [p].[ImageUrl], [p].[IsActive], [p].[Material], [p].[Model], [p].[Price], [p].[ProductCode], [p].[SellerId], [p].[SoldCount], [p].[Stock], [p].[Tags], [p].[ViewsCount], [p].[WarrantyPeriod], [p].[Weight], [c].[Id], [c].[BaseCode], [c].[Name], [c].[Prefix], [u].[Id], [u].[Address], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[ProfileImageUrl], [u].[Role], [u].[Username], [s].[UserId], [s].[AverageRating], [s].[IsActive], [s].[IsVerified], [s].[ShopAddress], [s].[ShopBannerUrl], [s].[ShopDescription], [s].[ShopEmail], [s].[ShopLogoUrl], [s].[ShopName], [s].[ShopPhoneNumber], [s].[TotalReviews]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [p].[SellerId] = [u].[Id]
+LEFT JOIN [SellerProfiles] AS [s] ON [u].[Id] = [s].[UserId]
+2025-05-05 20:14:36.9501|Info|Executed action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1415.442ms.
+2025-05-05 20:14:36.9591|Info|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.API.Entities.Dtos.ProductSummaryDto, ECommerce.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-05 20:14:37.0097|Info|Executed action ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) in 1693.4857ms
+2025-05-05 20:14:37.0097|Info|Executed endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 20:14:37.0226|Info|Request finished HTTP/1.1 GET https://localhost:7295/api/Product/summary - 200 - application/json;+charset=utf-8 1761.6833ms
+2025-05-05 20:15:19.1143|Info|Now listening on: https://localhost:7295
+2025-05-05 20:15:19.1177|Info|Now listening on: http://localhost:5103
+2025-05-05 20:15:19.1895|Info|Application started. Press Ctrl+C to shut down.
+2025-05-05 20:15:19.1895|Info|Hosting environment: Development
+2025-05-05 20:15:19.1895|Info|Content root path: C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API
+2025-05-05 20:15:20.7056|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - - -
+2025-05-05 20:15:20.9473|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 - text/html;charset=utf-8 258.5833ms
+2025-05-05 20:15:20.9951|Info|Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - - -
+2025-05-05 20:15:20.9951|Info|Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript;+charset=utf-8 7.6524ms
+2025-05-05 20:15:21.3751|Info|Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - - -
+2025-05-05 20:15:21.4282|Info|Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 52.6156ms
+2025-05-05 20:15:21.4912|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - - -
+2025-05-05 20:15:21.5317|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 40.0497ms
+2025-05-05 20:15:23.3229|Info|Request starting HTTP/1.1 GET https://localhost:7295/api/Product/summary - - -
+2025-05-05 20:15:23.3378|Info|Executing endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 20:15:23.3756|Info|Route matched with {action = "GetProductSummaries", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductSummariesAsync() on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-05-05 20:15:23.7093|Info|Executing action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) - Validation state: Valid
+2025-05-05 20:15:25.1440|Info|Executed DbCommand (62ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedAt], [p].[Description], [p].[Dimensions], [p].[DiscountRate], [p].[ImageUrl], [p].[IsActive], [p].[Material], [p].[Model], [p].[Price], [p].[ProductCode], [p].[SellerId], [p].[SoldCount], [p].[Stock], [p].[Tags], [p].[ViewsCount], [p].[WarrantyPeriod], [p].[Weight], [c].[Id], [c].[BaseCode], [c].[Name], [c].[Prefix], [u].[Id], [u].[Address], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[ProfileImageUrl], [u].[Role], [u].[Username], [s].[UserId], [s].[AverageRating], [s].[IsActive], [s].[IsVerified], [s].[ShopAddress], [s].[ShopBannerUrl], [s].[ShopDescription], [s].[ShopEmail], [s].[ShopLogoUrl], [s].[ShopName], [s].[ShopPhoneNumber], [s].[TotalReviews]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [p].[SellerId] = [u].[Id]
+LEFT JOIN [SellerProfiles] AS [s] ON [u].[Id] = [s].[UserId]
+2025-05-05 20:15:25.2133|Info|Executed action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1499.3822ms.
+2025-05-05 20:15:25.2133|Info|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.API.Entities.Dtos.ProductSummaryDto, ECommerce.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-05 20:15:25.2490|Info|Executed action ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) in 1872.2152ms
+2025-05-05 20:15:25.2566|Info|Executed endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 20:15:25.2566|Info|Request finished HTTP/1.1 GET https://localhost:7295/api/Product/summary - 200 - application/json;+charset=utf-8 1946.6484ms
+2025-05-05 20:16:32.5114|Info|Now listening on: https://localhost:7295
+2025-05-05 20:16:32.5114|Info|Now listening on: http://localhost:5103
+2025-05-05 20:16:32.5985|Info|Application started. Press Ctrl+C to shut down.
+2025-05-05 20:16:32.5985|Info|Hosting environment: Development
+2025-05-05 20:16:32.5985|Info|Content root path: C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API
+2025-05-05 20:16:33.7689|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - - -
+2025-05-05 20:16:34.0073|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 - text/html;charset=utf-8 256.4165ms
+2025-05-05 20:16:34.0731|Info|Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - - -
+2025-05-05 20:16:34.0836|Info|Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript;+charset=utf-8 7.9017ms
+2025-05-05 20:16:34.3402|Info|Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - - -
+2025-05-05 20:16:34.4609|Info|Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 124.0971ms
+2025-05-05 20:16:34.5576|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - - -
+2025-05-05 20:16:34.6162|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 57.5892ms
+2025-05-05 20:16:36.2901|Info|Request starting HTTP/1.1 GET https://localhost:7295/api/Product/summary - - -
+2025-05-05 20:16:36.3184|Info|Executing endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 20:16:36.3525|Info|Route matched with {action = "GetProductSummaries", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductSummariesAsync() on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-05-05 20:16:36.6112|Info|Executing action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) - Validation state: Valid
+2025-05-05 20:16:37.9723|Info|Executed DbCommand (55ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedAt], [p].[Description], [p].[Dimensions], [p].[DiscountRate], [p].[ImageUrl], [p].[IsActive], [p].[Material], [p].[Model], [p].[Price], [p].[ProductCode], [p].[SellerId], [p].[SoldCount], [p].[Stock], [p].[Tags], [p].[ViewsCount], [p].[WarrantyPeriod], [p].[Weight], [c].[Id], [c].[BaseCode], [c].[Name], [c].[Prefix], [u].[Id], [u].[Address], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[ProfileImageUrl], [u].[Role], [u].[Username], [s].[UserId], [s].[AverageRating], [s].[IsActive], [s].[IsVerified], [s].[ShopAddress], [s].[ShopBannerUrl], [s].[ShopDescription], [s].[ShopEmail], [s].[ShopLogoUrl], [s].[ShopName], [s].[ShopPhoneNumber], [s].[TotalReviews]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [p].[SellerId] = [u].[Id]
+LEFT JOIN [SellerProfiles] AS [s] ON [u].[Id] = [s].[UserId]
+2025-05-05 20:16:38.0183|Info|Executed action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1403.579ms.
+2025-05-05 20:16:38.0183|Info|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.API.Entities.Dtos.ProductSummaryDto, ECommerce.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-05 20:16:38.0421|Info|Executed action ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) in 1688.035ms
+2025-05-05 20:16:38.0421|Info|Executed endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 20:16:38.0421|Info|Request finished HTTP/1.1 GET https://localhost:7295/api/Product/summary - 200 - application/json;+charset=utf-8 1754.4643ms
+2025-05-05 20:16:55.9084|Info|Now listening on: https://localhost:7295
+2025-05-05 20:16:55.9084|Info|Now listening on: http://localhost:5103
+2025-05-05 20:16:55.9926|Info|Application started. Press Ctrl+C to shut down.
+2025-05-05 20:16:55.9926|Info|Hosting environment: Development
+2025-05-05 20:16:55.9926|Info|Content root path: C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API
+2025-05-05 20:16:57.3802|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - - -
+2025-05-05 20:16:57.6993|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 - text/html;charset=utf-8 345.6252ms
+2025-05-05 20:16:57.7422|Info|Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - - -
+2025-05-05 20:16:57.7422|Info|Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript;+charset=utf-8 9.5147ms
+2025-05-05 20:16:57.9017|Info|Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - - -
+2025-05-05 20:16:58.0055|Info|Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 105.1977ms
+2025-05-05 20:16:58.1134|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - - -
+2025-05-05 20:16:58.1731|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 59.8784ms
+2025-05-05 20:16:59.7283|Info|Request starting HTTP/1.1 GET https://localhost:7295/api/Product/summary - - -
+2025-05-05 20:16:59.7629|Info|Executing endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 20:16:59.7995|Info|Route matched with {action = "GetProductSummaries", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductSummariesAsync() on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-05-05 20:17:00.1041|Info|Executing action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) - Validation state: Valid
+2025-05-05 20:17:01.6785|Info|Executed DbCommand (55ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedAt], [p].[Description], [p].[Dimensions], [p].[DiscountRate], [p].[ImageUrl], [p].[IsActive], [p].[Material], [p].[Model], [p].[Price], [p].[ProductCode], [p].[SellerId], [p].[SoldCount], [p].[Stock], [p].[Tags], [p].[ViewsCount], [p].[WarrantyPeriod], [p].[Weight], [c].[Id], [c].[BaseCode], [c].[Name], [c].[Prefix], [u].[Id], [u].[Address], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[ProfileImageUrl], [u].[Role], [u].[Username], [s].[UserId], [s].[AverageRating], [s].[IsActive], [s].[IsVerified], [s].[ShopAddress], [s].[ShopBannerUrl], [s].[ShopDescription], [s].[ShopEmail], [s].[ShopLogoUrl], [s].[ShopName], [s].[ShopPhoneNumber], [s].[TotalReviews]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [p].[SellerId] = [u].[Id]
+LEFT JOIN [SellerProfiles] AS [s] ON [u].[Id] = [s].[UserId]
+2025-05-05 20:17:01.7325|Info|Executed action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1624.4742ms.
+2025-05-05 20:17:01.7325|Info|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.API.Entities.Dtos.ProductSummaryDto, ECommerce.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-05 20:17:01.7676|Info|Executed action ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) in 1965.5421ms
+2025-05-05 20:17:01.7676|Info|Executed endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 20:17:01.7787|Info|Request finished HTTP/1.1 GET https://localhost:7295/api/Product/summary - 200 - application/json;+charset=utf-8 2042.9436ms
+2025-05-05 20:18:44.2720|Info|Now listening on: https://localhost:7295
+2025-05-05 20:18:44.2743|Info|Now listening on: http://localhost:5103
+2025-05-05 20:18:44.3461|Info|Application started. Press Ctrl+C to shut down.
+2025-05-05 20:18:44.3461|Info|Hosting environment: Development
+2025-05-05 20:18:44.3461|Info|Content root path: C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API
+2025-05-05 20:18:45.9666|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - - -
+2025-05-05 20:18:46.2562|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 - text/html;charset=utf-8 302.2566ms
+2025-05-05 20:18:46.2874|Info|Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - - -
+2025-05-05 20:18:46.2874|Info|Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript;+charset=utf-8 6.7570ms
+2025-05-05 20:18:46.7638|Info|Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - - -
+2025-05-05 20:18:46.8344|Info|Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 80.3059ms
+2025-05-05 20:18:46.9194|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - - -
+2025-05-05 20:18:46.9774|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 57.3546ms
+2025-05-05 20:18:48.6520|Info|Request starting HTTP/1.1 GET https://localhost:7295/api/Product/summary - - -
+2025-05-05 20:18:48.6646|Info|Executing endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 20:18:48.6969|Info|Route matched with {action = "GetProductSummaries", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductSummariesAsync() on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-05-05 20:18:48.9135|Info|Executing action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) - Validation state: Valid
+2025-05-05 20:18:50.2030|Info|Executed DbCommand (50ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedAt], [p].[Description], [p].[Dimensions], [p].[DiscountRate], [p].[ImageUrl], [p].[IsActive], [p].[Material], [p].[Model], [p].[Price], [p].[ProductCode], [p].[SellerId], [p].[SoldCount], [p].[Stock], [p].[Tags], [p].[ViewsCount], [p].[WarrantyPeriod], [p].[Weight], [c].[Id], [c].[BaseCode], [c].[Name], [c].[Prefix], [u].[Id], [u].[Address], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[ProfileImageUrl], [u].[Role], [u].[Username], [s].[UserId], [s].[AverageRating], [s].[IsActive], [s].[IsVerified], [s].[ShopAddress], [s].[ShopBannerUrl], [s].[ShopDescription], [s].[ShopEmail], [s].[ShopLogoUrl], [s].[ShopName], [s].[ShopPhoneNumber], [s].[TotalReviews]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [p].[SellerId] = [u].[Id]
+LEFT JOIN [SellerProfiles] AS [s] ON [u].[Id] = [s].[UserId]
+2025-05-05 20:18:50.2545|Info|Executed action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1331.2056ms.
+2025-05-05 20:18:50.2563|Info|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.API.Entities.Dtos.ProductSummaryDto, ECommerce.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-05 20:18:50.2880|Info|Executed action ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) in 1585.5444ms
+2025-05-05 20:18:50.2880|Info|Executed endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 20:18:50.2880|Info|Request finished HTTP/1.1 GET https://localhost:7295/api/Product/summary - 200 - application/json;+charset=utf-8 1645.2339ms
+2025-05-05 20:19:24.3754|Info|Now listening on: https://localhost:7295
+2025-05-05 20:19:24.3754|Info|Now listening on: http://localhost:5103
+2025-05-05 20:19:24.4899|Info|Application started. Press Ctrl+C to shut down.
+2025-05-05 20:19:24.4899|Info|Hosting environment: Development
+2025-05-05 20:19:24.4899|Info|Content root path: C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API
+2025-05-05 20:19:26.1654|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - - -
+2025-05-05 20:19:26.4291|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 - text/html;charset=utf-8 278.0956ms
+2025-05-05 20:19:27.0166|Info|Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - - -
+2025-05-05 20:19:27.0166|Info|Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - - -
+2025-05-05 20:19:27.0411|Info|Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript;+charset=utf-8 21.6420ms
+2025-05-05 20:19:27.1150|Info|Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 106.9366ms
+2025-05-05 20:19:27.2053|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - - -
+2025-05-05 20:19:27.2650|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 57.4364ms
+2025-05-05 20:19:29.5219|Info|Request starting HTTP/1.1 GET https://localhost:7295/api/Product/summary - - -
+2025-05-05 20:19:29.5382|Info|Executing endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 20:19:29.5662|Info|Route matched with {action = "GetProductSummaries", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductSummariesAsync() on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-05-05 20:19:29.7882|Info|Executing action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) - Validation state: Valid
+2025-05-05 20:19:31.3750|Info|Executed DbCommand (61ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedAt], [p].[Description], [p].[Dimensions], [p].[DiscountRate], [p].[ImageUrl], [p].[IsActive], [p].[Material], [p].[Model], [p].[Price], [p].[ProductCode], [p].[SellerId], [p].[SoldCount], [p].[Stock], [p].[Tags], [p].[ViewsCount], [p].[WarrantyPeriod], [p].[Weight], [c].[Id], [c].[BaseCode], [c].[Name], [c].[Prefix], [u].[Id], [u].[Address], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[ProfileImageUrl], [u].[Role], [u].[Username], [s].[UserId], [s].[AverageRating], [s].[IsActive], [s].[IsVerified], [s].[ShopAddress], [s].[ShopBannerUrl], [s].[ShopDescription], [s].[ShopEmail], [s].[ShopLogoUrl], [s].[ShopName], [s].[ShopPhoneNumber], [s].[TotalReviews]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [p].[SellerId] = [u].[Id]
+LEFT JOIN [SellerProfiles] AS [s] ON [u].[Id] = [s].[UserId]
+2025-05-05 20:19:31.4437|Info|Executed action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1642.4549ms.
+2025-05-05 20:19:31.4437|Info|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.API.Entities.Dtos.ProductSummaryDto, ECommerce.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-05 20:19:31.4742|Info|Executed action ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) in 1907.1159ms
+2025-05-05 20:19:31.4742|Info|Executed endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 20:19:31.4742|Info|Request finished HTTP/1.1 GET https://localhost:7295/api/Product/summary - 200 - application/json;+charset=utf-8 1966.1450ms
+2025-05-05 20:19:31.6281|Info|Request starting HTTP/1.1 GET https://localhost:7295/api/Category/categories - - -
+2025-05-05 20:19:31.6281|Info|Executing endpoint 'ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API)'
+2025-05-05 20:19:31.6340|Info|Route matched with {action = "GetCategories", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoriesAsync() on controller ECommerce.API.Controllers.CategoryController (ECommerce.API).
+2025-05-05 20:19:31.6340|Info|Executing action method ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API) - Validation state: Valid
+2025-05-05 20:19:31.6955|Info|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[BaseCode], [c].[Name], [c].[Prefix]
+FROM [Categories] AS [c]
+2025-05-05 20:19:31.6955|Info|Executed action method ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 69.7124ms.
+2025-05-05 20:19:31.6955|Info|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.API.Entities.Dtos.Category.CategoryDto, ECommerce.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-05 20:19:31.7097|Info|Executed action ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API) in 75.5757ms
+2025-05-05 20:19:31.7097|Info|Executed endpoint 'ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API)'
+2025-05-05 20:19:31.7097|Info|Request finished HTTP/1.1 GET https://localhost:7295/api/Category/categories - 200 - application/json;+charset=utf-8 82.5518ms
+2025-05-05 20:23:14.4443|Info|Now listening on: https://localhost:7295
+2025-05-05 20:23:14.4470|Info|Now listening on: http://localhost:5103
+2025-05-05 20:23:14.5287|Info|Application started. Press Ctrl+C to shut down.
+2025-05-05 20:23:14.5287|Info|Hosting environment: Development
+2025-05-05 20:23:14.5287|Info|Content root path: C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API
+2025-05-05 20:23:16.0721|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - - -
+2025-05-05 20:23:16.2926|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 - text/html;charset=utf-8 241.4644ms
+2025-05-05 20:23:16.3304|Info|Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - - -
+2025-05-05 20:23:16.3365|Info|Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript;+charset=utf-8 6.8209ms
+2025-05-05 20:23:16.7810|Info|Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - - -
+2025-05-05 20:23:16.8650|Info|Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 88.4353ms
+2025-05-05 20:23:16.9456|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - - -
+2025-05-05 20:23:17.0133|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 66.6404ms
+2025-05-05 20:23:19.1975|Info|Request starting HTTP/1.1 GET https://localhost:7295/api/Product/summary - - -
+2025-05-05 20:23:19.2134|Info|Executing endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 20:23:19.2491|Info|Route matched with {action = "GetProductSummaries", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductSummariesAsync() on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-05-05 20:23:19.5259|Info|Executing action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) - Validation state: Valid
+2025-05-05 20:23:20.9409|Info|Executed DbCommand (53ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedAt], [p].[Description], [p].[Dimensions], [p].[DiscountRate], [p].[ImageUrl], [p].[IsActive], [p].[Material], [p].[Model], [p].[Price], [p].[ProductCode], [p].[SellerId], [p].[SoldCount], [p].[Stock], [p].[Tags], [p].[ViewsCount], [p].[WarrantyPeriod], [p].[Weight], [c].[Id], [c].[BaseCode], [c].[Name], [c].[Prefix], [u].[Id], [u].[Address], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[ProfileImageUrl], [u].[Role], [u].[Username], [s].[UserId], [s].[AverageRating], [s].[IsActive], [s].[IsVerified], [s].[ShopAddress], [s].[ShopBannerUrl], [s].[ShopDescription], [s].[ShopEmail], [s].[ShopLogoUrl], [s].[ShopName], [s].[ShopPhoneNumber], [s].[TotalReviews]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [p].[SellerId] = [u].[Id]
+LEFT JOIN [SellerProfiles] AS [s] ON [u].[Id] = [s].[UserId]
+2025-05-05 20:23:20.9997|Info|Executed action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1463.5529ms.
+2025-05-05 20:23:21.0058|Info|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.API.Entities.Dtos.ProductSummaryDto, ECommerce.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-05 20:23:21.0314|Info|Executed action ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) in 1781.2267ms
+2025-05-05 20:23:21.0314|Info|Executed endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 20:23:21.0371|Info|Request finished HTTP/1.1 GET https://localhost:7295/api/Product/summary - 200 - application/json;+charset=utf-8 1838.5868ms
+2025-05-05 20:23:21.1675|Info|Request starting HTTP/1.1 GET https://localhost:7295/api/Category/categories - - -
+2025-05-05 20:23:21.1675|Info|Executing endpoint 'ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API)'
+2025-05-05 20:23:21.1675|Info|Route matched with {action = "GetCategories", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoriesAsync() on controller ECommerce.API.Controllers.CategoryController (ECommerce.API).
+2025-05-05 20:23:21.1675|Info|Executing action method ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API) - Validation state: Valid
+2025-05-05 20:23:21.2130|Info|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[BaseCode], [c].[Name], [c].[Prefix]
+FROM [Categories] AS [c]
+2025-05-05 20:23:21.2276|Info|Executed action method ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 53.2829ms.
+2025-05-05 20:23:21.2276|Info|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.API.Entities.Dtos.Category.CategoryDto, ECommerce.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-05 20:23:21.2276|Info|Executed action ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API) in 57.0945ms
+2025-05-05 20:23:21.2276|Info|Executed endpoint 'ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API)'
+2025-05-05 20:23:21.2276|Info|Request finished HTTP/1.1 GET https://localhost:7295/api/Category/categories - 200 - application/json;+charset=utf-8 62.7140ms
+2025-05-05 20:23:45.6126|Info|Now listening on: https://localhost:7295
+2025-05-05 20:23:45.6160|Info|Now listening on: http://localhost:5103
+2025-05-05 20:23:45.7257|Info|Application started. Press Ctrl+C to shut down.
+2025-05-05 20:23:45.7257|Info|Hosting environment: Development
+2025-05-05 20:23:45.7257|Info|Content root path: C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API
+2025-05-05 20:23:47.1291|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - - -
+2025-05-05 20:23:47.3394|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 - text/html;charset=utf-8 219.8567ms
+2025-05-05 20:23:47.3855|Info|Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - - -
+2025-05-05 20:23:47.4043|Info|Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript;+charset=utf-8 16.7318ms
+2025-05-05 20:23:47.9052|Info|Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - - -
+2025-05-05 20:23:47.9744|Info|Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 76.1049ms
+2025-05-05 20:23:48.0460|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - - -
+2025-05-05 20:23:48.1014|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 51.2422ms
+2025-05-05 20:23:50.4905|Info|Request starting HTTP/1.1 GET https://localhost:7295/api/Product/summary - - -
+2025-05-05 20:23:50.5091|Info|Executing endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 20:23:50.5377|Info|Route matched with {action = "GetProductSummaries", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductSummariesAsync() on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-05-05 20:23:50.7400|Info|Executing action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) - Validation state: Valid
+2025-05-05 20:23:52.2102|Info|Executed DbCommand (57ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedAt], [p].[Description], [p].[Dimensions], [p].[DiscountRate], [p].[ImageUrl], [p].[IsActive], [p].[Material], [p].[Model], [p].[Price], [p].[ProductCode], [p].[SellerId], [p].[SoldCount], [p].[Stock], [p].[Tags], [p].[ViewsCount], [p].[WarrantyPeriod], [p].[Weight], [c].[Id], [c].[BaseCode], [c].[Name], [c].[Prefix], [u].[Id], [u].[Address], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[ProfileImageUrl], [u].[Role], [u].[Username], [s].[UserId], [s].[AverageRating], [s].[IsActive], [s].[IsVerified], [s].[ShopAddress], [s].[ShopBannerUrl], [s].[ShopDescription], [s].[ShopEmail], [s].[ShopLogoUrl], [s].[ShopName], [s].[ShopPhoneNumber], [s].[TotalReviews]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [p].[SellerId] = [u].[Id]
+LEFT JOIN [SellerProfiles] AS [s] ON [u].[Id] = [s].[UserId]
+2025-05-05 20:23:52.2706|Info|Executed action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1521.5278ms.
+2025-05-05 20:23:52.2715|Info|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.API.Entities.Dtos.ProductSummaryDto, ECommerce.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-05 20:23:52.3040|Info|Executed action ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) in 1765.3294ms
+2025-05-05 20:23:52.3040|Info|Executed endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 20:23:52.3040|Info|Request finished HTTP/1.1 GET https://localhost:7295/api/Product/summary - 200 - application/json;+charset=utf-8 1827.3588ms
+2025-05-05 20:23:52.4485|Info|Request starting HTTP/1.1 GET https://localhost:7295/api/Category/categories - - -
+2025-05-05 20:23:52.4485|Info|Executing endpoint 'ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API)'
+2025-05-05 20:23:52.4485|Info|Route matched with {action = "GetCategories", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoriesAsync() on controller ECommerce.API.Controllers.CategoryController (ECommerce.API).
+2025-05-05 20:23:52.4485|Info|Executing action method ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API) - Validation state: Valid
+2025-05-05 20:23:52.5098|Info|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[BaseCode], [c].[Name], [c].[Prefix]
+FROM [Categories] AS [c]
+2025-05-05 20:23:52.5098|Info|Executed action method ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 57.73ms.
+2025-05-05 20:23:52.5098|Info|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.API.Entities.Dtos.Category.CategoryDto, ECommerce.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-05 20:23:52.5098|Info|Executed action ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API) in 61.4781ms
+2025-05-05 20:23:52.5098|Info|Executed endpoint 'ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API)'
+2025-05-05 20:23:52.5098|Info|Request finished HTTP/1.1 GET https://localhost:7295/api/Category/categories - 200 - application/json;+charset=utf-8 66.9862ms
+2025-05-05 20:35:25.3844|Info|Now listening on: https://localhost:7295
+2025-05-05 20:35:25.3844|Info|Now listening on: http://localhost:5103
+2025-05-05 20:35:25.5279|Info|Application started. Press Ctrl+C to shut down.
+2025-05-05 20:35:25.5279|Info|Hosting environment: Development
+2025-05-05 20:35:25.5279|Info|Content root path: C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API
+2025-05-05 20:35:27.0415|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - - -
+2025-05-05 20:35:27.2905|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 - text/html;charset=utf-8 269.6500ms
+2025-05-05 20:35:27.3351|Info|Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - - -
+2025-05-05 20:35:27.3351|Info|Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript;+charset=utf-8 7.6380ms
+2025-05-05 20:35:30.7156|Info|Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - - -
+2025-05-05 20:35:30.7568|Info|Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 40.4666ms
+2025-05-05 20:35:31.1103|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - - -
+2025-05-05 20:35:31.1244|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 18.1879ms
+2025-05-05 20:35:36.0745|Info|Request starting HTTP/1.1 GET https://localhost:7295/api/Product/summary - - -
+2025-05-05 20:35:36.0845|Info|Executing endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 20:35:36.1034|Info|Route matched with {action = "GetProductSummaries", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductSummariesAsync() on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-05-05 20:35:36.3362|Info|Executing action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) - Validation state: Valid
+2025-05-05 20:35:37.6955|Info|Executed DbCommand (51ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedAt], [p].[Description], [p].[Dimensions], [p].[DiscountRate], [p].[ImageUrl], [p].[IsActive], [p].[Material], [p].[Model], [p].[Price], [p].[ProductCode], [p].[SellerId], [p].[SoldCount], [p].[Stock], [p].[Tags], [p].[ViewsCount], [p].[WarrantyPeriod], [p].[Weight], [c].[Id], [c].[BaseCode], [c].[Name], [c].[Prefix], [u].[Id], [u].[Address], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[ProfileImageUrl], [u].[Role], [u].[Username], [s].[UserId], [s].[AverageRating], [s].[IsActive], [s].[IsVerified], [s].[ShopAddress], [s].[ShopBannerUrl], [s].[ShopDescription], [s].[ShopEmail], [s].[ShopLogoUrl], [s].[ShopName], [s].[ShopPhoneNumber], [s].[TotalReviews]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [p].[SellerId] = [u].[Id]
+LEFT JOIN [SellerProfiles] AS [s] ON [u].[Id] = [s].[UserId]
+2025-05-05 20:35:37.7622|Info|Executed action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1417.6332ms.
+2025-05-05 20:35:37.7622|Info|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.API.Entities.Dtos.ProductSummaryDto, ECommerce.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-05 20:35:37.8000|Info|Executed action ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) in 1690.033ms
+2025-05-05 20:35:37.8000|Info|Executed endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 20:35:37.8040|Info|Request finished HTTP/1.1 GET https://localhost:7295/api/Product/summary - 200 - application/json;+charset=utf-8 1736.2681ms
+2025-05-05 20:35:37.9365|Info|Request starting HTTP/1.1 GET https://localhost:7295/api/Category/categories - - -
+2025-05-05 20:35:37.9365|Info|Executing endpoint 'ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API)'
+2025-05-05 20:35:37.9365|Info|Route matched with {action = "GetCategories", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoriesAsync() on controller ECommerce.API.Controllers.CategoryController (ECommerce.API).
+2025-05-05 20:35:37.9423|Info|Executing action method ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API) - Validation state: Valid
+2025-05-05 20:35:37.9907|Info|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[BaseCode], [c].[Name], [c].[Prefix]
+FROM [Categories] AS [c]
+2025-05-05 20:35:37.9907|Info|Executed action method ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 56.6589ms.
+2025-05-05 20:35:37.9907|Info|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.API.Entities.Dtos.Category.CategoryDto, ECommerce.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-05 20:35:37.9907|Info|Executed action ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API) in 59.8267ms
+2025-05-05 20:35:37.9907|Info|Executed endpoint 'ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API)'
+2025-05-05 20:35:37.9907|Info|Request finished HTTP/1.1 GET https://localhost:7295/api/Category/categories - 200 - application/json;+charset=utf-8 64.4370ms
+2025-05-05 20:37:38.2144|Info|Now listening on: https://localhost:7295
+2025-05-05 20:37:38.2257|Info|Now listening on: http://localhost:5103
+2025-05-05 20:37:38.3205|Info|Application started. Press Ctrl+C to shut down.
+2025-05-05 20:37:38.3205|Info|Hosting environment: Development
+2025-05-05 20:37:38.3205|Info|Content root path: C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API
+2025-05-05 20:37:39.5668|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - - -
+2025-05-05 20:37:39.8045|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 - text/html;charset=utf-8 257.2336ms
+2025-05-05 20:37:39.8542|Info|Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - - -
+2025-05-05 20:37:39.8653|Info|Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript;+charset=utf-8 7.8281ms
+2025-05-05 20:37:43.8496|Info|Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - - -
+2025-05-05 20:37:43.8967|Info|Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 60.3563ms
+2025-05-05 20:37:43.9741|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - - -
+2025-05-05 20:37:44.0072|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 31.6467ms
+2025-05-05 20:37:45.9483|Info|Request starting HTTP/1.1 GET https://localhost:7295/api/Product/summary - - -
+2025-05-05 20:37:45.9483|Info|Executing endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 20:37:45.9786|Info|Route matched with {action = "GetProductSummaries", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductSummariesAsync() on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-05-05 20:37:46.1492|Info|Executing action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) - Validation state: Valid
+2025-05-05 20:37:47.5032|Info|Executed DbCommand (60ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedAt], [p].[Description], [p].[Dimensions], [p].[DiscountRate], [p].[ImageUrl], [p].[IsActive], [p].[Material], [p].[Model], [p].[Price], [p].[ProductCode], [p].[SellerId], [p].[SoldCount], [p].[Stock], [p].[Tags], [p].[ViewsCount], [p].[WarrantyPeriod], [p].[Weight], [c].[Id], [c].[BaseCode], [c].[Name], [c].[Prefix], [u].[Id], [u].[Address], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[ProfileImageUrl], [u].[Role], [u].[Username], [s].[UserId], [s].[AverageRating], [s].[IsActive], [s].[IsVerified], [s].[ShopAddress], [s].[ShopBannerUrl], [s].[ShopDescription], [s].[ShopEmail], [s].[ShopLogoUrl], [s].[ShopName], [s].[ShopPhoneNumber], [s].[TotalReviews]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [p].[SellerId] = [u].[Id]
+LEFT JOIN [SellerProfiles] AS [s] ON [u].[Id] = [s].[UserId]
+2025-05-05 20:37:47.5550|Info|Executed action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1394.6905ms.
+2025-05-05 20:37:47.5550|Info|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.API.Entities.Dtos.ProductSummaryDto, ECommerce.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-05 20:37:47.5839|Info|Executed action ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) in 1604.6708ms
+2025-05-05 20:37:47.5839|Info|Executed endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 20:37:47.5927|Info|Request finished HTTP/1.1 GET https://localhost:7295/api/Product/summary - 200 - application/json;+charset=utf-8 1646.8699ms
+2025-05-05 20:37:47.7199|Info|Request starting HTTP/1.1 GET https://localhost:7295/api/Category/categories - - -
+2025-05-05 20:37:47.7199|Info|Executing endpoint 'ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API)'
+2025-05-05 20:37:47.7247|Info|Route matched with {action = "GetCategories", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoriesAsync() on controller ECommerce.API.Controllers.CategoryController (ECommerce.API).
+2025-05-05 20:37:47.7247|Info|Executing action method ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API) - Validation state: Valid
+2025-05-05 20:37:47.7722|Info|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[BaseCode], [c].[Name], [c].[Prefix]
+FROM [Categories] AS [c]
+2025-05-05 20:37:47.7722|Info|Executed action method ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 55.2307ms.
+2025-05-05 20:37:47.7722|Info|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.API.Entities.Dtos.Category.CategoryDto, ECommerce.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-05 20:37:47.7722|Info|Executed action ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API) in 58.603ms
+2025-05-05 20:37:47.7722|Info|Executed endpoint 'ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API)'
+2025-05-05 20:37:47.7722|Info|Request finished HTTP/1.1 GET https://localhost:7295/api/Category/categories - 200 - application/json;+charset=utf-8 64.0650ms
+2025-05-05 20:38:27.5149|Info|Now listening on: https://localhost:7295
+2025-05-05 20:38:27.5254|Info|Now listening on: http://localhost:5103
+2025-05-05 20:38:27.7111|Info|Application started. Press Ctrl+C to shut down.
+2025-05-05 20:38:27.7111|Info|Hosting environment: Development
+2025-05-05 20:38:27.7111|Info|Content root path: C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API
+2025-05-05 20:38:29.2271|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - - -
+2025-05-05 20:38:29.4925|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 - text/html;charset=utf-8 286.4365ms
+2025-05-05 20:38:29.5700|Info|Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - - -
+2025-05-05 20:38:29.5700|Info|Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript;+charset=utf-8 9.1525ms
+2025-05-05 20:38:29.6864|Info|Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - - -
+2025-05-05 20:38:29.7552|Info|Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 74.9675ms
+2025-05-05 20:38:29.8337|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - - -
+2025-05-05 20:38:29.9663|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 132.7678ms
+2025-05-05 20:38:34.6199|Info|Request starting HTTP/1.1 GET https://localhost:7295/api/Product/summary - - -
+2025-05-05 20:38:34.6369|Info|Executing endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 20:38:34.6558|Info|Route matched with {action = "GetProductSummaries", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductSummariesAsync() on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-05-05 20:38:34.8501|Info|Executing action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) - Validation state: Valid
+2025-05-05 20:38:36.1248|Info|Executed DbCommand (68ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedAt], [p].[Description], [p].[Dimensions], [p].[DiscountRate], [p].[ImageUrl], [p].[IsActive], [p].[Material], [p].[Model], [p].[Price], [p].[ProductCode], [p].[SellerId], [p].[SoldCount], [p].[Stock], [p].[Tags], [p].[ViewsCount], [p].[WarrantyPeriod], [p].[Weight], [c].[Id], [c].[BaseCode], [c].[Name], [c].[Prefix], [u].[Id], [u].[Address], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[ProfileImageUrl], [u].[Role], [u].[Username], [s].[UserId], [s].[AverageRating], [s].[IsActive], [s].[IsVerified], [s].[ShopAddress], [s].[ShopBannerUrl], [s].[ShopDescription], [s].[ShopEmail], [s].[ShopLogoUrl], [s].[ShopName], [s].[ShopPhoneNumber], [s].[TotalReviews]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [p].[SellerId] = [u].[Id]
+LEFT JOIN [SellerProfiles] AS [s] ON [u].[Id] = [s].[UserId]
+2025-05-05 20:38:36.1817|Info|Executed action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1320.1243ms.
+2025-05-05 20:38:36.1817|Info|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.API.Entities.Dtos.ProductSummaryDto, ECommerce.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-05 20:38:36.2168|Info|Executed action ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) in 1560.4162ms
+2025-05-05 20:38:36.2168|Info|Executed endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 20:38:36.2259|Info|Request finished HTTP/1.1 GET https://localhost:7295/api/Product/summary - 200 - application/json;+charset=utf-8 1602.3583ms
+2025-05-05 20:38:36.3539|Info|Request starting HTTP/1.1 GET https://localhost:7295/api/Category/categories - - -
+2025-05-05 20:38:36.3539|Info|Executing endpoint 'ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API)'
+2025-05-05 20:38:36.3539|Info|Route matched with {action = "GetCategories", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoriesAsync() on controller ECommerce.API.Controllers.CategoryController (ECommerce.API).
+2025-05-05 20:38:36.3539|Info|Executing action method ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API) - Validation state: Valid
+2025-05-05 20:38:36.3978|Info|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[BaseCode], [c].[Name], [c].[Prefix]
+FROM [Categories] AS [c]
+2025-05-05 20:38:36.4118|Info|Executed action method ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 51.5757ms.
+2025-05-05 20:38:36.4118|Info|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.API.Entities.Dtos.Category.CategoryDto, ECommerce.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-05 20:38:36.4118|Info|Executed action ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API) in 55.017ms
+2025-05-05 20:38:36.4118|Info|Executed endpoint 'ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API)'
+2025-05-05 20:38:36.4118|Info|Request finished HTTP/1.1 GET https://localhost:7295/api/Category/categories - 200 - application/json;+charset=utf-8 60.1251ms
+2025-05-05 20:39:20.3611|Info|Now listening on: https://localhost:7295
+2025-05-05 20:39:20.3655|Info|Now listening on: http://localhost:5103
+2025-05-05 20:39:20.5369|Info|Application started. Press Ctrl+C to shut down.
+2025-05-05 20:39:20.5369|Info|Hosting environment: Development
+2025-05-05 20:39:20.5369|Info|Content root path: C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API
+2025-05-05 20:39:22.1409|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - - -
+2025-05-05 20:39:22.3661|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 - text/html;charset=utf-8 244.4035ms
+2025-05-05 20:39:22.3974|Info|Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - - -
+2025-05-05 20:39:22.3974|Info|Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript;+charset=utf-8 9.3968ms
+2025-05-05 20:39:22.7889|Info|Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - - -
+2025-05-05 20:39:22.9288|Info|Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 151.0829ms
+2025-05-05 20:39:23.0528|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - - -
+2025-05-05 20:39:23.1335|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 75.6259ms
+2025-05-05 20:39:26.9288|Info|Request starting HTTP/1.1 GET https://localhost:7295/api/Product/summary - - -
+2025-05-05 20:39:26.9459|Info|Executing endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 20:39:26.9950|Info|Route matched with {action = "GetProductSummaries", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductSummariesAsync() on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-05-05 20:39:27.3245|Info|Executing action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) - Validation state: Valid
+2025-05-05 20:39:28.7138|Info|Executed DbCommand (64ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedAt], [p].[Description], [p].[Dimensions], [p].[DiscountRate], [p].[ImageUrl], [p].[IsActive], [p].[Material], [p].[Model], [p].[Price], [p].[ProductCode], [p].[SellerId], [p].[SoldCount], [p].[Stock], [p].[Tags], [p].[ViewsCount], [p].[WarrantyPeriod], [p].[Weight], [c].[Id], [c].[BaseCode], [c].[Name], [c].[Prefix], [u].[Id], [u].[Address], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[ProfileImageUrl], [u].[Role], [u].[Username], [s].[UserId], [s].[AverageRating], [s].[IsActive], [s].[IsVerified], [s].[ShopAddress], [s].[ShopBannerUrl], [s].[ShopDescription], [s].[ShopEmail], [s].[ShopLogoUrl], [s].[ShopName], [s].[ShopPhoneNumber], [s].[TotalReviews]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [p].[SellerId] = [u].[Id]
+LEFT JOIN [SellerProfiles] AS [s] ON [u].[Id] = [s].[UserId]
+2025-05-05 20:39:28.7892|Info|Executed action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1451.6012ms.
+2025-05-05 20:39:28.7892|Info|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.API.Entities.Dtos.ProductSummaryDto, ECommerce.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-05 20:39:28.8275|Info|Executed action ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) in 1830.4925ms
+2025-05-05 20:39:28.8275|Info|Executed endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 20:39:28.8348|Info|Request finished HTTP/1.1 GET https://localhost:7295/api/Product/summary - 200 - application/json;+charset=utf-8 1912.3467ms
+2025-05-05 20:39:28.9500|Info|Request starting HTTP/1.1 GET https://localhost:7295/api/Category/categories - - -
+2025-05-05 20:39:28.9500|Info|Executing endpoint 'ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API)'
+2025-05-05 20:39:28.9500|Info|Route matched with {action = "GetCategories", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoriesAsync() on controller ECommerce.API.Controllers.CategoryController (ECommerce.API).
+2025-05-05 20:39:28.9500|Info|Executing action method ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API) - Validation state: Valid
+2025-05-05 20:39:29.0082|Info|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[BaseCode], [c].[Name], [c].[Prefix]
+FROM [Categories] AS [c]
+2025-05-05 20:39:29.0082|Info|Executed action method ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 54.9835ms.
+2025-05-05 20:39:29.0082|Info|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.API.Entities.Dtos.Category.CategoryDto, ECommerce.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-05 20:39:29.0082|Info|Executed action ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API) in 58.6654ms
+2025-05-05 20:39:29.0082|Info|Executed endpoint 'ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API)'
+2025-05-05 20:39:29.0082|Info|Request finished HTTP/1.1 GET https://localhost:7295/api/Category/categories - 200 - application/json;+charset=utf-8 63.6889ms
+2025-05-05 20:41:20.8354|Info|Now listening on: https://localhost:7295
+2025-05-05 20:41:20.8354|Info|Now listening on: http://localhost:5103
+2025-05-05 20:41:20.9454|Info|Application started. Press Ctrl+C to shut down.
+2025-05-05 20:41:20.9454|Info|Hosting environment: Development
+2025-05-05 20:41:20.9454|Info|Content root path: C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API
+2025-05-05 20:41:22.4926|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - - -
+2025-05-05 20:41:22.7730|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 - text/html;charset=utf-8 300.6808ms
+2025-05-05 20:41:22.8048|Info|Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - - -
+2025-05-05 20:41:22.8048|Info|Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript;+charset=utf-8 8.3906ms
+2025-05-05 20:41:23.2588|Info|Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - - -
+2025-05-05 20:41:23.3182|Info|Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 67.1736ms
+2025-05-05 20:41:23.3991|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - - -
+2025-05-05 20:41:23.4442|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 57.9783ms
+2025-05-05 20:41:25.9329|Info|Request starting HTTP/1.1 GET https://localhost:7295/api/Product/summary - - -
+2025-05-05 20:41:25.9449|Info|Executing endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 20:41:25.9714|Info|Route matched with {action = "GetProductSummaries", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductSummariesAsync() on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-05-05 20:41:26.1628|Info|Executing action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) - Validation state: Valid
+2025-05-05 20:41:27.5082|Info|Executed DbCommand (60ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedAt], [p].[Description], [p].[Dimensions], [p].[DiscountRate], [p].[ImageUrl], [p].[IsActive], [p].[Material], [p].[Model], [p].[Price], [p].[ProductCode], [p].[SellerId], [p].[SoldCount], [p].[Stock], [p].[Tags], [p].[ViewsCount], [p].[WarrantyPeriod], [p].[Weight], [c].[Id], [c].[BaseCode], [c].[Name], [c].[Prefix], [u].[Id], [u].[Address], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[ProfileImageUrl], [u].[Role], [u].[Username], [s].[UserId], [s].[AverageRating], [s].[IsActive], [s].[IsVerified], [s].[ShopAddress], [s].[ShopBannerUrl], [s].[ShopDescription], [s].[ShopEmail], [s].[ShopLogoUrl], [s].[ShopName], [s].[ShopPhoneNumber], [s].[TotalReviews]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [p].[SellerId] = [u].[Id]
+LEFT JOIN [SellerProfiles] AS [s] ON [u].[Id] = [s].[UserId]
+2025-05-05 20:41:27.5682|Info|Executed action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1394.5187ms.
+2025-05-05 20:41:27.5682|Info|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.API.Entities.Dtos.ProductSummaryDto, ECommerce.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-05 20:41:27.6053|Info|Executed action ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) in 1633.0609ms
+2025-05-05 20:41:27.6053|Info|Executed endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 20:41:27.6053|Info|Request finished HTTP/1.1 GET https://localhost:7295/api/Product/summary - 200 - application/json;+charset=utf-8 1679.6654ms
+2025-05-05 20:41:27.7299|Info|Request starting HTTP/1.1 GET https://localhost:7295/api/Category/categories - - -
+2025-05-05 20:41:27.7310|Info|Executing endpoint 'ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API)'
+2025-05-05 20:41:27.7310|Info|Route matched with {action = "GetCategories", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoriesAsync() on controller ECommerce.API.Controllers.CategoryController (ECommerce.API).
+2025-05-05 20:41:27.7310|Info|Executing action method ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API) - Validation state: Valid
+2025-05-05 20:41:27.7901|Info|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[BaseCode], [c].[Name], [c].[Prefix]
+FROM [Categories] AS [c]
+2025-05-05 20:41:27.7901|Info|Executed action method ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 56.2936ms.
+2025-05-05 20:41:27.7901|Info|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.API.Entities.Dtos.Category.CategoryDto, ECommerce.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-05 20:41:27.7901|Info|Executed action ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API) in 60.0565ms
+2025-05-05 20:41:27.7901|Info|Executed endpoint 'ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API)'
+2025-05-05 20:41:27.7901|Info|Request finished HTTP/1.1 GET https://localhost:7295/api/Category/categories - 200 - application/json;+charset=utf-8 66.0995ms
+2025-05-05 20:42:08.6148|Info|Now listening on: https://localhost:7295
+2025-05-05 20:42:08.6148|Info|Now listening on: http://localhost:5103
+2025-05-05 20:42:08.7132|Info|Application started. Press Ctrl+C to shut down.
+2025-05-05 20:42:08.7132|Info|Hosting environment: Development
+2025-05-05 20:42:08.7132|Info|Content root path: C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API
+2025-05-05 20:42:10.3679|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - - -
+2025-05-05 20:42:10.6017|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 - text/html;charset=utf-8 246.3305ms
+2025-05-05 20:42:10.6266|Info|Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - - -
+2025-05-05 20:42:10.6320|Info|Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript;+charset=utf-8 6.4902ms
+2025-05-05 20:42:10.9794|Info|Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - - -
+2025-05-05 20:42:11.0530|Info|Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 86.4435ms
+2025-05-05 20:42:11.1422|Info|Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - - -
+2025-05-05 20:42:11.1930|Info|Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 50.3518ms
+2025-05-05 20:42:12.7902|Info|Request starting HTTP/1.1 GET https://localhost:7295/api/Product/summary - - -
+2025-05-05 20:42:12.8043|Info|Executing endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 20:42:12.8353|Info|Route matched with {action = "GetProductSummaries", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductSummariesAsync() on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-05-05 20:42:13.0545|Info|Executing action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) - Validation state: Valid
+2025-05-05 20:42:14.4422|Info|Executed DbCommand (49ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedAt], [p].[Description], [p].[Dimensions], [p].[DiscountRate], [p].[ImageUrl], [p].[IsActive], [p].[Material], [p].[Model], [p].[Price], [p].[ProductCode], [p].[SellerId], [p].[SoldCount], [p].[Stock], [p].[Tags], [p].[ViewsCount], [p].[WarrantyPeriod], [p].[Weight], [c].[Id], [c].[BaseCode], [c].[Name], [c].[Prefix], [u].[Id], [u].[Address], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[PhoneNumber], [u].[ProfileImageUrl], [u].[Role], [u].[Username], [s].[UserId], [s].[AverageRating], [s].[IsActive], [s].[IsVerified], [s].[ShopAddress], [s].[ShopBannerUrl], [s].[ShopDescription], [s].[ShopEmail], [s].[ShopLogoUrl], [s].[ShopName], [s].[ShopPhoneNumber], [s].[TotalReviews]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Users] AS [u] ON [p].[SellerId] = [u].[Id]
+LEFT JOIN [SellerProfiles] AS [s] ON [u].[Id] = [s].[UserId]
+2025-05-05 20:42:14.4998|Info|Executed action method ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1435.5491ms.
+2025-05-05 20:42:14.4998|Info|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.API.Entities.Dtos.ProductSummaryDto, ECommerce.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-05 20:42:14.5260|Info|Executed action ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API) in 1689.9155ms
+2025-05-05 20:42:14.5260|Info|Executed endpoint 'ECommerce.API.Controllers.ProductController.GetProductSummariesAsync (ECommerce.API)'
+2025-05-05 20:42:14.5260|Info|Request finished HTTP/1.1 GET https://localhost:7295/api/Product/summary - 200 - application/json;+charset=utf-8 1741.1747ms
+2025-05-05 20:42:14.6778|Info|Request starting HTTP/1.1 GET https://localhost:7295/api/Category/categories - - -
+2025-05-05 20:42:14.6778|Info|Executing endpoint 'ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API)'
+2025-05-05 20:42:14.6778|Info|Route matched with {action = "GetCategories", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoriesAsync() on controller ECommerce.API.Controllers.CategoryController (ECommerce.API).
+2025-05-05 20:42:14.6778|Info|Executing action method ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API) - Validation state: Valid
+2025-05-05 20:42:14.7425|Info|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[BaseCode], [c].[Name], [c].[Prefix]
+FROM [Categories] AS [c]
+2025-05-05 20:42:14.7425|Info|Executed action method ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 61.5022ms.
+2025-05-05 20:42:14.7425|Info|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.API.Entities.Dtos.Category.CategoryDto, ECommerce.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-05 20:42:14.7425|Info|Executed action ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API) in 65.4426ms
+2025-05-05 20:42:14.7425|Info|Executed endpoint 'ECommerce.API.Controllers.CategoryController.GetCategoriesAsync (ECommerce.API)'
+2025-05-05 20:42:14.7425|Info|Request finished HTTP/1.1 GET https://localhost:7295/api/Category/categories - 200 - application/json;+charset=utf-8 71.3257ms

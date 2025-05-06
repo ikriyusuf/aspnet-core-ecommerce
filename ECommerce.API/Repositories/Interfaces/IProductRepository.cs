@@ -13,5 +13,6 @@ namespace ECommerce.API.Repositories.Interfaces
         Task<int> ProductCountAsync();
         Task<ProductCountBySellerDto> GetProductCountBySellerIdAsync(int sellerId);
         Task<List<Product>> GetSortedProductsAsync(string sortBy, bool trackChanges);
+        Task<IEnumerable<Product>> GetProductsByCategoryIdAsync(int categoryId, bool trackChanges);
     }
 }

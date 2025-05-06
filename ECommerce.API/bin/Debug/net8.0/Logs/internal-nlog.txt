@@ -43,3 +43,426 @@
 2025-05-05 11:22:42.9564 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
 2025-05-05 11:22:42.9779 Info Configuration initialized.
 2025-05-05 11:22:43.5342 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 16:04:58.4266 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-05 16:04:58.4398 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-05 16:04:58.4487 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-05 16:04:58.4487 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-05 16:04:58.4487 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-05 16:04:58.4487 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-05 16:04:58.4927 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 16:04:58.5069 Info Configuration initialized.
+2025-05-05 16:04:59.2133 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 16:05:24.4287 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-05 16:05:24.4287 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-05 16:05:24.4477 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-05 16:05:24.4477 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-05 16:05:24.4477 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-05 16:05:24.4477 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-05 16:05:24.4863 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 16:05:24.5010 Info Configuration initialized.
+2025-05-05 16:05:25.0323 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 16:11:26.6417 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-05 16:11:26.6517 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-05 16:11:26.6662 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-05 16:11:26.6662 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-05 16:11:26.6662 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-05 16:11:26.6778 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-05 16:11:26.7052 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 16:11:26.7200 Info Configuration initialized.
+2025-05-05 16:11:27.2075 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 16:13:38.3146 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-05 16:13:38.3278 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-05 16:13:38.3400 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-05 16:13:38.3400 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-05 16:13:38.3400 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-05 16:13:38.3400 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-05 16:13:38.3696 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 16:13:38.3696 Info Configuration initialized.
+2025-05-05 16:13:38.7979 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 16:26:40.4073 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-05 16:26:40.4130 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-05 16:26:40.4130 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-05 16:26:40.4130 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-05 16:26:40.4130 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-05 16:26:40.4307 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-05 16:26:40.4614 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 16:26:40.4614 Info Configuration initialized.
+2025-05-05 16:26:41.0530 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 16:32:28.8161 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-05 16:32:28.8234 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-05 16:32:28.8234 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-05 16:32:28.8234 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-05 16:32:28.8376 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-05 16:32:28.8376 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-05 16:32:28.8642 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 16:32:28.8756 Info Configuration initialized.
+2025-05-05 16:32:29.2496 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 16:34:20.9158 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-05 16:34:20.9158 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-05 16:34:20.9273 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-05 16:34:20.9273 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-05 16:34:20.9273 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-05 16:34:20.9273 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-05 16:34:20.9595 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 16:34:20.9595 Info Configuration initialized.
+2025-05-05 16:34:21.2754 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 19:26:49.8202 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-05 19:26:49.8202 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-05 19:26:49.8359 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-05 19:26:49.8359 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-05 19:26:49.8359 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-05 19:26:49.8359 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-05 19:26:49.8647 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 19:26:49.8647 Info Configuration initialized.
+2025-05-05 19:26:50.6397 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 19:27:53.4189 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-05 19:27:53.4389 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-05 19:27:53.4491 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-05 19:27:53.4491 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-05 19:27:53.4491 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-05 19:27:53.4491 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-05 19:27:53.4831 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 19:27:53.4933 Info Configuration initialized.
+2025-05-05 19:27:53.8824 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 19:28:45.4145 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-05 19:28:45.4145 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-05 19:28:45.4347 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-05 19:28:45.4347 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-05 19:28:45.4347 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-05 19:28:45.4444 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-05 19:28:45.4652 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 19:28:45.4652 Info Configuration initialized.
+2025-05-05 19:28:45.8713 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 19:30:03.7281 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-05 19:30:03.7395 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-05 19:30:03.7395 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-05 19:30:03.7395 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-05 19:30:03.7395 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-05 19:30:03.7395 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-05 19:30:03.7670 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 19:30:03.7758 Info Configuration initialized.
+2025-05-05 19:30:04.1747 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 19:30:24.1865 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-05 19:30:24.1865 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-05 19:30:24.2008 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-05 19:30:24.2008 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-05 19:30:24.2008 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-05 19:30:24.2008 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-05 19:30:24.2266 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 19:30:24.2266 Info Configuration initialized.
+2025-05-05 19:30:24.5432 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 20:01:02.2715 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-05 20:01:02.2816 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-05 20:01:02.2974 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-05 20:01:02.2974 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-05 20:01:02.2974 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-05 20:01:02.3163 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-05 20:01:02.3685 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 20:01:02.3964 Info Configuration initialized.
+2025-05-05 20:01:03.2686 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 20:03:35.0626 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-05 20:03:35.0764 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-05 20:03:35.0764 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-05 20:03:35.0839 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-05 20:03:35.0839 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-05 20:03:35.0839 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-05 20:03:35.1119 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 20:03:35.1200 Info Configuration initialized.
+2025-05-05 20:03:35.5288 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 20:09:38.4302 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-05 20:09:38.4302 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-05 20:09:38.4438 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-05 20:09:38.4438 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-05 20:09:38.4438 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-05 20:09:38.4438 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-05 20:09:38.4788 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 20:09:38.4788 Info Configuration initialized.
+2025-05-05 20:09:38.8859 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 20:10:13.1221 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-05 20:10:13.1221 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-05 20:10:13.1375 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-05 20:10:13.1375 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-05 20:10:13.1375 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-05 20:10:13.1375 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-05 20:10:13.1607 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 20:10:13.1696 Info Configuration initialized.
+2025-05-05 20:10:13.5557 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 20:13:13.3581 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-05 20:13:13.3581 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-05 20:13:13.3658 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-05 20:13:13.3658 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-05 20:13:13.3658 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-05 20:13:13.3820 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-05 20:13:13.4012 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 20:13:13.4012 Info Configuration initialized.
+2025-05-05 20:13:13.7268 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 20:14:08.2510 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-05 20:14:08.2639 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-05 20:14:08.2639 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-05 20:14:08.2639 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-05 20:14:08.2639 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-05 20:14:08.2639 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-05 20:14:08.2947 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 20:14:08.2947 Info Configuration initialized.
+2025-05-05 20:14:08.6292 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 20:14:29.3535 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-05 20:14:29.3535 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-05 20:14:29.3743 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-05 20:14:29.3743 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-05 20:14:29.3743 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-05 20:14:29.3840 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-05 20:14:29.4119 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 20:14:29.4275 Info Configuration initialized.
+2025-05-05 20:14:30.1786 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 20:15:18.2182 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-05 20:15:18.2182 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-05 20:15:18.2312 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-05 20:15:18.2312 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-05 20:15:18.2312 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-05 20:15:18.2312 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-05 20:15:18.2537 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 20:15:18.2621 Info Configuration initialized.
+2025-05-05 20:15:18.6437 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 20:16:31.5591 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-05 20:16:31.5591 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-05 20:16:31.5695 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-05 20:16:31.5695 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-05 20:16:31.5695 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-05 20:16:31.5695 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-05 20:16:31.5952 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 20:16:31.6062 Info Configuration initialized.
+2025-05-05 20:16:32.0435 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 20:16:54.9936 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-05 20:16:54.9936 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-05 20:16:54.9936 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-05 20:16:55.0066 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-05 20:16:55.0066 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-05 20:16:55.0066 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-05 20:16:55.0328 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 20:16:55.0413 Info Configuration initialized.
+2025-05-05 20:16:55.4105 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 20:18:43.3253 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-05 20:18:43.3373 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-05 20:18:43.3373 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-05 20:18:43.3373 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-05 20:18:43.3499 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-05 20:18:43.3499 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-05 20:18:43.3753 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 20:18:43.3845 Info Configuration initialized.
+2025-05-05 20:18:43.7624 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 20:19:23.2982 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-05 20:19:23.3039 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-05 20:19:23.3039 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-05 20:19:23.3039 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-05 20:19:23.3039 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-05 20:19:23.3039 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-05 20:19:23.3386 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 20:19:23.3504 Info Configuration initialized.
+2025-05-05 20:19:23.8778 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 20:23:13.4463 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-05 20:23:13.4463 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-05 20:23:13.4635 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-05 20:23:13.4635 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-05 20:23:13.4635 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-05 20:23:13.4635 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-05 20:23:13.5038 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 20:23:13.5124 Info Configuration initialized.
+2025-05-05 20:23:13.9372 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 20:23:44.6847 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-05 20:23:44.6847 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-05 20:23:44.7034 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-05 20:23:44.7034 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-05 20:23:44.7034 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-05 20:23:44.7097 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-05 20:23:44.7312 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 20:23:44.7400 Info Configuration initialized.
+2025-05-05 20:23:45.0788 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 20:35:23.9877 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-05 20:35:23.9938 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-05 20:35:23.9938 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-05 20:35:23.9938 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-05 20:35:23.9938 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-05 20:35:24.0092 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-05 20:35:24.0346 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 20:35:24.0511 Info Configuration initialized.
+2025-05-05 20:35:24.6120 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 20:37:37.1821 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-05 20:37:37.1821 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-05 20:37:37.1964 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-05 20:37:37.1964 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-05 20:37:37.1964 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-05 20:37:37.1964 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-05 20:37:37.2204 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 20:37:37.2297 Info Configuration initialized.
+2025-05-05 20:37:37.6427 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 20:38:25.9397 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-05 20:38:25.9485 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-05 20:38:25.9616 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-05 20:38:25.9616 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-05 20:38:25.9616 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-05 20:38:25.9616 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-05 20:38:26.0028 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 20:38:26.0275 Info Configuration initialized.
+2025-05-05 20:38:26.7763 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 20:39:18.9046 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-05 20:39:18.9182 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-05 20:39:18.9182 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-05 20:39:18.9182 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-05 20:39:18.9277 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-05 20:39:18.9277 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-05 20:39:18.9277 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 20:39:18.9586 Info Configuration initialized.
+2025-05-05 20:39:19.5130 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 20:41:19.8259 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-05 20:41:19.8259 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-05 20:41:19.8385 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-05 20:41:19.8385 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-05 20:41:19.8385 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-05 20:41:19.8385 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-05 20:41:19.8683 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 20:41:19.8683 Info Configuration initialized.
+2025-05-05 20:41:20.2204 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 20:42:07.6998 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-05 20:42:07.6998 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-05 20:42:07.6998 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-05 20:42:07.7150 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-05 20:42:07.7150 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-05 20:42:07.7150 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-05 20:42:07.7412 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-05 20:42:07.7412 Info Configuration initialized.
+2025-05-05 20:42:08.1331 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-06 09:09:26.1190 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-06 09:09:26.1190 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-06 09:09:26.1365 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-06 09:09:26.1365 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-06 09:09:26.1365 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-06 09:09:26.1365 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-06 09:09:26.1713 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-06 09:09:26.1856 Info Configuration initialized.
+2025-05-06 09:09:27.1094 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-06 09:12:44.6883 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-06 09:12:44.6961 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-06 09:12:44.6961 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-06 09:12:44.6961 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-06 09:12:44.6961 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-06 09:12:44.7152 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-06 09:12:44.7425 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-06 09:12:44.7561 Info Configuration initialized.
+2025-05-06 09:12:45.3009 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-06 09:18:12.8131 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-06 09:18:12.8199 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-06 09:18:12.8199 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-06 09:18:12.8199 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-06 09:18:12.8199 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-06 09:18:12.8357 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-06 09:18:12.8561 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-06 09:18:12.8647 Info Configuration initialized.
+2025-05-06 09:18:13.2579 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-06 09:22:15.3670 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-06 09:22:15.3833 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-06 09:22:15.4015 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-06 09:22:15.4015 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-06 09:22:15.4015 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-06 09:22:15.4247 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-06 09:22:15.4611 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-06 09:22:15.4846 Info Configuration initialized.
+2025-05-06 09:22:16.2636 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-06 09:23:44.0568 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-06 09:23:44.0568 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-06 09:23:44.0739 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-06 09:23:44.0739 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-06 09:23:44.0739 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-06 09:23:44.0739 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-06 09:23:44.1022 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-06 09:23:44.1153 Info Configuration initialized.
+2025-05-06 09:23:44.5899 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-06 09:27:06.6594 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-06 09:27:06.6713 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-06 09:27:06.6874 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-06 09:27:06.6874 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-06 09:27:06.6874 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-06 09:27:06.6983 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-06 09:27:06.7256 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-06 09:27:06.7404 Info Configuration initialized.
+2025-05-06 09:27:07.3707 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-06 09:27:26.4751 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-06 09:27:26.4751 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-06 09:27:26.4927 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-06 09:27:26.4927 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-06 09:27:26.4927 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-06 09:27:26.4927 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-06 09:27:26.5250 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-06 09:27:26.5375 Info Configuration initialized.
+2025-05-06 09:27:27.0767 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-06 09:29:19.9154 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-06 09:29:19.9154 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-06 09:29:19.9154 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-06 09:29:19.9313 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-06 09:29:19.9313 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-06 09:29:19.9313 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-06 09:29:19.9589 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-06 09:29:19.9672 Info Configuration initialized.
+2025-05-06 09:29:20.2961 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-06 09:31:15.7712 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-06 09:31:15.7712 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-06 09:31:15.7712 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-06 09:31:15.7712 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-06 09:31:15.7712 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-06 09:31:15.7891 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-06 09:31:15.8056 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-06 09:31:15.8056 Info Configuration initialized.
+2025-05-06 09:31:16.1516 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-06 09:37:15.5004 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-06 09:37:15.5004 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-06 09:37:15.5179 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-06 09:37:15.5219 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-06 09:37:15.5219 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-06 09:37:15.5361 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-06 09:37:15.5925 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-06 09:37:15.6008 Info Configuration initialized.
+2025-05-06 09:37:15.9509 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-06 09:39:14.8573 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-06 09:39:14.8668 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-06 09:39:14.8668 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-06 09:39:14.8798 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-06 09:39:14.8798 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-06 09:39:14.8798 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-06 09:39:14.9159 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-06 09:39:14.9336 Info Configuration initialized.
+2025-05-06 09:39:15.5931 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-06 09:40:33.9992 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-06 09:40:33.9992 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-06 09:40:34.0161 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-06 09:40:34.0161 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-06 09:40:34.0161 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-06 09:40:34.0224 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-06 09:40:34.0402 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-06 09:40:34.0516 Info Configuration initialized.
+2025-05-06 09:40:34.4618 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-06 09:40:53.4769 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-06 09:40:53.4769 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-06 09:40:53.4769 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-06 09:40:53.4896 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-06 09:40:53.4896 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-06 09:40:53.4896 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-06 09:40:53.5118 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-06 09:40:53.5118 Info Configuration initialized.
+2025-05-06 09:40:54.0731 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-06 09:42:10.0944 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-06 09:42:10.1011 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-06 09:42:10.1011 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-06 09:42:10.1011 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-06 09:42:10.1011 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-06 09:42:10.1011 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-06 09:42:10.1403 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-06 09:42:10.1522 Info Configuration initialized.
+2025-05-06 09:42:10.5548 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-06 10:00:45.8903 Info Registered target NLog.Targets.FileTarget(Name=infofile)
+2025-05-06 10:00:45.9001 Info Registered target NLog.Targets.FileTarget(Name=warnfile)
+2025-05-06 10:00:45.9136 Info Registered target NLog.Targets.FileTarget(Name=errorfile)
+2025-05-06 10:00:45.9136 Info Registered target NLog.Targets.FileTarget(Name=webfile)
+2025-05-06 10:00:45.9136 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-05-06 10:00:45.9136 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-06 10:00:45.9455 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config
+2025-05-06 10:00:45.9583 Info Configuration initialized.
+2025-05-06 10:00:46.3556 Info Validating config: Targets=5, ConfigItems=78, FilePath=C:\Users\yusuf\source\repos\ECommerceSolution\ECommerce.API\bin\Debug\net8.0\nlog.config

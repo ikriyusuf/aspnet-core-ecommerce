@@ -17,6 +17,7 @@ namespace ECommerce.API.Infrastructure.Extension
         {
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped<IServiceManager, ServiceManager>();
+            services.AddScoped<ICategoryService, CategoryService>();
         }
 
         public static void ConfigureLoggerService(this IServiceCollection services)

@@ -57,6 +57,14 @@
       "PackagePath": "staticwebassets\\images\\product\\sonyplaystation.png"
     },
     {
+      "Id": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\xiaomi_redmi_buds_5.png",
+      "PackagePath": "staticwebassets\\images\\product\\xiaomi_redmi_buds_5.png"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\images\\product\\xiaomi_redmi_note_13_pro.png",
+      "PackagePath": "staticwebassets\\images\\product\\xiaomi_redmi_note_13_pro.png"
+    },
+    {
       "Id": "C:\\Users\\yusuf\\source\\repos\\ECommerceSolution\\ECommerce.UI\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

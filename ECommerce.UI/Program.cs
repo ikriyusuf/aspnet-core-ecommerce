@@ -5,6 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<ProductApiService>();
+builder.Services.AddScoped<CategoryApiService>();
 builder.Services.AddHttpClient(); // gerekli çünkü içeride IHttpClientFactory var
 
 var app = builder.Build();

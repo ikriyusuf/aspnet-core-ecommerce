@@ -13,12 +13,12 @@ namespace ECommerce.API.Controllers
     public class ProductController : ControllerBase
     {
         private readonly IServiceManager _serviceManager;
-        private readonly ILoggerService _logger;
 
-        public ProductController(IServiceManager serviceManager, ILoggerService logger)
+
+        public ProductController(IServiceManager serviceManager)
         {
             _serviceManager = serviceManager;
-            _logger = logger;
+
         }
 
         /// <summary>
@@ -67,7 +67,6 @@ namespace ECommerce.API.Controllers
         public async Task<IActionResult> DeleteProductAsync(int productId)
         {
             await _serviceManager.ProductService.DeleteProductAsync(productId, false);
-            _logger.LogError("Here is info message from the controller.");
             return NoContent();
         }
 

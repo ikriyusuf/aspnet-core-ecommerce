@@ -1,5 +1,15 @@
 [
   {
+    "ContainingType": "ECommerce.API.Controllers.CategoryController",
+    "Method": "GetCategoriesAsync",
+    "RelativePath": "api/Category/categories",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ECommerce.API.Controllers.ProductController",
     "Method": "CreateProductAsync",
     "RelativePath": "api/Product",

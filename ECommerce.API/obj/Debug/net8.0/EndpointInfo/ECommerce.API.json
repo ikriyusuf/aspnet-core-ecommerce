@@ -5,6 +5,18 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Category/categories": {
+      "get": {
+        "tags": [
+          "Category"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Product/summary": {
       "get": {
         "tags": [

@@ -28,7 +28,7 @@ namespace ECommerce.API.Services.Implementations
 
             var category = await _repositoryManager.Category.GetCategoryByIdAsync(entity.CategoryId, false);
             if (category is null)
-                throw new Exception("Kategori bulunamadı.");
+                throw new CategoryNotFoundException(entity.CategoryId);
 
 
             entity.ProductCode = GenerateProductCode(category);

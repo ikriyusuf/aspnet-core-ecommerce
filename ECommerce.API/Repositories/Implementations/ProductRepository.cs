@@ -48,6 +48,16 @@ namespace ECommerce.API.Repositories.Implementations
             };
         }
 
+        public async Task<IEnumerable<Product>> GetProductsByCategoryIdAsync(int categoryId, bool trackChanges)
+        {
+            var query = FindByCondition(p => p.CategoryId.Equals(categoryId), trackChanges)
+             .Include(p => p.Category)
+             .Include(p => p.Seller)
+                 .ThenInclude(s => s.SellerProfile);
+
+            return await query.ToListAsync();
+        }
+
         public async Task<List<Product>> GetSortedProductsAsync(string sortBy, bool trackChanges)
         {
             var query = FindByCondition(p => p.IsActive, trackChanges)

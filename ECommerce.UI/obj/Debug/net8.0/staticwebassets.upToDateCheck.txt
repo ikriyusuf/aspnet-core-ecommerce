@@ -11,6 +11,8 @@ wwwroot\images\product\nvdiageforcertx4070.png
 wwwroot\images\product\samsunggalaxywatch6.png
 wwwroot\images\product\samsungs23.png
 wwwroot\images\product\sonyplaystation.png
+wwwroot\images\product\xiaomi_redmi_buds_5.png
+wwwroot\images\product\xiaomi_redmi_note_13_pro.png
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

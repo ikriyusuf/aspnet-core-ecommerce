@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - ECommerce.UI</title>
+    <title>@ViewData["Title"] - BozokBazarr</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
@@ -35,37 +35,46 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom mb-3">
-            <div class="container-fluid d-flex align-items-center">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+            <div class="container">
+                <!-- Üst Satır: Logo, Arama ve İkonlar -->
+                <div class="row w-100 align-items-center">
+                    <!-- Logo -->
+                    <div class="col-12 col-md-3 text-center text-md-start mb-2 mb-md-0">
+                        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                            BozokBazaar
+                        </a>
+                    </div>
 
-                <!-- Sol: Marka -->
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
-                    BozokBazaar
-                </a>
+                    <!-- Arama Çubuğu -->
+                    <div class="col-12 col-md-6 mb-2 mb-md-0">
+                        <form class="d-flex search-form" asp-controller="Product" asp-action="Index" method="get">
+                            <input class="form-control" type="search" name="searchTerm" placeholder="Ürün ara..." aria-label="Ara" />
+                            <button class="btn btn-outline-primary ms-2" type="submit">
+                                <i class="fa-solid fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
 
-                <!-- Orta: Arama Çubuğu -->
-                <form class="d-flex search-form" asp-controller="Product" asp-action="Index" method="get">
-                    <input class="form-control"
-                           type="search"
-                           name="searchTerm"
-                           placeholder="Ürün ara..."
-                           aria-label="Ara" />
-                </form>
-
-                <div class="nav-icons d-flex align-items-center">
-                    <a class="text-decoration-none d-flex align-items-center" asp-controller="Account" asp-action="Login" title="Giriş Yap">
-                        <i class="fa-solid fa-user me-1"></i> Giriş Yap
-                    </a>
-                    <a class="text-decoration-none d-flex align-items-center" asp-controller="Favorites" asp-action="Index" title="Favoriler">
-                        <i class="fa-regular fa-heart me-1"></i> Favorilerim
-                    </a>
-                    <a class="text-decoration-none d-flex align-items-center" asp-controller="Cart" asp-action="Index" title="Sepetim">
-                        <i class="fa-solid fa-shopping-cart me-1"></i> Sepetim
-                    </a>
+                    <!-- İkonlar -->
+                    <div class="col-12 col-md-3 d-flex justify-content-center justify-content-md-end">
+                        <div class="nav-icons d-flex align-items-center gap-3">
+                            <a class="text-decoration-none d-flex align-items-center" asp-controller="Account" asp-action="Login" title="Giriş Yap">
+                                <i class="fa-solid fa-user me-1"></i> <span class="d-none d-sm-inline">Giriş Yap</span>
+                            </a>
+                            <a class="text-decoration-none d-flex align-items-center" asp-controller="Favorites" asp-action="Index" title="Favoriler">
+                                <i class="fa-regular fa-heart me-1"></i> <span class="d-none d-sm-inline">Favorilerim</span>
+                            </a>
+                            <a class="text-decoration-none d-flex align-items-center" asp-controller="Cart" asp-action="Index" title="Sepetim">
+                                <i class="fa-solid fa-shopping-cart me-1"></i> <span class="d-none d-sm-inline">Sepetim</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
+
 
     <div class="container">
         <main role="main" class="pb-3">
